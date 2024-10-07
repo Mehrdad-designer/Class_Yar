@@ -3201,6 +3201,12 @@
 
 
 @media (max-width: 767.98px) {
+.project-item-two .project-content-two{
+    opacity: 1;
+	visibility: visible;
+    transform: none;
+}
+}
 .slider-bg-two {
     padding: 195px 0 100px;
 }
@@ -3517,7 +3523,7 @@
 }
 
 
-}
+
 
 
 
@@ -3564,6 +3570,7 @@
 .banner-content-seven .title {
     font-size: 45px;
 }
+
 .project-content-seven .content .title {
     font-size: 22px;
 }
