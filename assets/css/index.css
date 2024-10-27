@@ -1,12 +1,13 @@
 /* section of cart categories */
 
-.project-thumb-two .items{
-    padding: 15px;
+.categories-item{
+    width: 312px;
+    cursor: pointer;
 }
 
-.project-thumb-two .items .ViwesClasses h4 , .project-thumb-two .items .ViwesClasses i{
-    display: inline-block;
-   margin: 30px;
+.categories-item .services-item-two .services-thumb-two{
+    height: 450px;
+    color: black;
 }
 
 .none{
@@ -16,3 +17,4 @@
 .block{
     display: block;
 }
+
