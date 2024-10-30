@@ -5,6 +5,9 @@
 
     demo 1
 */
+html{
+    direction: rtl;
+}
 .navbar-wrap > ul > li.menu-item-has-children > a::after {
     margin-right: 8px;
     margin-left: unset;
