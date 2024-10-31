@@ -1,0 +1,102 @@
+/* main */
+
+
+main{
+  margin-top: 80px !important;
+  margin: 20px;
+}
+
+
+.container-info{
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  padding: 20px;
+}
+
+/* slid */
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+.swiper{
+  width: 500px;
+  height: 300px;
+}
+
+/* institute-title */
+
+
+.institute-title{
+  margin: 20px;
+  padding: 5px;
+
+}
+
+.institute-title img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  display: inline;
+}
+
+.institute-title h3{
+  display: inline;
+}
+
+
+.institute-title span{
+  margin: 6px;
+}
+
+
+/* info1 */
+
+
+.class-info1 {
+  height: 500px !important;
+}
+
+/* 
+info2 */
+
+.class-info2{
+  height: 500px !important;
+}
