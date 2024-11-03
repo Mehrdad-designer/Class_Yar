@@ -13,10 +13,27 @@ main {
   justify-content: center;
   flex-direction: row;
   height: 100%;
-  background: gray;
   padding: 20px;
+  background-image: url(/assets/img/services/h6_services_shape02.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background: #cfcdcd15;
+  overflow: hidden;
 }
 
+.about-shape-wrap-two{
+  z-index: -1;
+}
+
+/* not active */
+.not-active{
+  display: none;
+}
+
+/* active */
+.active{
+  display: block;
+}
 /* slid */
 
 html,
@@ -37,6 +54,7 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .swiper-slide {
@@ -97,6 +115,8 @@ body {
   position: relative;
 }
 
+
+
 .class-info1 .class-icon {
   position: absolute;
   bottom: 2px;
@@ -121,12 +141,31 @@ body {
   background: white;
 }
 
+
+.class-info1 .capacity {
+  position: absolute;
+  bottom: 2px;
+  font-weight:bold;
+  
+}
+
+
+
+
 /* 
 info2 */
 
 .class-info2 {
   height: 500px !important;
   position: relative;
+}
+
+.class-info2 h4 , .class-info2 b{
+  margin: 5px;
+}
+
+.class-info2 h4{
+  text-align: center;
 }
 
 .class-info2 .time-box p {
@@ -154,6 +193,11 @@ info2 */
   color: #eee;
 
 }
+
+.description{
+  margin-top: 150px;
+}
+
 
 .class-info2 .rank{
   position: absolute;
