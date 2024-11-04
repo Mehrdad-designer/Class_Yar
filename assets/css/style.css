@@ -11715,3 +11715,11 @@ label {
     min-height: 275px;
     object-fit: cover;
 }
+
+body{
+	direction: rtl !important;
+}
+
+.logo-side img{
+	width: 200px !important;
+}
