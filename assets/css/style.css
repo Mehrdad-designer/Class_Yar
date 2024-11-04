@@ -538,9 +538,12 @@ label {
 	justify-content: flex-start;
 }
 .logo img,
-.f-logo img,
-.fw-logo img {
-    max-height: 29px;
+.f-logo img
+ {
+    max-height: 45px;
+}
+.fw-logo img{
+    max-height: 150px;
 }
 .navbar-wrap {
 	display: flex;
