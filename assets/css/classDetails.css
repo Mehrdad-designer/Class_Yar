@@ -1,9 +1,12 @@
 /* main */
 
-
+ul{
+  list-style: none;
+}
 main {
   margin-top: 80px !important;
   margin: 20px;
+  height: 90%;
 }
 
 
@@ -116,24 +119,30 @@ body {
 
 
 .class-info1 {
-  height: 500px !important;
+  height: 100% !important;
   position: relative;
 }
 
 
 
 .class-info1 .class-icon {
-  position: absolute;
-  bottom: 2px;
-  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-size: 25px;
   padding: 10px;
   color: white;
-
+  position: absolute;
+  right: 136px;
+  top: 35px;
 }
+
+
 
 .class-info1 .class-icon i {
   border-radius: 50%;
+  margin: 5px;
   background: rgb(4, 0, 255);
   padding: 10px;
 }
@@ -155,18 +164,33 @@ body {
 }
 
 
+.class-info1  ul {
+  list-style: none;
+  display: inline;
+  position:absolute ;
+  bottom: 80px;
+  right: 160px;
+}
+
+.class-info1 ul li{
+  display: inline !important;
+  margin: 6px;
+  text-align: center;
+  
+}
+
+.class-info1 ul li i{
+  color: rgb(4, 0, 255);
+}
+
 
 
 /* 
 info2 */
-.class-info2 .box{
-  background: gray;
-  border-radius: 20px;
-  padding: 10px;
-}
+
 
 .class-info2 {
-  height: 500px !important;
+  height: 100% !important;
   position: relative;
 }
 
@@ -174,8 +198,10 @@ info2 */
   margin: 5px;
 }
 
-.class-info2 h4{
-  text-align: center;
+.class-info2 .box ul li {
+  display: inline-block;
+  margin-right: 20px;
+  
 }
 
 .class-info2 .time-box p {
@@ -205,7 +231,7 @@ info2 */
 } */
 
 .description{
-  margin-top: 150px;
+  margin-top: 30rem;
 }
 
 
@@ -228,3 +254,8 @@ info2 */
 .class-info2 .rank i:hover{
   color: #000;
 } 
+
+.class-info2 ul b , .class-info2 ul p{
+  display: inline !important;
+  margin-right: 20px;
+}
