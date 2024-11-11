@@ -55,6 +55,10 @@ hr{
 
 }
 
+.class-item .section-one{
+    position: relative;
+}
+
 .class-item .section-one img{
     border-radius: 10px;
     margin: 15px;
@@ -100,4 +104,17 @@ hr{
     font-weight: bold;
     color: white;
     
+}
+
+.classes .class-item .section-one .info{
+    position: absolute;
+    top: 20px;
+    right: 300px;
+}
+
+.class-item .section-one .manaiger{
+    font-weight: bold;
+    color: rgb(4, 0, 255);
+    position: absolute;
+    bottom: 10px;
 }
