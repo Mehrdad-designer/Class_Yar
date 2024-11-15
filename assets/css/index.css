@@ -633,3 +633,18 @@ body {
     font-size: small;
 
 }
+
+
+/* footer */
+
+footer .footer-widget .footer-social .icons{
+    position: relative;
+}
+
+footer .footer-widget .footer-social ul{
+    position: absolute;
+    right: -5px;
+    display: flex !important;
+  flex-direction: column !important;
+}
+
