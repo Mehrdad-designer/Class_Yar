@@ -445,3 +445,191 @@ body {
     font-size: small;
 
 }
+
+
+
+
+
+
+
+/* popular institute and newest classes */
+
+.ane-new {
+    position: relative;
+    height: 500px;
+    
+}
+
+
+.ane-new .swiper{
+    right: -30rem;
+}
+
+
+
+/* selector new section */
+
+.project-area-two .selector {
+    border: 1px solid black;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    width: 500px;
+    height: 40px;
+    overflow: hidden;
+
+}
+
+.project-area-two .selector button:nth-child(1) {
+    height: 100%;
+    width: 50%;
+    border: none;
+}
+
+
+.project-area-two .selector button:nth-child(2) {
+    height: 100%;
+    width: 48.9%;
+    border: none;
+
+}
+
+
+.acctive {
+    background: rgb(4, 0, 255) !important;
+    color: rgb(255, 255, 255);
+}
+
+.nonedisplay {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
+
+/* new institute */
+
+
+.institute-new >h3{
+    color: #000000;
+}
+
+.institute-new .title-institute .info-institute-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+
+
+}
+
+.institute-new .title-institute img {
+    border-radius: 15px;
+
+}
+
+
+
+.institute-new .title-institute span {
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    font-weight: 100;
+    font-size: small;
+}
+
+.institute-new .discreption {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.institute-new .discreption hr{
+    width: 90%;
+    
+}
+
+
+
+.institute-new .send button{
+    border-radius: 15px;
+    padding: 5px;
+    background:rgb(4, 0, 255) ;
+    color: honeydew;
+    border: 1px solid black;
+}
+
+.institute-new .send span{
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    font-weight: 100;
+    font-size: small;
+
+}
+
+
+
+
+/* new classes */
+
+
+.classes-new >h3{
+    color: #000000;
+}
+
+.classes-new .title-class .info-class-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+
+
+}
+
+.classes-new .title-class img {
+    border-radius: 15px;
+
+}
+
+
+
+.classes-new .title-class span {
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    font-weight: 100;
+    font-size: small;
+}
+
+.classse-new .discreption {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.classes-new .discreption hr{
+    width: 90%;
+    
+}
+
+
+
+.classes-new .send button{
+    border-radius: 15px;
+    padding: 5px;
+    background:rgb(4, 0, 255) ;
+    color: honeydew;
+    border: 1px solid black;
+}
+
+.classes-new .send span{
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    font-weight: 100;
+    font-size: small;
+
+}
