@@ -11,9 +11,7 @@
     color: black;
 }
 
-.categories-item:hover{
-    border-radius: 15px;
-}
+
 
 .banner-img text-center img {
     animation: animate2;
@@ -23,6 +21,7 @@
     color: rgb(4, 0, 255);
     transition: all 0.5s;
 }
+
 
 
 /* 
@@ -634,17 +633,4 @@ body {
 
 }
 
-
-/* footer */
-
-footer .footer-widget .footer-social .icons{
-    position: relative;
-}
-
-footer .footer-widget .footer-social ul{
-    position: absolute;
-    right: -5px;
-    display: flex !important;
-  flex-direction: column !important;
-}
 
