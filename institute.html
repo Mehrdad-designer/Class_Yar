@@ -234,22 +234,49 @@
     <div class="title-filter">
         <h3>دسته هنری </h3>
     </div>
-    
+
     <div class="filter-nav">
+
        
+
         <ul class="filter">
             <li class="filter-item">نقاشی</li>
             <li class="filter-item">مجسمه سازی</li>
             <li class="filter-item">موسیقی</li>
             <li class="filter-item">بازیگری</li>
+
+
+            <li class="filter-item">نقاشی</li>
+            <li class="filter-item">مجسمه سازی</li>
+            <li class="filter-item">موسیقی</li>
+            <li class="filter-item">بازیگری</li>
+
+            <li class="filter-item">نقاشی</li>
+            <li class="filter-item">مجسمه سازی</li>
+            <li class="filter-item">موسیقی</li>
+            <li class="filter-item">بازیگری</li>
+            
+
+            <li class="filter-item">نقاشی</li>
+            <li class="filter-item">مجسمه سازی</li>
+            <li class="filter-item">موسیقی</li>
+            <li class="filter-item">بازیگری</li>
         </ul>
+
+        <div class="selector" style="margin: 0px auto;">
+            <button type="button" class="acctive">  اموزشگاه ها </button>
+            <button type="button">  کلاس ها</button>
+        </div>
     </div>
 
-    
 
 
-    <div class="classes">
-        <div class="class-item">
+
+
+
+    <!-- institute -->
+    <div class="institute">
+        <div class="institute-item">
 
             <section class="section-one ">
                 <img src="assets/img/categories/download.jpg" alt="اموزشگاه شیدا">
@@ -277,7 +304,42 @@
         </div>
 
 
-        
+
+
+    </div>
+
+    <!-- classes -->
+
+    <div class="classes">
+        <div class="class-item">
+
+            <section class="section-one ">
+                <img src="assets/img/categories/download.jpg" alt="اموزشگاه شیدا">
+
+                <div class="info">
+                    <h3>نام کلاس:ویلن شیدا</h3>
+                    <span>ادرس:خیابان امام</span>
+                    <br>
+                    <span>شماره موسسه : 09121458974</span>
+                </div>
+
+                <span class="manaiger">مدیریت : غیور </span>
+
+
+            </section>
+
+            <section class="section-two ">
+
+                <a href="#">
+                    <button>بازدید <i class="fab fa-instagram"></i></button>
+
+                </a>
+            </section>
+
+        </div>
+
+
+
 
     </div>
 
@@ -305,6 +367,60 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+
+    <!-- selecor for institute and classses -->
+    <script>
+
+
+
+        const institute = document.querySelector(" .selector button:nth-child(1)")
+        const classes = document.querySelector(" .selector button:nth-child(2)")
+
+
+        const instituteSection = document.querySelector(" .institute")
+        const classesSection = document.querySelector(".classes")
+
+        if (classesSection != undefined) {
+            classesSection.style.display = "none"
+        }
+
+
+
+        institute.className = "acctive"
+
+        classes.addEventListener("click", (e) => {
+            classes.className = "acctive";
+
+            institute.className = ""
+
+
+
+            if (classesSection != undefined) {
+                classesSection.style.display = "block"
+            }
+            if (instituteSection != undefined) {
+                instituteSection.style.display = "none"
+            }
+
+        })
+
+
+
+        institute.addEventListener("click", (e) => {
+            institute.className = "acctive";
+
+            classes.className = "";
+
+            if (instituteSection != undefined) {
+                instituteSection.style.display = "block"
+            }
+
+            if (classesSection != undefined) {
+                classesSection.style.display = "none"
+            }
+        })
+    </script>
 </body>
 
 </html>
