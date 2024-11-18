@@ -1,4 +1,21 @@
+::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color:#cedbe8;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #f7f7f7;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-track-piece{
+    width:5px;
+    border-radius: 10px;
+    background-color:#2014c9;
+}
 /* section of cart categories */
 
 .categories-item {
@@ -234,7 +251,7 @@ animation section */
 
 /* popular institute and popular classes */
 
-.ane {
+.ane , .ane-new{
     position: relative;
     height: 500px;
 }
@@ -254,7 +271,7 @@ animation section */
 .container .selector button:nth-child(1) {
     height: 100%;
     width: 50%;
-    border: none;
+    border: none
 }
 
 
@@ -324,13 +341,23 @@ body {
 }
 
 
+/* bg */
+
+.choose-area{
+    background-image: url(../img/slider/bg-carts-institute\ and\ classes.jpg);
+    height: 47rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
 /* institute section popular */
 
 .institute >h3{
     color: #fff;
 }
 
-.institute .title-institute .info-institute-card {
+.institute .title-institute .info-institute-card, .institute-new .title-institute .info-institute-card {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -339,14 +366,14 @@ body {
 
 }
 
-.institute .title-institute img {
-    border-radius: 15px;
+.institute .title-institute img , .institute-new .title-institute img {
+    border-radius: 5px;
 
 }
 
 
 
-.institute .title-institute span {
+.institute .title-institute span , .institute-new .title-institute span  {
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -354,28 +381,44 @@ body {
     font-size: small;
 }
 
-.institute .discreption {
-    display: block;
+
+.institute .discreption , .institute-new .discreption{
+    margin-top: 60px;
+}
+
+
+
+.institute .discreption span , .institute-new .discreption span{
+    margin-left: 230px;
+}
+
+
+
+.institute .send ,  .classes .send , .classes-new .send , .institute-new .send{
+    width: 100%;
+    display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: space-around;
 }
 
-.institute .discreption hr{
-    width: 90%;
-    
-}
-
-
-
-.institute .send button{
+.institute .send button , .classes .send button , .classes-new .send button , .institute-new .send button{
     border-radius: 15px;
-    padding: 5px;
+    padding: 3px;
+    width: 90px;
     background:rgb(4, 0, 255) ;
     color: honeydew;
-    border: 1px solid black;
+    border: none;
+    margin: 3px;
+
+    transition: all 0.5s;
 }
 
-.institute .send span{
+.institute .send button:hover , .classes .send button:hover , .classes-new .send button:hover , .institute-new .send button:hover{
+   background:rgb(4, 1, 143)  ;
+}
+
+
+.institute .send span , .institute-new .send span{
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -383,6 +426,26 @@ body {
     font-size: small;
 
 }
+
+.institute .send .likes , .institute-new .send .likes{
+    background: rgba(128, 128, 128, 0.322);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 65px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.institute .send .likes h5 ,.institute-new .send .likes h5{
+    color: rgb(0, 131, 17);
+
+}
+
 
 /* classes */
 
@@ -391,7 +454,7 @@ body {
     color: #fff;
 }
 
-.classes .title-class .info-class-card {
+.classes .title-class .info-class-card , .classes-new .title-class .info-class-card {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -400,14 +463,14 @@ body {
 
 }
 
-.classes .title-class img {
-    border-radius: 15px;
+.classes .title-class img , .classes-new .title-class img {
+    border-radius: 5px;
 
 }
 
 
 
-.classes .title-class span {
+.classes .title-class span , .classes-new .title-class span{
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -415,49 +478,55 @@ body {
     font-size: small;
 }
 
-.classse .discreption {
-    display: block;
+
+
+
+
+
+.classes .send span , .classes-new .send span{
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    font-weight: 100;
+    font-size: small;
+
+}
+
+
+.classes .send .likes, .classes-new .send .likes{
+    background: rgba(128, 128, 128, 0.322);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 65px;
+    height: 50px;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-.classes .discreption hr{
-    width: 90%;
-    
-}
-
-
-
-.classes .send button{
-    border-radius: 15px;
-    padding: 5px;
-    background:rgb(4, 0, 255) ;
-    color: honeydew;
-    border: 1px solid black;
-}
-
-.classes .send span{
-    margin: 0px;
-    padding: 0px;
-    color: gray;
-    font-weight: 100;
-    font-size: small;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
 
+.classes .send .likes h5 , .classes-new .send .likes h5{
+    color: rgb(2, 88, 2);
+}
 
 
+.classes .discreption , .classes-new .discreption{
+    margin-top: 60px;
+}
+
+
+
+.classes .discreption span  , .classes-new .discreption span{
+    margin-left: 230px;
+}
 
 
 
 /* popular institute and newest classes */
 
-.ane-new {
-    position: relative;
-    height: 500px;
-    
-}
 
 
 .ane-new .swiper{
@@ -515,63 +584,6 @@ body {
     color: #000000;
 }
 
-.institute-new .title-institute .info-institute-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-
-
-}
-
-.institute-new .title-institute img {
-    border-radius: 15px;
-
-}
-
-
-
-.institute-new .title-institute span {
-    margin: 0px;
-    padding: 0px;
-    color: gray;
-    font-weight: 100;
-    font-size: small;
-}
-
-.institute-new .discreption {
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.institute-new .discreption hr{
-    width: 90%;
-    
-}
-
-
-
-.institute-new .send button{
-    border-radius: 15px;
-    padding: 5px;
-    background:rgb(4, 0, 255) ;
-    color: honeydew;
-    border: 1px solid black;
-}
-
-.institute-new .send span{
-    margin: 0px;
-    padding: 0px;
-    color: gray;
-    font-weight: 100;
-    font-size: small;
-
-}
-
-
-
-
 /* new classes */
 
 
@@ -579,58 +591,10 @@ body {
     color: #000000;
 }
 
-.classes-new .title-class .info-class-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-
-
-}
-
-.classes-new .title-class img {
-    border-radius: 15px;
-
-}
 
 
 
-.classes-new .title-class span {
-    margin: 0px;
-    padding: 0px;
-    color: gray;
-    font-weight: 100;
-    font-size: small;
-}
-
-.classse-new .discreption {
-    display: block;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.classes-new .discreption hr{
-    width: 90%;
-    
-}
 
 
-
-.classes-new .send button{
-    border-radius: 15px;
-    padding: 5px;
-    background:rgb(4, 0, 255) ;
-    color: honeydew;
-    border: 1px solid black;
-}
-
-.classes-new .send span{
-    margin: 0px;
-    padding: 0px;
-    color: gray;
-    font-weight: 100;
-    font-size: small;
-
-}
 
 
