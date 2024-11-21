@@ -1,0 +1,261 @@
+/* main */
+
+ul{
+  list-style: none;
+}
+main {
+  margin-top: 80px !important;
+  margin: 20px;
+  height: 90%;
+}
+
+
+.container-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  padding: 20px;
+  background-image: url(/assets/img/services/h6_services_shape02.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background: #cfcdcd15;
+  overflow: hidden;
+}
+
+.about-shape-wrap-two{
+  z-index: -1;
+}
+
+/* not active */
+.not-active{
+  display: none;
+}
+
+/* active */
+.active{
+  display: block;
+}
+/* slid */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  left: 10px;
+  margin-top: 45px;
+}
+
+.swiper-pagination{
+  background: #fff;
+}
+
+/* institute-title */
+
+
+.institute-title {
+  margin: 20px;
+  padding: 5px;
+
+}
+
+.institute-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  display: inline;
+}
+
+.institute-title h3 {
+  display: inline;
+}
+
+
+.institute-title span {
+  margin: 6px;
+}
+
+
+/* info1 */
+
+
+.class-info1 {
+  height: 100% !important;
+  position: relative;
+}
+
+
+
+.class-info1 .class-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  right: 136px;
+  top: 35px;
+}
+
+
+
+.class-info1 .class-icon i {
+  border-radius: 50%;
+  margin: 5px;
+  background: rgb(4, 0, 255);
+  padding: 10px;
+}
+
+
+.class-info1 .class-icon i:hover {
+  color: rgb(4, 0, 255);
+  cursor: pointer;
+  transition: all 0.5s;
+  background: white;
+}
+
+
+.class-info1 .capacity {
+  position: absolute;
+  bottom: 2px;
+  font-weight:bold;
+  
+}
+
+
+.class-info1  ul {
+  list-style: none;
+  display: inline;
+  position:absolute ;
+  bottom: 80px;
+  right: 160px;
+}
+
+.class-info1 ul li{
+  display: inline !important;
+  margin: 6px;
+  text-align: center;
+  
+}
+
+.class-info1 ul li i{
+  color: rgb(4, 0, 255);
+}
+
+
+
+/* 
+info2 */
+
+
+.class-info2 {
+  height: 100% !important;
+  position: relative;
+}
+
+.class-info2 h4 , .class-info2 b{
+  margin: 5px;
+}
+
+.class-info2 .box ul li {
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+
+.class-info2 .time-box p {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.623);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+/* .class-info2 button {
+  border-radius: 10px;
+  background: green;
+  padding: 5px;
+  color: black;
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+}
+
+.class-info2 button:hover {
+  color: #eee;
+
+} */
+
+.description{
+  margin-top: 30rem;
+}
+
+
+.class-info2 .rank{
+  position: absolute;
+  bottom: -16px;
+  font-size: 20px;
+}
+
+
+.class-info2 .rank i{
+  color:  white;
+  margin: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+
+.class-info2 .rank i:hover{
+  color: #000;
+} 
+
+.class-info2 ul b , .class-info2 ul p{
+  display: inline !important;
+  margin-right: 20px;
+}
