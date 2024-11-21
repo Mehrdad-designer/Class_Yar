@@ -41,7 +41,7 @@ hr {
 
 /* classes  section*/
 
-.classes {
+/* .classes {
   width: 70%;
   margin: 0px auto;
 }
@@ -59,12 +59,12 @@ hr {
 }
 
 .class-item .section-one h3 {
-  display: inline-block;
-}
+  display: inline-block; */
+/* }
 
 .class-item .section-one .span {
   display: block !important;
-}
+} */
 
 /* .class-item .section-one {
     display: inline-block;
@@ -78,7 +78,7 @@ hr {
     background: aqua;
     width: 100%;
 } */
-.class-item .section-two {
+/* .class-item .section-two {
   position: relative;
 }
 .class-item .section-two button {
@@ -100,7 +100,7 @@ hr {
 }
 .transparent-header {
   position: relative;
-}
+} */
 
 .amoozeshgah-detail-main-container {
   text-align: center;
