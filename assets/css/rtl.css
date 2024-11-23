@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 8px !important;
+    background: #6c6c70 !important;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0px -1px 13px #a3a0a0 !important;
+    border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 255) !important;
+    border-radius: 10px !important;
+}
+
 /*
     Right folded by Amin Ahmadi
     website : https://farscod.ir/
@@ -1164,11 +1180,6 @@ html{
         text-align: right !important;
     }
 }
-
-
-
-
-
 
 
 

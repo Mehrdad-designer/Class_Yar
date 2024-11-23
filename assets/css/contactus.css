@@ -1,0 +1,15 @@
+ /* ul.navigation {
+   margin-left: 30rem;
+} */
+.footer-social .list-wrap{
+justify-content:flex-start;
+margin-bottom: 10px;
+} 
+.near-connection{
+  border-radius: 5px;
+  background: lightgray;
+  padding: 20px;
+}
+.footer-des{
+  margin-top: 50px;
+}
