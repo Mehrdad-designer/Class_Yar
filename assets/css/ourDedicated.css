@@ -256,11 +256,12 @@ article > * {
     font-size: 8vw;
   }
   .amozeshgah-info {
-    margin: 20px 0;
+    margin: 20px 10px;
   }
   .amozeshgah-info > * {
-    font-size: 6vw;
-    text-align: center;
+    font-size: 4vw;
+    display: inline-block;
+    width: 48%;
   }
   .amozeshgah-web-button {
     font-size: 4.5vw;
@@ -268,9 +269,13 @@ article > * {
   .address {
     margin: 0;
   }
+  .class-icon {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   .amozeshgah-info > * {
     font-size: 3.5vw;
   }

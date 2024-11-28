@@ -3,8 +3,14 @@
     display: flex;
     flex-wrap: wrap;
 }
+a{
+    text-decoration: none;
+}
 
-
+.my-container{
+    max-width: 1200px;
+    margin: auto;
+}
 .my-container-fluid{
     width: 100%;
 }
