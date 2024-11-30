@@ -102,6 +102,8 @@ hr {
   position: relative;
 } */
 
+
+
 .amoozeshgah-detail-main-container {
   text-align: center;
 }
@@ -112,14 +114,86 @@ hr {
   display: flex;
   align-items: center;
   text-align: right;
-  justify-content: center;
+  justify-content: start !important;
   color: #fff;
 }
 .amoozeshgah-info-container article {
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  margin-right: 22px;
   width: 100%;
 }
+
+.header-icon{
+  color: #64748b !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-icon i{
+  font-size: smaller;
+  padding: 9px;
+  background: #64748b;
+  color: white;
+  border-radius: 50%;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: end;
+}
+
+.list-wrapp {
+  list-style: none;
+  padding: 0;
+}
+
+.list-wrapp li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.tooltip {
+  visibility: hidden;
+  /* width: 60px; */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  /* padding: 5px; */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* موقعیت متن */
+  margin-left: -30px; /* نصف عرض برای مرکز کردن */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.list-wrapp li:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-info{
+  background: rgba(7, 32, 54, 0.671);
+  padding: 5px;
+  font-size: small !important;
+  color: #c6ced4 !important;
+  width: 190px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+.s-info span:hover{
+  color: #ffffff;
+}
+
+
+
+
+
 .amoozeshgah-info-container article h1 {
   text-align: center;
   font-size: 4vw;
@@ -129,7 +203,7 @@ article > * {
   color: inherit;
 }
 .amozeshgah-info {
-  margin-right: 50px;
+  margin-right: -10px;
 }
 .amozeshgah-info > * {
   font-size: 2vw;
@@ -139,6 +213,7 @@ article > * {
 }
 .amoozeshgah-pictures img {
   border-radius: 19px;
+  width: 500px;
 }
 .amozeshgah-classes-list h2 {
   text-align: center;
@@ -243,6 +318,15 @@ article > * {
 }
 .amozeshgah-web-button:hover::after {
   transform: translate(0, 0);
+}
+
+.blog-widget{
+  height: 500px ;
+ 
+}
+
+.bs-cat-list{
+
 }
 
 @media screen and (max-width: 767.98px) {
