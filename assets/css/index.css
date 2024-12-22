@@ -1,21 +1,4 @@
-::-webkit-scrollbar {
-    width:5px;
-    height: 5px;
-    border-radius: 10px;
-    background-color:#cedbe8;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #f7f7f7;
-    border-radius: 10px;
-}
-
-
-::-webkit-scrollbar-track-piece{
-    width:5px;
-    border-radius: 10px;
-    background-color:#2014c9;
-}
 /* section of cart categories */
 
 .categories-item {

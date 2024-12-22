@@ -1,0 +1,41 @@
+.section-title .sub-title{
+    font-size: large;
+}
+
+.propertis h4{
+    text-align: center;
+}
+
+
+.perfer{
+    margin-top: 50px;
+    text-align: justify;
+
+}
+
+.perfer span{
+    font-weight: bold;
+    color:  rgb(0, 0, 255);
+    text-shadow: 0px 7px 5px rgb(0, 0, 255);
+    margin-bottom: 15px;
+}
+
+
+.calender span{
+    color: black;
+    margin-top: 15px;
+}
+
+.deta-box{
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black !important;
+    text-decoration: underline;
+    background: lightgray;
+    margin: 0px auto !important;
+}
+
+ul.navigation {
+    margin-left: 29rem;
+ }

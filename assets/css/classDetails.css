@@ -4,6 +4,10 @@ ul{
   list-style: none;
 }
 
+ul.navigation {
+  margin-left: 29rem;
+}
+
 
 .container-info {
   display: flex;
@@ -146,6 +150,7 @@ body {
 }
 
 
+
 .class-info1 .capacity {
   font-weight:bold;
   
@@ -156,6 +161,7 @@ body {
   padding: 0;
   margin: 0;
   width: 50%;
+
 
 }
 
@@ -177,7 +183,87 @@ body {
   color: rgb(4, 0, 255);
 }
 
+.info-institute{
+  border-radius: 5px;
+  padding: 5px;
+  background: rgb(4, 0, 255);
+  color: white;
+  height: 65px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 
+
+/* seggestion section */
+
+.suggestion{
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 30px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.suggestion b{
+  font-size: 20px;
+  margin: 25px !important;
+}
+
+.suggestion .suggest-classe{
+  border-radius: 5px;
+  padding: 6px;
+
+}
+
+.suggestion .suggest-classe li {
+  border-radius: 5px;
+  padding: 9px;
+  height: 80px;
+  border: 1px solid black;
+  position: relative;
+
+  margin-top: 15px;
+
+  background: white;
+
+}
+
+.suggestion .suggest-classe li img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.suggestion .suggest-classe li h4{
+  font-size:25px;
+  display: inline;
+  color: rgb(0, 0, 0);
+
+}
+
+.suggestion .suggest-classe li span{
+  position: absolute;
+  bottom: 7px;
+  right: 100px;
+  font-size: small;
+  color: gray;
+}
+
+.suggestion .suggest-classe li button{
+  border-radius: 5px;
+  border: none;
+  background: rgb(4, 0, 255);
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
 
 /* 
 info2 */
@@ -214,7 +300,7 @@ info2 */
   font-weight: bold;
   position: absolute;
   bottom: 2px;
-  right: 20px;
+  right/: 20px;
 }
 
 .class-info2 button:hover {
@@ -222,9 +308,11 @@ info2 */
 
 } */
 
+
 .description{
   margin-top: 50px;
 }
+
 
 
 .class-info2 .rank{

@@ -1,3 +1,4 @@
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 10px;
@@ -15,6 +16,7 @@
   border-radius: 10px;
   background-color: #2014c9;
 }
+
 
 /* nav section */
 ul {
