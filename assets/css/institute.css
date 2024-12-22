@@ -1,241 +1,315 @@
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #cedbe8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  width: 5px;
+  border-radius: 10px;
+  background-color: #2014c9;
+}
 
 
 /* nav section */
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
-hr{
-    width: 50%;
-    display: flex;
+hr {
+  width: 50%;
+  display: flex;
+}
+main {
+  margin-top: 100px;
 }
 
-.filter-nav{
-    width: 900px;
-    margin: 0px auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+.filter-nav {
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.filter-nav .filter{
-    display: flex;
-    margin: 10px;
-    width: 48.9%;
-    overflow-x:scroll;
-    
+.filter-nav .filter {
+  display: flex;
+  margin: 10px;
+  width: 50%;
+  overflow-x: scroll;
 }
 
-.title-filter{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: -90px !important;
-    }
-
-.filter-nav .filter .filter-item{
-    margin: 5px;
-    box-shadow: 0px 0px 2px black;
-    border-radius: 10px;
-    padding: 2px;
-    transition: all 0.5s;
+.title-filter {
+  text-align: center;
 }
 
-
-.filter-nav .filter .filter-item:hover{
-    cursor: pointer;
-    font-weight: bold;
-    background: rgb(4, 0, 255) ;
-    color: white;
-    
+.filter-nav .filter .filter-item {
+  margin: 5px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 10px;
+  padding: 2px;
+  transition: all 0.5s;
 }
 
-
+.filter-nav .filter .filter-item:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background: rgb(4, 0, 255);
+  color: white;
+}
 
 /* selector section */
 
- .selector {
-    border: 1px solid black;
-    margin-bottom: 80px;
-    border-radius: 20px;
-    width: 300px;
-    height: 30px;
-    overflow: hidden;
-
-    width: 48.9%;
-    
-
+.selector {
+  border: 1px solid black;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  width: 300px;
+  height: 30px;
+  overflow: hidden;
+  display: flex;
+  width: 50%;
 }
 
-.selector button:nth-child(1) {
-    height: 100%;
-    width: 48.9%;
-    border: none;
+.selector button {
+  height: 100%;
+  width: 50%;
+  border: none;
 }
-
-
-.selector button:nth-child(2) {
-    height: 100%;
-    width: 48.9%;
-    border: none;
-
-}
-
 
 .acctive {
-    background: rgb(4, 0, 255) !important;
-    color: rgb(255, 255, 255);
+  background: rgb(4, 0, 255) !important;
+  color: rgb(255, 255, 255);
 }
 
 .nonedisplay {
-    display: none;
+  display: none;
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 /* classes  section*/
 
-.classes{
-    width: 70%;
-    margin: 0px auto;
-
+.classes {
+  width: 45%;
 }
-.class-item{
-    border-radius: 20px;
-    border: 1px solid black;
-    margin: 0px auto;
-    margin-top: 10px;
-    padding: 10px;
-
+.class-item {
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 0px auto;
+  margin-top: 10px;
+  padding: 10px;
 }
 
-.class-item .section-one{
-    position: relative;
+.class-item .section-one {
+  position: relative;
 }
 
-.class-item .section-one img{
-    border-radius: 10px;
-    margin: 15px;
+.class-item .section-one img {
+  border-radius: 10px;
+  margin: 15px;
 }
 
-.class-item .section-one h3{
-    display: inline-block;
+.class-item .section-one h3 {
+  display: inline-block;
 }
 
-.class-item .section-one .span{
-    display: block !important;
+.class-item .section-one .span {
+  display: block !important;
 }
 
-
-
-.class-item .section-two{
-    position: relative;
+.class-item .section-two {
+  position: relative;
 }
-.class-item .section-two button{
-    border: 1px solid black;
-    background: white;
-    border-radius: 10px;
-    padding: auto;
-    color: black;
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    transition: all 0.5s;
+.class-item .section-two button {
+  border: 1px solid black;
+  background: white;
+  border-radius: 10px;
+  padding: auto;
+  color: black;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  transition: all 0.5s;
 }
-.class-item .section-two button:hover{
-    background: rgb(4, 0, 255) ;
-    font-weight: bold;
-    color: white;
-    
+.class-item .section-two button:hover {
+  background: rgb(4, 0, 255);
+  font-weight: bold;
+  color: white;
 }
 
-.classes .class-item .section-one .info{
-    position: absolute;
-    top: 20px;
-    right: 300px;
+.classes .class-item .section-one .info {
+  position: absolute;
+  top: 20px;
+  right: 300px;
 }
 
-.class-item .section-one .manaiger{
-    font-weight: bold;
-    color: rgb(4, 0, 255);
-    position: absolute;
-    bottom: 10px;
+.class-item .section-one .manaiger {
+  font-weight: bold;
+  color: rgb(4, 0, 255);
+  position: absolute;
+  bottom: 10px;
 }
-
 
 /* institute  section*/
+.institute-container {
+  justify-content: space-between;
+}
+.institute {
+  width: 45%;
+  margin: 0px;
+}
+.institute-item {
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 0px auto;
+  margin-top: 10px;
+  padding: 10px;
+}
 
-.institute{
+.institute-item .section-one {
+  position: relative;
+}
+
+.institute-item .section-one img {
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.institute-item .section-one h3 {
+  display: inline-block;
+}
+
+.institute-item .section-one .span {
+  display: block !important;
+}
+
+.institute-item .section-one button {
+  border: 1px solid black;
+  background: white;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: black;
+  transition: all 0.5s;
+}
+.link-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.institute-item .section-one button:hover {
+  background: rgb(4, 0, 255);
+  font-weight: bold;
+  color: white;
+}
+.institute .section-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.institute-item .section-one .manaiger {
+  font-weight: bold;
+  color: rgb(4, 0, 255);
+}
+.categotiy-bar {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .filter-nav {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 0;
+  }
+  .selector {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .filter {
+    display: none !important;
+  }
+  .my-container {
+    margin: 0 20px;
+  }
+  .categotiy-bar {
+    display: block;
+    order: 1;
+    margin: 30px 0;
+  }
+  .blog-sidebar {
+    margin: 0;
+  }
+  .institute {
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+  .info span:nth-child(2) {
+    display: block;
+  }
+  .institute-item .section-one {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-one img {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .filter-nav {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 0;
+  }
+  .selector {
+    width: 75%;
+    margin: 20px 0;
+  }
+  .filter {
+    display: none !important;
+  }
+  .my-container {
+    margin: 0 20px;
+  }
+  .categotiy-bar {
+    display: block;
+    order: 1;
+    margin: 30px 0;
+  }
+  .blog-sidebar {
+    margin: 0;
+  }
+  .institute-container{
+    justify-content: center;
+  }
+  .institute {
     width: 70%;
-    margin: 0px auto;
-
-}
-.institute-item{
-    border-radius: 20px;
-    border: 1px solid black;
-    margin: 0px auto;
-    margin-top: 10px;
-    padding: 10px;
-
-}
-
-.institute-item .section-one{
-    position: relative;
-}
-
-.institute-item .section-one img{
-    border-radius: 10px;
-    margin: 15px;
-}
-
-.institute-item .section-one h3{
-    display: inline-block;
-}
-
-.institute-item .section-one .span{
-    display: block !important;
-}
-
-
-
-.institute-item .section-two{
-    position: relative;
-}
-.institute-item .section-two button{
-    border: 1px solid black;
-    background: white;
-    border-radius: 10px;
-    padding: auto;
-    color: black;
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    transition: all 0.5s;
-}
-.institute-item .section-two button:hover{
-    background: rgb(4, 0, 255) ;
-    font-weight: bold;
-    color: white;
-    
-}
-
-.institute .section-one .info{
-    position: absolute;
-    top: 20px;
-    right: 300px;
-}
-
-.institute-item .section-one .manaiger{
-    font-weight: bold;
-    color: rgb(4, 0, 255);
-    position: absolute;
-    bottom: 10px;
+  }
+  .section-one {
+    justify-content: space-between!important;
+  }
+  br {
+    display: none;
+  }
+  .info span:nth-child(2) {
+    display: block;
+  }
+  .section-one img {
+    margin: 0 !important;
+  }
 }
