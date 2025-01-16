@@ -59,6 +59,8 @@ main {
   border-radius: 10px;
   padding: 2px;
   transition: all 0.5s;
+  display: flex;
+  align-items: center;
 }
 
 .filter-nav .filter .filter-item:hover {
@@ -164,7 +166,8 @@ main {
 }
 
 /* institute  section*/
-.institute-container {
+.institute-container , .classes {
+  width: 100%;
   justify-content: space-between;
 }
 .institute {
@@ -188,12 +191,11 @@ main {
   margin: 15px;
 }
 
-.institute-item .section-one h3 {
-  display: inline-block;
-}
 
-.institute-item .section-one .span {
-  display: block !important;
+
+.info{
+  display: flex;
+  flex-direction: column;
 }
 
 .institute-item .section-one button {
@@ -294,7 +296,7 @@ main {
   .blog-sidebar {
     margin: 0;
   }
-  .institute-container{
+  .institute-container , .classes{
     justify-content: center;
   }
   .institute {

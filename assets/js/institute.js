@@ -3,7 +3,7 @@
 const institute = document.querySelector(" .selector button:nth-child(1)");
 const classes = document.querySelector(" .selector button:nth-child(2)");
 
-const instituteSection = document.querySelector(" .institute");
+const instituteSection = document.querySelector(" .institute-container");
 const classesSection = document.querySelector(".classes");
 
 if (classesSection != undefined) {
@@ -17,13 +17,12 @@ classes.addEventListener("click", (e) => {
 
     institute.className = "";
 
-    if (classesSection != undefined) {
-        classesSection.style.display = "block";
-    }
+        classesSection.style.display = "";
+    
 
-    if (instituteSection != undefined) {
+    
         instituteSection.style.display = "none";
-    }
+    
 });
 
 institute.addEventListener("click", (e) => {
@@ -31,11 +30,8 @@ institute.addEventListener("click", (e) => {
 
     classes.className = "";
 
-    if (instituteSection != undefined) {
-        instituteSection.style.display = "block";
-    }
+        instituteSection.style.display = "";
 
-    if (classesSection != undefined) {
         classesSection.style.display = "none";
-    }
+    
 });
