@@ -1,4 +1,3 @@
-
 /* section of cart categories */
 
 .categories-item {
@@ -11,8 +10,6 @@
     color: black;
 }
 
-
-
 .banner-img text-center img {
     animation: animate2;
 }
@@ -21,8 +18,6 @@
     color: rgb(4, 0, 255);
     transition: all 0.5s;
 }
-
-
 
 /* 
 background css header */
@@ -56,28 +51,21 @@ background css header */
     animation: animate 25s infinite;
     font-size: 50px;
     z-index: -1000;
-
 }
-
-
 
 .circle li:nth-child(1) {
     left: 25%;
-
-
 }
 
 .circle li:nth-child(2) {
     left: 10%;
     animation-delay: 2s;
     animation-duration: 12s;
-
 }
 
 .circle li:nth-child(3) {
     left: 70%;
     animation-delay: 2s;
-
 }
 
 .circle li:nth-child(4) {
@@ -87,17 +75,14 @@ background css header */
     animation-duration: 18s;
 }
 
-
 .circle li:nth-child(5) {
     left: 65%;
-
 }
 
 .circle li:nth-child(6) {
     left: 75%;
 
     animation-delay: 3s;
-
 }
 
 .circle li:nth-child(7) {
@@ -106,8 +91,6 @@ background css header */
     animation-delay: 7s;
 }
 
-
-
 .circle li:nth-child(8) {
     left: 50%;
 
@@ -115,15 +98,12 @@ background css header */
     animation-duration: 45s;
 }
 
-
 .circle li:nth-child(9) {
     left: 20%;
 
     animation-delay: 2s;
     animation-duration: 35s;
 }
-
-
 
 .circle li:nth-child(10) {
     left: 85%;
@@ -133,41 +113,34 @@ background css header */
 
 .circle li:nth-child(11) {
     left: 90%;
-
-
 }
 
 .circle li:nth-child(12) {
     left: 17%;
     animation-delay: 1s;
     animation-duration: 8s;
-
 }
 
 .circle li:nth-child(13) {
     left: 56%;
     animation-delay: 6s;
-
 }
 
 .circle li:nth-child(14) {
     left: 10%;
 
     animation-delay: 0s;
-    animation-duration: 10S;
+    animation-duration: 10s;
 }
-
 
 .circle li:nth-child(15) {
     left: 30%;
-
 }
 
 .circle li:nth-child(16) {
     left: 40%;
 
     animation-delay: 43s;
-
 }
 
 .circle li:nth-child(17) {
@@ -176,8 +149,6 @@ background css header */
     animation-delay: 7s;
 }
 
-
-
 .circle li:nth-child(18) {
     left: 40%;
 
@@ -185,23 +156,22 @@ background css header */
     animation-duration: 45s;
 }
 
-
 .circle li:nth-child(19) {
     left: 60%;
 
     animation-delay: 22s;
-    animation-duration: 9S;
+    animation-duration: 9s;
 }
-
-
 
 .circle li:nth-child(20) {
     left: 25%;
 
-    animation-delay: 20S;
+    animation-delay: 20s;
 }
 
-
+.menu-item-has-children span {
+    font-weight: bold;
+}
 
 /* 
 animation section */
@@ -231,13 +201,15 @@ animation section */
     }
 }
 
-
 /* popular institute and popular classes */
 
-.ane , .ane-new{
+.ane,
+.ane-new {
     position: relative;
-    height: 500px;
-
+    padding: 20px;
+}
+.send button a{
+    color: inherit;
 }
 
 /* selector section */
@@ -250,9 +222,8 @@ animation section */
     width: 50%;
     height: 40px;
     overflow: hidden;
-
 }
-.selector{
+.selector {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -260,12 +231,8 @@ animation section */
 .container .selector button {
     height: 100%;
     width: 100%;
-    border: none
+    border: none;
 }
-
-
-
-
 
 .acctive {
     background: rgb(4, 0, 255) !important;
@@ -281,7 +248,6 @@ animation section */
 }
 
 /* slid section for institute and classes */
-
 
 html,
 body {
@@ -322,15 +288,14 @@ body {
     height: 100%;
     object-fit: cover;
 }
-.group-container{
-    margin: 0!important;
+.group-container {
+    margin: 0 !important;
 }
 
 /* bg */
 
-.choose-area{
+.choose-area {
     background-image: url(../img/slider/bg-carts-institute\ and\ classes.jpg);
-    height: 47rem;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
@@ -338,27 +303,25 @@ body {
 
 /* institute section popular */
 
-.institute >h3{
+.institute > h3 {
     color: #fff;
 }
 
-.institute .title-institute .info-institute-card, .institute-new .title-institute .info-institute-card {
+.institute .title-institute .info-institute-card,
+.institute-new .title-institute .info-institute-card {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 5px;
-
-
 }
 
-.institute .title-institute img , .institute-new .title-institute img {
+.institute .title-institute img,
+.institute-new .title-institute img {
     border-radius: 5px;
-
 }
 
-
-
-.institute .title-institute span , .institute-new .title-institute span  {
+.institute .title-institute span,
+.institute-new .title-institute span {
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -366,31 +329,34 @@ body {
     font-size: small;
 }
 
-
-.institute .discreption , .institute-new .discreption{
+.institute .discreption,
+.institute-new .discreption {
     margin-top: 20px;
 }
 
-
-
-.institute .discreption span , .institute-new .discreption span{
+.institute .discreption span,
+.institute-new .discreption span {
     margin-left: 230px;
 }
 
-
-
-.institute .send ,  .classes .send , .classes-new .send , .institute-new .send{
+.institute .send,
+.classes .send,
+.classes-new .send,
+.institute-new .send {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.institute .send button , .classes .send button , .classes-new .send button , .institute-new .send button{
+.institute .send button,
+.classes .send button,
+.classes-new .send button,
+.institute-new .send button {
     border-radius: 15px;
     padding: 3px;
     width: 90px;
-    background:rgb(4, 0, 255) ;
+    background: rgb(4, 0, 255);
     color: honeydew;
     border: none;
     margin: 3px;
@@ -398,12 +364,15 @@ body {
     transition: all 0.5s;
 }
 
-.institute .send button:hover , .classes .send button:hover , .classes-new .send button:hover , .institute-new .send button:hover{
-   background:rgb(4, 1, 143)  ;
+.institute .send button:hover,
+.classes .send button:hover,
+.classes-new .send button:hover,
+.institute-new .send button:hover {
+    background: rgb(4, 1, 143);
 }
 
-
-.institute .send span , .institute-new .send span{
+.institute .send span,
+.institute-new .send span {
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -412,7 +381,8 @@ body {
     text-align: center;
 }
 
-.institute .send .likes , .institute-new .send .likes{
+.institute .send .likes,
+.institute-new .send .likes {
     background: rgba(128, 128, 128, 0.322);
     border-radius: 5px;
     padding: 10px;
@@ -424,37 +394,32 @@ body {
     flex-direction: column;
 }
 
-
-.institute .send .likes h5 ,.institute-new .send .likes h5{
+.institute .send .likes h5,
+.institute-new .send .likes h5 {
     color: rgb(0, 131, 17);
-
 }
-
 
 /* classes */
 
-
-.classes >h3{
+.classes > h3 {
     color: #fff;
 }
 
-.classes .title-class .info-class-card , .classes-new .title-class .info-class-card {
+.classes .title-class .info-class-card,
+.classes-new .title-class .info-class-card {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 5px;
-
-
 }
 
-.classes .title-class img , .classes-new .title-class img {
+.classes .title-class img,
+.classes-new .title-class img {
     border-radius: 5px;
-
 }
 
-
-
-.classes .title-class span , .classes-new .title-class span{
+.classes .title-class span,
+.classes-new .title-class span {
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -462,12 +427,8 @@ body {
     font-size: small;
 }
 
-
-
-
-
-
-.classes .send span , .classes-new .send span{
+.classes .send span,
+.classes-new .send span {
     margin: 0px;
     padding: 0px;
     color: gray;
@@ -476,8 +437,8 @@ body {
     text-align: center;
 }
 
-
-.classes .send .likes, .classes-new .send .likes{
+.classes .send .likes,
+.classes-new .send .likes {
     background: rgba(128, 128, 128, 0.322);
     border-radius: 5px;
     padding: 10px;
@@ -487,48 +448,44 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
-.likes{
+.likes {
     flex-direction: row !important;
-
-    
 }
-.likes h5{
+.likes h5 {
     order: 1;
     margin: 0;
 }
-.classes .send .likes h5 , .classes-new .send .likes h5{
+.classes .send .likes h5,
+.classes-new .send .likes h5 {
     color: rgb(2, 88, 2);
 }
 
-
-.classes .discreption , .classes-new .discreption{
+.classes .discreption,
+.classes-new .discreption {
     margin-top: 20px;
 }
 
-
-
-.classes .discreption span  , .classes-new .discreption span{
+.classes .discreption span,
+.classes-new .discreption span {
     margin-left: 230px;
 }
 
-
-
 /* popular institute and newest classes */
 
-.respon-style{
+.respon-style {
     width: 150%;
 }
 
-.respon-style .swiper-slide{
+.respon-style .swiper-slide {
     width: 14% !important;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 /* selector new section */
 
-.project-area-two .selector {
+.selector {
     border: 1px solid black;
     margin-bottom: 80px;
     border-radius: 20px;
@@ -537,15 +494,12 @@ body {
     overflow: hidden;
 }
 
-.project-area-two .selector button {
+.selector button {
     height: 100%;
     width: 50%;
     border: none;
     background-color: #fff;
-
 }
-
-
 
 .acctive {
     background: rgb(4, 0, 255) !important;
@@ -560,63 +514,41 @@ body {
     display: block;
 }
 
-
-
 /* new institute */
 
-
-.institute-new >h3{
+.institute-new > h3 {
     color: #000000;
 }
 
 /* new classes */
 
-
-.classes-new >h3{
+.classes-new > h3 {
     color: #000000;
 }
 
-
-
-@media screen and (max-width: 767.98px){
-    .swiper-slide{
-        width: 50%!important;
+@media screen and (max-width: 767.98px) {
+    .selector {
+        width: 90% !important;
     }
-    .selector{
-        width: 100% !important;
-    }
-    .selector-2{
-        width: 90%!important;
-    }
-    .respon-style .swiper-slide{
-        width: 50%!important;
+    .respon-style .swiper-slide {
+        width: 50% !important;
     }
 }
 
-
-@media screen and (max-width: 992px) and (min-width: 768px){
-    .swiper-slide{
-        width: 30%!important;
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .selector {
+        width: 60% !important;
     }
-    .selector{
-        width: 70% !important;
+    .respon-style .swiper-slide {
+        width: 30% !important;
     }
-    .selector-2{
-        width: 60%!important;
-    }
-    .respon-style .swiper-slide{
-        width: 40%!important;
-    }
-    .fw-logo{
+    .fw-logo {
         text-align: center;
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1200px){
-    .swiper-slide{
-        width: 25%!important;
-    }
-    .respon-style .swiper-slide{
-        width: 30%!important;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .respon-style .swiper-slide {
+        width: 25% !important;
     }
 }

@@ -39,70 +39,6 @@ hr {
   color: white;
 }
 
-/* classes  section*/
-
-/* .classes {
-  width: 70%;
-  margin: 0px auto;
-}
-.class-item {
-  border-radius: 20px;
-  border: 1px solid black;
-  margin: 0px auto;
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.class-item .section-one img {
-  border-radius: 10px;
-  margin: 15px;
-}
-
-.class-item .section-one h3 {
-  display: inline-block; */
-/* }
-
-.class-item .section-one .span {
-  display: block !important;
-} */
-
-/* .class-item .section-one {
-    display: inline-block;
-    background: rgb(223, 7, 43);
-    width: 100%;
-}
-
-.class-item .section-two{
-    display: inline-block;
-
-    background: aqua;
-    width: 100%;
-} */
-/* .class-item .section-two {
-  position: relative;
-}
-.class-item .section-two button {
-  border: 1px solid black;
-  background: white;
-  border-radius: 10px;
-  padding: auto;
-  color: black;
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  transition: all 0.5s;
-}
-.class-item .section-two button:hover {
-  background: rgb(4, 0, 255);
-  font-weight: bold;
-  padding: 5px;
-  color: white;
-}
-.transparent-header {
-  position: relative;
-} */
-
-
 
 .amoozeshgah-detail-main-container {
   text-align: center;
@@ -113,17 +49,34 @@ hr {
 .amoozeshgah-info-container {
   display: flex;
   align-items: center;
-  text-align: right;
-  justify-content: start !important;
   color: #fff;
 }
 .amoozeshgah-info-container article {
+  display: flex;
   align-items: center;
-  justify-content: start;
-  margin-right: 22px;
+  justify-content: center;
   width: 100%;
 }
+.top-info{
+  display: flex;
+  justify-content: space-evenly;
 
+}
+.list-links{
+  display: flex;
+  gap: 20px;
+}
+.list-links li a i{
+  background-color: #f1f1f1;
+  color: #334770;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.list-links li a i:hover{
+  background-color: #0055ff;
+  color: white;
+}
 .header-icon{
   color: #64748b !important;
   display: flex;
@@ -184,6 +137,8 @@ hr {
   border-radius: 5px;
   margin: 10px;
   transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
 }
 
 .s-info span:hover{
@@ -324,11 +279,6 @@ article > * {
   height: 500px ;
  
 }
-
-.bs-cat-list{
-
-}
-
 @media screen and (max-width: 767.98px) {
   .categotiy-bar .blog-sidebar {
     margin-top: 30px;
@@ -343,7 +293,7 @@ article > * {
     margin: 20px 10px;
   }
   .amozeshgah-info > * {
-    font-size: 4vw;
+    font-size: 4.5vw;
     display: inline-block;
     width: 48%;
   }
