@@ -9,96 +9,71 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+const institute = document.querySelector(".selector button:nth-child(1)");
+const classes = document.querySelector(".selector button:nth-child(2)");
 
+const instituteSection = document.querySelector(".ane .institute");
+const classesSection = document.querySelector(".ane .classes");
 
+classesSection.style.display = "none";
 
- const institute = document.querySelector(
-     ".selector button:nth-child(1)"
- );
- const classes = document.querySelector(
-     ".selector button:nth-child(2)"
- );
+institute.className = "acctive";
 
- const instituteSection = document.querySelector(".ane .institute");
- const classesSection = document.querySelector(".ane .classes");
+classes.addEventListener("click", (e) => {
+    classes.className = "acctive";
 
- if (classesSection != undefined) {
-     classesSection.style.display = "none";
- }
+    institute.className = "";
 
- institute.className = "acctive";
+    classesSection.style.display = "";
 
- classes.addEventListener("click", (e) => {
-     classes.className = "acctive";
+    instituteSection.style.display = "none";
+});
 
-     institute.className = "";
+institute.addEventListener("click", (e) => {
+    institute.className = "acctive";
 
-     if (classesSection != undefined) {
-         classesSection.style.display = "block";
-     }
-     if (instituteSection != undefined) {
-         instituteSection.style.display = "none";
-     }
- });
+    classes.className = "";
 
- institute.addEventListener("click", (e) => {
-     institute.className = "acctive";
+    instituteSection.style.display = "";
 
-     classes.className = "";
+    classesSection.style.display = "none";
+});
 
-     if (instituteSection != undefined) {
-         instituteSection.style.display = "block";
-     }
+const instituteNew = document.querySelector(
+    ".project-area-two .selector button:nth-child(1)"
+);
+const classesNew = document.querySelector(
+    ".project-area-two .selector button:nth-child(2)"
+);
 
-     if (classesSection != undefined) {
-         classesSection.style.display = "none";
-     }
- });
+const instituteSectionNew = document.querySelector(
+    ".project-area-two .ane-new .institute-new"
+);
+const classesSectionNew = document.querySelector(
+    ".project-area-two .ane-new .classes-new"
+);
 
-  const instituteNew = document.querySelector(
-      ".project-area-two .selector button:nth-child(1)"
-  );
-  const classesNew = document.querySelector(
-      ".project-area-two .selector button:nth-child(2)"
-  );
+if (classesSectionNew != undefined) {
+    classesSectionNew.style.display = "none";
+}
 
-  const instituteSectionNew = document.querySelector(
-      ".project-area-two .ane-new .institute-new"
-  );
-  const classesSectionNew = document.querySelector(
-      ".project-area-two .ane-new .classes-new"
-  );
+instituteNew.className = "acctive";
 
-  if (classesSectionNew != undefined) {
-      classesSectionNew.style.display = "none";
-  }
+classesNew.addEventListener("click", (e) => {
+    classesNew.className = "acctive";
 
-  instituteNew.className = "acctive";
+    instituteNew.className = "";
 
-  classesNew.addEventListener("click", (e) => {
-      classesNew.className = "acctive";
+    classesSectionNew.style.display = "";
+    instituteSectionNew.style.display = "none";
+});
 
-      instituteNew.className = "";
+instituteNew.addEventListener("click", (e) => {
+    instituteNew.className = "acctive";
 
-      if (classesSectionNew != undefined) {
-          classesSectionNew.style.display = "block";
-      }
-      if (instituteSectionNew != undefined) {
-          instituteSectionNew.style.display = "none";
-      }
-  });
+    classesNew.className = "";
 
-  instituteNew.addEventListener("click", (e) => {
-      instituteNew.className = "acctive";
+    instituteSectionNew.style.display = "";
 
-      classesNew.className = "";
-
-      if (instituteSectionNew != undefined) {
-          instituteSectionNew.style.display = "block";
-      }
-
-      if (classesSectionNew != undefined) {
-          classesSectionNew.style.display = "none";
-      }
-  });
-
+    classesSectionNew.style.display = "none";
+});
