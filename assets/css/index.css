@@ -246,6 +246,7 @@ animation section */
     border: 1px solid black;
     margin-bottom: 80px;
     border-radius: 20px;
+    margin-right:50%;
     width: 50%;
     height: 40px;
     overflow: hidden;
@@ -531,7 +532,7 @@ body {
     border: 1px solid black;
     margin-bottom: 80px;
     border-radius: 20px;
-    width: 50%;
+    width: 30%;
     height: 40px;
     overflow: hidden;
 }

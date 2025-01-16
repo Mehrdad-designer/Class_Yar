@@ -27,7 +27,7 @@ hr {
   width: 50%;
   display: flex;
 }
-main {
+main { 
   margin-top: 100px;
 }
 
@@ -102,7 +102,7 @@ main {
 
 /* classes  section*/
 
-.classes {
+/* .classes {
   width: 45%;
 }
 .class-item {
@@ -161,42 +161,46 @@ main {
   color: rgb(4, 0, 255);
   position: absolute;
   bottom: 10px;
-}
+} */
+
 
 /* institute  section*/
-.institute-container {
+.institute-container , .class-container {
   justify-content: space-between;
 }
-.institute {
+
+.institute , .class {
   width: 45%;
   margin: 0px;
 }
-.institute-item {
+.institute-item , .class-item {
   border-radius: 20px;
   border: 1px solid black;
   margin: 0px auto;
   margin-top: 10px;
   padding: 10px;
+  margin: 12px;
+  margin-top: 20px;
 }
 
-.institute-item .section-one {
+.institute-item .section-one , .class-item .section-one{
   position: relative;
 }
 
-.institute-item .section-one img {
+.institute-item .section-one img , .class-item .section-one img  {
   border-radius: 10px;
   margin: 15px;
 }
 
-.institute-item .section-one h3 {
+.institute-item .section-one h3 , .class-item .section-one h3  {
   display: inline-block;
 }
 
-.institute-item .section-one .span {
+.institute-item .section-one .span , .class-item .section-one .span{
   display: block !important;
 }
 
-.institute-item .section-one button {
+.institute-item .section-one button , .class-item .section-one button  {
   border: 1px solid black;
   background: white;
   border-radius: 10px;
@@ -209,18 +213,18 @@ main {
   justify-content: space-around;
   align-items: center;
 }
-.institute-item .section-one button:hover {
+.institute-item .section-one button:hover , .class-item .section-one button:hover {
   background: rgb(4, 0, 255);
   font-weight: bold;
   color: white;
 }
-.institute .section-one {
+.institute .section-one , .class .section-one{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.institute-item .section-one .manaiger {
+.institute-item .section-one .manaiger , .class-item .section-one .manaiger{
   font-weight: bold;
   color: rgb(4, 0, 255);
 }
@@ -252,7 +256,7 @@ main {
   .blog-sidebar {
     margin: 0;
   }
-  .institute {
+  .institute , .class {
     width: 100%;
   }
   br {
@@ -261,7 +265,7 @@ main {
   .info span:nth-child(2) {
     display: block;
   }
-  .institute-item .section-one {
+  .institute-item .section-one , .class-item .section-one {
     display: flex;
     flex-direction: column;
   }
@@ -294,10 +298,10 @@ main {
   .blog-sidebar {
     margin: 0;
   }
-  .institute-container{
+  .institute-container , .class-container{
     justify-content: center;
   }
-  .institute {
+  .institute , .class{
     width: 70%;
   }
   .section-one {
