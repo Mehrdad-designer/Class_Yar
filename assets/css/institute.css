@@ -3,18 +3,18 @@
   width: 5px;
   height: 10px;
   border-radius: 10px;
-  background-color: #cedbe8;
+  background-color: #f7f7f7 !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f7f7f7;
+  background:  #2014c9;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track-piece {
   width: 5px;
   border-radius: 10px;
-  background-color: #2014c9;
+  background-color:#f7f7f7 ;
 }
 
 
@@ -28,7 +28,7 @@ hr {
   display: flex;
 }
 main {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 .filter-nav {

@@ -768,8 +768,7 @@ label {
 	margin-right: 30px;
 }
 .header-contact-two .icon {
-	width: 40px;
-	height: 40px;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -5288,7 +5287,7 @@ label {
 .project-bg-two {
 	background-size: cover;
 	background-position: center;
-	padding: 120px 0 200px;
+	padding: 120px 0 ;
 }
 .project-content-top {
 	margin-bottom: 30px;
