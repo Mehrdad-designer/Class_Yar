@@ -413,12 +413,12 @@ body {
     padding: 5px;
 }
 
-.classes .title-class img,
+.classes .title-class img ,
 .classes-new .title-class img {
     border-radius: 5px;
 }
 
-.classes .title-class span,
+.classes .title-class span ,
 .classes-new .title-class span {
     margin: 0px;
     padding: 0px;
@@ -456,6 +456,7 @@ body {
     order: 1;
     margin: 0;
 }
+
 .classes .send .likes h5,
 .classes-new .send .likes h5 {
     color: rgb(2, 88, 2);
