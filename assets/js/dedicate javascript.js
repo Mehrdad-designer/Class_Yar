@@ -9,6 +9,22 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+var swiper = new Swiper(".classDetailSwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 const institute = document.querySelector(".selector button:nth-child(1)");
 const classes = document.querySelector(".selector button:nth-child(2)");
 

@@ -904,9 +904,6 @@ html{
 .testimonial-item-wrap-five .testimonial-active-five .testimonial-item {
     direction: rtl;
 }
-.navbar-wrap ul {
-    margin: 0 auto 0 0 ;
-}
 .banner-shape-wrap-nine img:nth-child(1) {
     left: unset;
     right: 0;
