@@ -1,349 +1,422 @@
 /* main */
 body {
-    background-color: #fefefe;
+  background-color: #fefefe;
 }
 .container-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    padding: 0 20px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 /* not active */
 .not-active {
-    display: none;
+  display: none;
 }
 
 /* active */
 .active {
-    display: block;
+  display: block;
 }
 /* slid */
 
 body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper {
-    width: 60%;
-    height: 100%;
-    border-radius: 5px;
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper {
-
-    margin-top: 45px;
+  margin-top: 45px;
 }
 
 .swiper-pagination {
-    background: #fff;
+  background: #fff;
 }
 
 /* institute-title */
 
 .institute-title {
-    margin: 20px;
-    padding: 15px;
-    background: rgba(4, 0, 255, 0.89);
-    border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  background: rgba(4, 0, 255, 0.89);
+  border-radius: 10px;
 }
 .institute-title * {
-    color: #ffff;
+  color: #ffff;
 }
 
 .institute-title img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: green;
-    display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  display: inline;
 }
 
 .institute-title h3 {
-    display: inline;
+  display: inline;
 }
 
 .institute-title span {
-    margin: 6px;
+  margin: 6px;
 }
 
 /* info1 */
 
 .class-info1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .class-info1 .class-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 25px;
-    padding: 20px;
-    background: #c4c3c3;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  padding: 20px;
+  background: #c4c3c3;
+  color: white;
 }
 
 .class-info1 .class-icon i {
-    border-radius: 50%;
-    margin: 5px;
-    background: rgb(4, 0, 255);
-    padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  background: rgb(4, 0, 255);
+  padding: 10px;
 }
 
 .class-info1 .class-icon i:hover {
-    color: rgb(4, 0, 255);
-    cursor: pointer;
-    transition: all 0.5s;
-    background: white;
+  color: rgb(4, 0, 255);
+  cursor: pointer;
+  transition: all 0.5s;
+  background: white;
 }
 
 .class-info1 ul {
-    list-style: none;
-    margin: 0;
-    text-align: center;
+  list-style: none;
+  margin: 0;
+  text-align: center;
 }
 
 .class-info1 ul li {
-    display: inline !important;
-    margin: 6px;
-    text-align: center;
+  display: inline !important;
+  margin: 6px;
+  text-align: center;
 }
 .class-info1 ul li a {
-    color: #000;
+  color: #000;
 }
 
 .class-info1 ul li i {
-    color: rgb(4, 0, 255);
+  color: rgb(4, 0, 255);
 }
 
 .slider-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.swiper-pagination{
+.swiper-pagination {
   bottom: 0 !important;
 }
 /* اطلاعات جزی کلاس  */
 .info-institute {
-    list-style: none;
-    border-radius: 5px;
-    padding: 10px;
-    background: rgb(255, 255, 255);
-    color: rgb(211, 206, 206);
-    color: #000;
-    margin-top: 20px;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(211, 206, 206);
+  color: #000;
+  margin-top: 20px;
 }
 
 .info-institute li {
-    margin: 5px;
-    margin-right: 10px;
-    padding: 0px;
+  margin: 5px;
+  margin-right: 10px;
+  padding: 0px;
 }
 
 .info-group-span {
-    color: gray;
+  color: gray;
 }
 
 .info-className-span {
-    color: black;
+  color: black;
 }
 
 .price-capacity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .price-capacity .price,
 .price-capacity .capacity {
-    background: rgb(4, 0, 255);
-    margin-right: 9px;
-    padding: 5px;
-    border-radius: 10px;
-    color: #fff;
+  background: rgb(4, 0, 255);
+  margin-right: 9px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
 }
 
 /* seggestion section */
 
 .suggestion {
-    box-shadow: 0px 0px 2px rgb(95, 94, 94);
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 30px;
-    height: 400px;
-    overflow-y: scroll;
+  box-shadow: 0px 0px 2px rgb(95, 94, 94);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 30px;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .suggestion h3 {
-    text-align: center;
-    margin: 5px 0;
+  text-align: center;
+  margin: 5px 0;
 }
 
 .suggestion .suggest-classe {
-    padding: 6px;
+  padding: 6px;
 }
 
 .suggestion .suggest-classe li {
-    border-radius: 5px;
-    padding: 9px;
-    box-shadow: 0px 0px 2px rgb(95, 94, 94);
-    margin-top: 15px;
+  border-radius: 5px;
+  padding: 9px;
+  box-shadow: 0px 0px 2px rgb(95, 94, 94);
+  margin-top: 15px;
 
-    background: white;
+  background: white;
 }
 .class-item {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 .suggestion .suggest-classe li img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .suggestion .suggest-classe li h4 {
-    font-size: 25px;
-    display: inline;
-    color: rgb(0, 0, 0);
+  font-size: 25px;
+  display: inline;
+  color: rgb(0, 0, 0);
 }
 
 .suggestion .suggest-classe li span {
-    font-size: small;
-    color: gray;
+  font-size: small;
+  color: gray;
 }
 
 .suggestion .suggest-classe li button {
-    border-radius: 5px;
-    border: none;
-    background: rgb(4, 0, 255);
-    color: white;
-    padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(4, 0, 255);
+  color: white;
+  padding: 5px;
 }
 
 /* 
 info2 */
 .bolder-span {
-    font-weight: bolder;
-    margin: 5%;
+  font-weight: bolder;
+  margin: 5%;
 }
 .class-info2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .class-info2 h4,
 .class-info2 b {
-    margin: 5px;
+  margin: 5px;
 }
 
 .class-info2 .box ul li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .box {
-    box-shadow: 0px 0px 2px rgb(95, 94, 94) !important;
-    background: #fff !important;
-    padding: 10px;
-    border-radius: 10px;
+  box-shadow: 0px 0px 2px rgb(95, 94, 94) !important;
+  background: #fff !important;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .class-info2 .time-box p {
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.623);
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    width: 250px;
-    text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.623);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
 }
 
 .class-info2 .rank i {
-    color: white;
-    margin: 10px;
-    transition: all 0.5s;
-    cursor: pointer;
+  color: white;
+  margin: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .class-info2 .rank i:hover {
-    color: #000;
+  color: #000;
 }
 
 .class-info2 ul b,
 .class-info2 ul p {
-    display: inline !important;
-    margin-right: 20px;
+  display: inline !important;
+  margin-right: 20px;
 }
 
 /* <!-- توضیحات تکمیلی کلاس --> */
 
-
 .more-info {
-    box-shadow: 0px 0px 2px rgb(95, 94, 94);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 15px;
+  box-shadow: 0px 0px 2px rgb(95, 94, 94);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
 }
 
 .more-info h3 {
-    margin-right: 12%;
+  margin-right: 12%;
 }
 
 .creator {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .creator img {
-    width: 40px;
+  width: 40px;
+}
+.list-container {
+  width: 80%;
+  /* عرض پیش‌فرض برای دسکتاپ */
+  margin: auto;
+  border: 1px solid #000;
+  /* اضافه کردن border به جدول */
+  border-collapse: collapse;
+  border-radius: 10px;
+  /* یکپارچه کردن border */
+}
+
+.list-item {
+  padding: 10px;
+  text-align: right;
+  border-bottom: 1px solid #000;
+  /* خط جداکننده بین ردیف‌ها */
+}
+
+.list-item:nth-child(odd) {
+  background-color: #ffffff;
+  /* سفید */
+}
+
+.list-item:nth-child(even) {
+  background-color: #d3d3d3;
+  /* توسی */
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 4px solid green; 
+  /* خط سبز ضخیم‌تر (4px) */
+  font-family: "Poppins", sans-serif;
+  /* فونت انگلیسی برای عنوان */
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .list-container {
+    width: 95%;
+    /* عرض بیشتر برای صفحه‌های کوچک‌تر */
+  }
+
+  .title {
+    font-size: 16px;
+    /* کاهش اندازه فونت عنوان برای موبایل */
+  }
+
+  .list-item {
+    font-size: 14px;
+    /* کاهش اندازه فونت آیتم‌ها برای موبایل */
+  }
+}
+
+@media (max-width: 480px) {
+  .list-container {
+    width: 100%;
+    /* عرض کامل برای صفحه‌های خیلی کوچک */
+  }
+
+  .title {
+    font-size: 14px;
+    /* کاهش بیشتر اندازه فونت عنوان */
+  }
+
+  .list-item {
+    font-size: 12px;
+    /* کاهش بیشتر اندازه فونت آیتم‌ها */
+    padding: 8px;
+    /* کاهش padding برای صرفه‌جویی در فضا */
+  }
 }
 
 @media screen and (max-width: 767.98px) {
-  .suggestion .suggest-classe li button{
+  .suggestion .suggest-classe li button {
     width: 100%;
   }
-  .swiper{
+  .swiper {
     order: -1;
     width: 100%;
   }
-  .class-icon{
+  .class-icon {
     flex-direction: row !important;
     margin: 10px;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
-  .swiper{
+  .swiper {
     width: 70%;
   }
 }
