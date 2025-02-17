@@ -91,37 +91,71 @@ body {
 
 /* info1 */
 
-.class-info1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-}
+/*  */
 
-.class-info1 .class-icon {
+/* بخش فضای مجازی */
+
+.social-box {
+  background-color: #fff; /* پس‌زمینه سفید */
+  padding: 16px;
+  border-radius: 15px; /* لبه‌های گرد */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+  text-align: center;
+  width: 90%; /* عرض پیش‌فرض */
+  max-width: 300px; /* حداکثر عرض */
+  margin: 15px;
   display: flex;
-  align-items: center;
+  align-items: center; /* مرکز چین عمودی */
   justify-content: center;
-  flex-direction: column;
-  font-size: 25px;
-  padding: 20px;
-  background: #c4c3c3;
-  color: white;
+}
+.social-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row; /* آیکون‌ها به صورت عمودی */
+  align-items: center; /* مرکز چین عمودی */
+  justify-content: center;
+  gap: 15px; /* فاصله بین آیکون‌ها */
+}
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* دایره‌ای شکل */
+  text-decoration: none;
+  color: #fff; /* رنگ متن سفید */
+  font-size: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ترنزیشن نرم */
+}
+.social-icons a:hover {
+  transform: translateY(-5px); /* حرکت به بالا هنگام hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
+}
+.social-icons .instagram {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  ); /* گرادینت اینستاگرام */
+}
+.social-icons .whatsapp {
+  background: linear-gradient(45deg, #25d366, #128c7e); /* گرادینت واتس‌اپ */
+}
+.social-icons .telegram {
+  background: linear-gradient(45deg, #0088cc, #00aced); /* گرادینت تلگرام */
 }
 
-.class-info1 .class-icon i {
-  border-radius: 50%;
-  margin: 5px;
-  background: rgb(4, 0, 255);
-  padding: 10px;
-}
-
-.class-info1 .class-icon i:hover {
-  color: rgb(4, 0, 255);
-  cursor: pointer;
-  transition: all 0.5s;
-  background: white;
-}
+/*  پایان بخش فضای مجازی */
 
 .class-info1 ul {
   list-style: none;
@@ -194,62 +228,107 @@ body {
 /* seggestion section */
 
 .suggestion {
-  box-shadow: 0px 0px 2px rgb(95, 94, 94);
-  border-radius: 5px;
-  padding: 5px;
-  margin-top: 30px;
-  height: 400px;
-  overflow-y: scroll;
+  padding: 20px;
+  max-width: 400px; /* عرض ثابت برای باکس */
+  width: 100%;
+  margin: 0 auto; /* مرکز چین */
+  background-color: #fff; /* پس‌زمینه سفید */
+  border-radius: 10px; /* لبه‌های گرد */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
 }
-
 .suggestion h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
   text-align: center;
-  margin: 5px 0;
 }
-
-.suggestion .suggest-classe {
-  padding: 6px;
-}
-
-.suggestion .suggest-classe li {
-  border-radius: 5px;
-  padding: 9px;
-  box-shadow: 0px 0px 2px rgb(95, 94, 94);
-  margin-top: 15px;
-
-  background: white;
+.suggest-classe {
+  display: flex;
+  flex-direction: column; /* نمایش کارت‌ها به صورت ستونی */
+  gap: 15px; /* فاصله بین کارت‌ها */
+  padding: 0;
+  list-style: none; /* حذف بولت‌های لیست */
+  max-height: 400px; /* ارتفاع ثابت برای اسکرول */
+  overflow-y: auto; /* اسکرول عمودی در صورت نیاز */
 }
 .class-item {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
+  background-color: #fff; /* پس‌زمینه سفید */
+  border-radius: 10px; /* لبه‌های گرد */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+  overflow: hidden; /* جلوگیری از بیرون زدن محتوا */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ترنزیشن نرم */
 }
-.suggestion .suggest-classe li img {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+.class-item:hover {
+  transform: translateY(-5px); /* حرکت به بالا هنگام hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
 }
-
-.suggestion .suggest-classe li h4 {
-  font-size: 25px;
-  display: inline;
-  color: rgb(0, 0, 0);
+.class-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* تصویر به‌طور مناسب نمایش داده شود */
 }
-
-.suggestion .suggest-classe li span {
-  font-size: small;
-  color: gray;
+.class-item h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin: 15px 15px 10px;
 }
-
-.suggestion .suggest-classe li button {
-  border-radius: 5px;
+.class-item span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin: 0 15px 15px;
+}
+.class-item button {
+  display: block;
+  width: calc(100% - 30px); /* عرض دکمه با احتساب padding */
+  margin: 0 15px 15px;
+  padding: 10px;
+  background-color: #007bff; /* رنگ آبی */
+  color: #fff; /* متن سفید */
   border: none;
-  background: rgb(4, 0, 255);
-  color: white;
-  padding: 5px;
+  border-radius: 5px; /* لبه‌های گرد */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* ترنزیشن نرم */
 }
+.class-item button:hover {
+  background-color: #0056b3; /* تغییر رنگ هنگام hover */
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .suggestion h3 {
+    font-size: 20px;
+  }
+  .class-item h4 {
+    font-size: 16px;
+  }
+  .class-item span {
+    font-size: 13px;
+  }
+  .class-item button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .suggestion h3 {
+    font-size: 18px;
+  }
+  .class-item h4 {
+    font-size: 15px;
+  }
+  .class-item span {
+    font-size: 12px;
+  }
+  .class-item button {
+    font-size: 12px;
+  }
+}
+/* seggestion section end */
 
 /* 
 info2 */
@@ -326,97 +405,102 @@ info2 */
 .creator img {
   width: 40px;
 }
+
 .list-container {
-  width: 80%;
-  /* عرض پیش‌فرض برای دسکتاپ */
-  margin: auto;
-  border: 1px solid #000;
-  /* اضافه کردن border به جدول */
-  border-collapse: collapse;
-  border-radius: 10px;
-  /* یکپارچه کردن border */
+  width: 80%; /* عرض پیش‌فرض برای دسکتاپ */
+  margin: 20px auto;
+  border: 1px solid #e0e0e0; /* حاشیه ملایم */
+  border-collapse: collapse; /* یکپارچه کردن border */
+  background-color: #fff; /* پس‌زمینه سفید */
+  border-radius: 10px; /* لبه‌های گرد */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
 }
-
 .list-item {
-  padding: 10px;
+  padding: 15px;
   text-align: right;
-  border-bottom: 1px solid #000;
-  /* خط جداکننده بین ردیف‌ها */
+  border-bottom: 1px solid #e0e0e0; /* خط جداکننده ملایم */
 }
-
 .list-item:nth-child(odd) {
-  background-color: #ffffff;
-  /* سفید */
+  background-color: #ffffff; /* سفید */
 }
-
 .list-item:nth-child(even) {
-  background-color: #d3d3d3;
-  /* توسی */
+  background-color: #f8f9fa; /* خاکستری بسیار روشن */
 }
-
 .title {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  padding: 10px;
-  border-bottom: 4px solid green; 
-  /* خط سبز ضخیم‌تر (4px) */
-  font-family: "Poppins", sans-serif;
-  /* فونت انگلیسی برای عنوان */
+  padding: 15px;
+  border-bottom: 2px solid #007bff; /* خط آبی زیر عنوان */
+  font-family: "Poppins", sans-serif; /* فونت انگلیسی برای عنوان */
+  color: #007bff; /* رنگ آبی */
 }
 
 /* تنظیمات ریسپانسیو */
 @media (max-width: 768px) {
-  .list-container {
-    width: 95%;
-    /* عرض بیشتر برای صفحه‌های کوچک‌تر */
+  .list-container,
+  .comments-section {
+    width: 95%; /* عرض بیشتر برای صفحه‌های کوچک‌تر */
   }
-
   .title {
-    font-size: 16px;
-    /* کاهش اندازه فونت عنوان برای موبایل */
+    font-size: 16px; /* کاهش اندازه فونت عنوان برای موبایل */
   }
-
   .list-item {
-    font-size: 14px;
-    /* کاهش اندازه فونت آیتم‌ها برای موبایل */
+    font-size: 14px; /* کاهش اندازه فونت آیتم‌ها برای موبایل */
   }
 }
 
 @media (max-width: 480px) {
-  .list-container {
-    width: 100%;
-    /* عرض کامل برای صفحه‌های خیلی کوچک */
+  .list-container,
+  .comments-section {
+    width: 100%; /* عرض کامل برای صفحه‌های خیلی کوچک */
   }
-
   .title {
-    font-size: 14px;
-    /* کاهش بیشتر اندازه فونت عنوان */
+    font-size: 14px; /* کاهش بیشتر اندازه فونت عنوان */
   }
-
   .list-item {
-    font-size: 12px;
-    /* کاهش بیشتر اندازه فونت آیتم‌ها */
-    padding: 8px;
-    /* کاهش padding برای صرفه‌جویی در فضا */
+    font-size: 12px; /* کاهش بیشتر اندازه فونت آیتم‌ها */
+    padding: 10px; /* کاهش padding برای صرفه‌جویی در فضا */
+  }
+  .comments-section h2 {
+    font-size: 20px; /* کاهش اندازه عنوان برای موبایل */
+  }
+  .comment-card {
+    padding: 10px;
+  }
+  .comment-header h3 {
+    font-size: 16px;
+  }
+  .comment-body {
+    font-size: 13px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .suggestion .suggest-classe li button {
-    width: 100%;
+/*  باکس مدیا تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .social-box {
+    padding: 20px;
   }
-  .swiper {
-    order: -1;
-    width: 100%;
+  .social-box h2 {
+    font-size: 20px;
   }
-  .class-icon {
-    flex-direction: row !important;
-    margin: 10px;
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  .swiper {
-    width: 70%;
+
+@media (max-width: 480px) {
+  .social-box {
+    padding: 15px;
+  }
+  .social-box h2 {
+    font-size: 18px;
+  }
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
