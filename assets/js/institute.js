@@ -1,10 +1,9 @@
-//selecor for institute and classses 
-
+//selecor for institute and classses
 const institute = document.querySelector(" .selector button:nth-child(1)");
 const classes = document.querySelector(" .selector button:nth-child(2)");
 
 const instituteSection = document.querySelector(" .institute-container");
-const classesSection = document.querySelector(".classes");
+const classesSection = document.querySelector(".class-container");
 
 if (classesSection != undefined) {
     classesSection.style.display = "none";
@@ -17,12 +16,13 @@ classes.addEventListener("click", (e) => {
 
     institute.className = "";
 
-        classesSection.style.display = "";
-    
+    if (classesSection != undefined) {
+        classesSection.style.display = "flex";
+    }
 
-    
+    if (instituteSection != undefined) {
         instituteSection.style.display = "none";
-    
+    }
 });
 
 institute.addEventListener("click", (e) => {
@@ -30,8 +30,11 @@ institute.addEventListener("click", (e) => {
 
     classes.className = "";
 
-        instituteSection.style.display = "";
+    if (instituteSection != undefined) {
+        instituteSection.style.display = "flex";
+    }
 
+    if (classesSection != undefined) {
         classesSection.style.display = "none";
-    
+    }
 });

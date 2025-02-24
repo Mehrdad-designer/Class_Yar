@@ -92,4 +92,4 @@ instituteNew.addEventListener("click", (e) => {
     instituteSectionNew.style.display = "";
 
     classesSectionNew.style.display = "none";
-});
+}); 
