@@ -206,6 +206,7 @@ main {
 .class-item .section-one .span {
   display: block !important;
 }
+
 .info {
   display: flex;
   flex-direction: column;
