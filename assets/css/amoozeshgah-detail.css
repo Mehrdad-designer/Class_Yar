@@ -1,0 +1,193 @@
+body {
+    font-family: "Vazir", Arial, sans-serif;
+    /* فونت فارسی */
+    direction: rtl;
+    /* متن از راست به چپ */
+    color: #333;
+  }
+  
+  .amoozeshgah-info-container {
+    max-width: 1800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-row h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .top-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .amoozeshgah-pictures img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .amozeshgah-info {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .amozeshgah-info h4,
+  .amozeshgah-info h5,
+  .amozeshgah-info h6 {
+    margin: 15px 0;
+    color: #34495e;
+  }
+  
+  .amozeshgah-info h4 {
+    /* font-size: 1.4rem; */
+    color: white;
+  }
+  
+  .amozeshgah-info h5 {
+    /* font-size: 1.2rem; */
+    color: white;
+  
+  }
+  
+  .amozeshgah-info h6 {
+    /* font-size: 1rem; */
+    color: #7f8c8d;
+  }
+  
+  .amoozeshgah-social ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .amoozeshgah-social ul li a {
+    color: #fff;
+    background-color: #3498db;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .amoozeshgah-social ul li a:hover {
+    background-color: #2980b9;
+  }
+  
+  .amoozeshgah-social ul li a i {
+    font-size: 1.2rem;
+  }
+  
+  .s-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .s-info span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* رسپانسیو */
+  @media (max-width: 768px) {
+    .top-info {
+      flex-direction: column;
+    }
+  
+    .amoozeshgah-pictures,
+    .amozeshgah-info {
+      width: 100%;
+    }
+  
+    .my-row h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Swiper Container */
+  .swiper-container {
+    width: 500px;
+    height: 400px;
+    /* ارتفاع اسلایدر */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Swiper Slides */
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+  
+  .swiper-slide img {
+    width: 500px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    object-fit: cover;
+    /* تصویر را به خوبی در اسلاید قرار می‌دهد */
+  }
+  
+  /* Swiper Navigation Buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Swiper Pagination */
+  .swiper-pagination-bullet {
+    background-color: #091c8a67;
+    opacity: 0.7;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #3498db;
+    opacity: 1;
+  }
+  
+  .top-info {
+    display: flex;
+    flex-direction: row !important;
+    width: 1800px;
+  }
+  .my-row h1 {
+    color: white;
+  }
+  .amoozeshgah-info {
+    font-size: large !important;
+  }
+  
+  .amoozeshgah-info h4,
+  .amoozeshgah-info h5,
+  .amoozeshgah-info h6 {
+    font-size: 25px !important;
+  }
+  
