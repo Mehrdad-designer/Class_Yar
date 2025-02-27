@@ -191,10 +191,31 @@
                 <div class="amoozeshgah-info-container">
                     <article class="my-row">
                         <h1 class="my-col-xs-12 my-col-sm-12">آموزشگاه حرف اول</h1>
-                        <div class="top-info row">
-                            <div class="amoozeshgah-pictures my-col-xs-12 my-col-sm-12 my-col-md-6 my-col-lg-4">
-                                <img src="assets/img/categories/download.jpg" alt="" class="image-fluid">
+                        <div class="top-info ">
+
+
+
+                            <div class="swiper-container my-col-xs-12 my-col-sm-12 my-col-md-6 my-col-lg-4">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/categories/download.jpg" alt="تصویر ۱" class="image-fluid">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/categories/slide2.jpg" alt="تصویر ۲" class="image-fluid">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/categories/slide3.jpg" alt="تصویر ۳" class="image-fluid">
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <!-- Add Pagination -->
+                                <!-- Add Navigation -->
+                                <!-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> -->
                             </div>
+
                             <div class="amozeshgah-info my-col-xs-12 my-col-sm-12 my-col-md-5 my-col-lg-6">
                                 <h5>تلفن تماس: 32432-021</h5>
                                 <h4>ایمیل آموزشگاه: example@gmail.com </h4>
@@ -204,7 +225,6 @@
                                         <li><a href="https://t.me/keaasyarbot"><i class="fab fa-telegram"></i></a></li>
                                         <li><a href="https://instagram.com/kelassyar"><i
                                                     class="fab fa-instagram"></i></a></li>
-
                                         <li><a href="https://wa.me/09232894508"><i class="fab fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
@@ -222,6 +242,7 @@
 
 
             </section>
+
         </div>
 
         <div class="container">
@@ -276,9 +297,9 @@
                                             <span>
                                                 <img src="assets/img/images/sb_insta05.jpg" alt="" class="image-fluid">
                                             </span>
-                        
+
                                             معلم: علی
-                        
+
                                         </span>
                                         <span><i class="fas fa-star">5.0</i></span>
                                     </div>
@@ -305,9 +326,9 @@
                                             <span>
                                                 <img src="assets/img/images/sb_insta05.jpg" alt="" class="image-fluid">
                                             </span>
-                        
+
                                             معلم: علی
-                        
+
                                         </span>
                                         <span><i class="fas fa-star">5.0</i></span>
                                     </div>
@@ -334,9 +355,9 @@
                                             <span>
                                                 <img src="assets/img/images/sb_insta05.jpg" alt="" class="image-fluid">
                                             </span>
-                        
+
                                             معلم: علی
-                        
+
                                         </span>
                                         <span><i class="fas fa-star">5.0</i></span>
                                     </div>
@@ -580,7 +601,26 @@
 
     <!-- JS here -->
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                loop: true, // اسلایدر به صورت بی‌نهایت ادامه پیدا کند
+                autoplay: {
+                    delay: 3000, // هر ۳ ثانیه اسلاید تغییر کند
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
