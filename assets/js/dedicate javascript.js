@@ -25,35 +25,39 @@ var swiper = new Swiper(".classDetailSwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-const institute = document.querySelector(".selector button:nth-child(1)");
-const classes = document.querySelector(".selector button:nth-child(2)");
+// const institute = document.querySelector(".selector button:nth-child(1)");
+// const classes = document.querySelector(".selector button:nth-child(2)");
 
-const instituteSection = document.querySelector(".ane .institute");
-const classesSection = document.querySelector(".ane .classes");
+// const instituteSection = document.querySelector(".ane .institute");
+// const classesSection = document.querySelector(".ane .classes");
 
-classesSection.style.display = "none";
+// classesSection.style.display = "none";
 
-institute.className = "acctive";
+// institute.className = "acctive";
 
-classes.addEventListener("click", (e) => {
-    classes.className = "acctive";
+// classes.addEventListener("click", (e) => {
+//     classes.className = "acctive";
 
-    institute.className = "";
+//     institute.className = "";
 
-    classesSection.style.display = "";
+//     classesSection.style.display = "";
 
-    instituteSection.style.display = "none";
-});
+//     instituteSection.style.display = "none";
+// });
 
-institute.addEventListener("click", (e) => {
-    institute.className = "acctive";
+// institute.addEventListener("click", (e) => {
+//     institute.className = "acctive";
 
-    classes.className = "";
+//     classes.className = "";
 
-    instituteSection.style.display = "";
+//     instituteSection.style.display = "";
 
-    classesSection.style.display = "none";
-});
+//     classesSection.style.display = "none";
+// });
+
+
+
+
 
 const instituteNew = document.querySelector(
     ".project-area-two .selector button:nth-child(1)"
