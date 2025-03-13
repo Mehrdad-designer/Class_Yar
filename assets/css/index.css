@@ -265,10 +265,7 @@ body {
 }
 
 .swiper {
-  width: 150%;
-  /* height: 600px; */
-  /* position: absolute; */
-  /* right: -38rem; */
+  width: 100%;
 }
 
 .swiper-slide {
@@ -478,11 +475,10 @@ body {
 /* popular institute and newest classes */
 
 .respon-style {
-  width: 150%;
+  width: 100%;
 }
 
 .respon-style .swiper-slide {
-  width: 14% !important;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
@@ -539,17 +535,11 @@ body {
   .selector {
     width: 90% !important;
   }
-  .respon-style .swiper-slide {
-    width: 50% !important;
-  }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .selector {
     width: 60% !important;
-  }
-  .respon-style .swiper-slide {
-    width: 30% !important;
   }
   .fw-logo {
     text-align: center;
