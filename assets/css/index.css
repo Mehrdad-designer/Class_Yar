@@ -526,10 +526,56 @@ body {
   color: #000000;
 }
 
+/* seo section with word keys  */
+
+#key-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#key-item h4{
+  margin-top: 15px;
+  border-bottom: 1px dashed blue;
+}
+
+#key-item .contentt{
+  display: flex;
+  flex-direction: row !important;
+}
+
+#key-item .contentt .key-items{
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: space-between !;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid rgb(65, 63, 63);
+  flex-direction: column !important;
+}
 
 
+#key-item .key-items img{
+  width: 150px;
+  height: 150px;
+}
 
 
+#key-item .key-items span{
+  margin-top: 5px;
+  border-bottom: 1px solid blue;
+}
+
+#key-item .key-items span:hover{
+  font-weight: bolder;
+  transition: all 0.5ms;
+  border-bottom: 1px solid blue;
+}
+/* seo section with word keys end */
 
 @media screen and (max-width: 767.98px) {
   .selector {
