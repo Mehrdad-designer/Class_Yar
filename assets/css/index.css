@@ -586,6 +586,9 @@ body {
 .key-items img{
     max-width: 40%;
 }
+.amoozeshgah-info-container .swiper-slide{
+  padding: 0;
+}
 @media screen and (max-width: 767.98px) {
   .selector {
     width: 90% !important;
