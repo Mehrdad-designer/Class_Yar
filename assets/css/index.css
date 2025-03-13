@@ -576,10 +576,26 @@ body {
   border-bottom: 1px solid blue;
 }
 /* seo section with word keys end */
-
+.contentt{
+    justify-content: center;
+    gap: 20px;
+}
+.key-items{
+    text-align: center;
+}
+.key-items img{
+    max-width: 40%;
+}
 @media screen and (max-width: 767.98px) {
   .selector {
     width: 90% !important;
+  }
+  .contentt{
+    flex-direction: column;
+    align-items: center;
+  }
+  .key-items img{
+    max-width: 90%;
   }
 }
 
@@ -589,6 +605,9 @@ body {
   }
   .fw-logo {
     text-align: center;
+  }
+  .key-items img{
+    max-width: 70%;
   }
 }
 
