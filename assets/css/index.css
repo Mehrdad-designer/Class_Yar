@@ -529,7 +529,7 @@ body {
 /* seo section with word keys  */
 
 #key-item {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -554,7 +554,7 @@ body {
   padding: 25px;
   border-radius: 10px;
   font-family: 'Times New Roman', Times, serif;
-  border: 1px solid rgb(65, 63, 63);
+  border: 1px solid rgb(124, 16, 16) !important;
   flex-direction: column !important;
 }
 

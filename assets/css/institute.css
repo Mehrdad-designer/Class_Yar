@@ -16,6 +16,8 @@
   background-color: #f7f7f7;
 }
 
+
+
 /* nav section */
 ul {
   list-style-type: none;
@@ -49,6 +51,25 @@ main {
 
 .title-filter {
   text-align: center;
+}
+
+.contentt{
+  border: 1px solid black;
+  margin-right: 0px;
+  display: flex;
+  position: absolute;
+  height: 500px;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}
+
+.contentt .filter-list{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid red;
 }
 
 /* side-filter-nav */
