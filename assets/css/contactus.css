@@ -7,7 +7,7 @@ margin-bottom: 10px;
 } 
 .near-connection{
   border-radius: 5px;
-  background: lightgray;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   padding: 20px;
 }
 .footer-des{
@@ -16,4 +16,123 @@ margin-bottom: 10px;
 
 ul.navigation {
   margin-left: 22rem;
+}
+
+
+
+.support-container {
+  font-family: 'Vazirmatn', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+
+.support-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.support-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.support-header p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.support-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.support-form .form-group {
+  position: relative;
+}
+
+.support-form input,
+.support-form textarea {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.support-form input:focus,
+.support-form textarea:focus {
+  border-color: #fff;
+}
+
+.support-form label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.support-form input:focus + label,
+.support-form textarea:focus + label,
+.support-form input:not(:placeholder-shown) + label,
+.support-form textarea:not(:placeholder-shown) + label {
+  top: 0;
+  right: 10px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.support-form textarea {
+  resize: vertical;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #6a11cb;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-form .form-row {
+      grid-template-columns: 1fr;
+  }
 }

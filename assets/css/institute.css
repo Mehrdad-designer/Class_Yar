@@ -30,6 +30,7 @@ hr {
 main {
   margin: 100px 0;
 }
+/* side-filter-nav */
 
 .filter-nav {
   width: 100%;
@@ -54,14 +55,20 @@ main {
 }
 
 .contentt{
-  border: 1px solid black;
+  box-shadow: 0px 0px 8px gray;
   margin-right: 0px;
+  margin-top: 50px;
   display: flex;
   position: absolute;
   height: 500px;
   flex-direction: column;
   width: 300px;
   padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+  z-index: 5 !important;
+
+  animation: animatetop 0.5s;
+
 }
 
 .contentt .filter-list{
@@ -72,12 +79,57 @@ main {
   border-bottom: 1px solid red;
 }
 
-/* side-filter-nav */
+.contentt .filter-list li{
+  cursor: pointer;
+}
+
+.contentt .top-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentt .top-section span{
+  font-size: 17px;
+}
+
+.contentt .top-section i{
+  font-size: 17px;
+  color: red;
+  cursor: pointer;
+}
+
+.filter-container .call-filter {
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #2014c9;
+  border-radius: 10px 0px 0px 10px ;
+  z-index: -1 !important;
+  cursor: pointer;
+}
+
+.filter-container .call-filter i{
+  padding: 20px;
+}
 
 
+@keyframes animatetop{
+  from{
+      margin-top:-300px ;
+      opacity: 0;
 
-
-
+  }
+  to{
+      margin-top: 100px;
+      opacity: 1;
+  }
+}
 /* side-filter-nav end*/
 
 /* selector section */
@@ -102,9 +154,12 @@ main {
 .acctive {
   background: rgb(4, 0, 255) !important;
   color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.nonedisplay {
+.none{
   display: none;
 }
 
