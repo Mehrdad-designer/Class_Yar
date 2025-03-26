@@ -283,7 +283,7 @@ label {
 /*=============================
 	1. Button style
 ===============================*/
-.btn {
+/* .btn {
 	user-select: none;
 	-moz-user-select: none;
 	background: var(--tg-primary-color) none repeat scroll 0 0;
@@ -308,14 +308,14 @@ label {
 	border: 0;
 	position: relative;
 	z-index: 1;
-}
-.btn::after {
+} */
+/* .btn::after {
 	content: "\f054";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 700;
 	margin-left: 45px;
-}
-.btn::before {
+} */
+/* .btn::before {
 	content: "";
 	position: absolute;
 	right: 0;
@@ -327,7 +327,7 @@ label {
 	border-radius: 30px;
 	z-index: -1;
 	transition: all 0.3s ease 0s;
-}
+} */
 .btn:hover::before {
 	width: 100%;
 }
