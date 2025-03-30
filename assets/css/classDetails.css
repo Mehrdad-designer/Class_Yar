@@ -291,108 +291,114 @@ input#rate-5:checked ~ label {
 }
 
 /* seggestion section */
-
-.suggestion {
+ .recommended-classes {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
-  max-width: 400px; /* عرض ثابت برای باکس */
-  width: 100%;
-  margin: 0 auto; /* مرکز چین */
-  background-color: #fff; /* پس‌زمینه سفید */
-  border-radius: 10px; /* لبه‌های گرد */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
 }
-.suggestion h3 {
-  font-family: "Poppins", sans-serif;
+.recommended-classes img{
+  height: 140px;
+}
+
+.section-title {
   font-size: 24px;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 20px;
-  text-align: center;
+  font-weight: 600;
 }
-.suggest-classe {
-  display: flex;
-  flex-direction: column; /* نمایش کارت‌ها به صورت ستونی */
-  gap: 15px; /* فاصله بین کارت‌ها */
-  padding: 0;
-  list-style: none; /* حذف بولت‌های لیست */
-  max-height: 400px; /* ارتفاع ثابت برای اسکرول */
-  overflow-y: auto; /* اسکرول عمودی در صورت نیاز */
-}
-.class-item {
-  background-color: #fff; /* پس‌زمینه سفید */
-  border-radius: 10px; /* لبه‌های گرد */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
-  overflow: hidden; /* جلوگیری از بیرون زدن محتوا */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ترنزیشن نرم */
-}
-.class-item:hover {
-  transform: translateY(-5px); /* حرکت به بالا هنگام hover */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
-}
-.class-item img {
+
+.swiper-container {
   width: 100%;
-  height: 150px;
-  object-fit: cover; /* تصویر به‌طور مناسب نمایش داده شود */
+  height: 100%;
+  padding: 10px 0;
 }
-.class-item h4 {
-  font-family: "Poppins", sans-serif;
+
+.class-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 0 10px;
+  height: 350px;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+}
+
+.class-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.class-info {
+  padding: 15px;
+}
+
+.class-title {
   font-size: 18px;
-  color: #333;
-  margin: 15px 15px 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-color);
 }
-.class-item span {
-  display: block;
+
+.class-instructor {
   font-size: 14px;
-  color: #777;
-  margin: 0 15px 15px;
+  color: #666;
+  margin-bottom: 10px;
 }
-.class-item button {
-  display: block;
-  width: calc(100% - 30px); /* عرض دکمه با احتساب padding */
-  margin: 0 15px 15px;
-  padding: 10px;
-  background-color: #007bff; /* رنگ آبی */
-  color: #fff; /* متن سفید */
+
+.class-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-/color);
+  margin-bottom: 10px;
+}
+
+.class-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #ffc107;
+  margin-left: 5px;
+}
+
+.rating-count {
+  font-size: 12px;
+  color: #666;
+}
+
+.enroll-btn {
+  background-color: var(--primary-color);
+  color: white;
   border: none;
-  border-radius: 5px; /* لبه‌های گرد */
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* ترنزیشن نرم */
-}
-.class-item button:hover {
-  background-color: #0056b3; /* تغییر رنگ هنگام hover */
+  width: 100%;
+  font-size: 14px;
+  transition: background-color 0.3s;
 }
 
-/* تنظیمات ریسپانسیو */
+
+
+
+
 @media (max-width: 768px) {
-  .suggestion h3 {
-    font-size: 20px;
+  .class-card {
+    height: 320px;
   }
-  .class-item h4 {
-    font-size: 16px;
-  }
-  .class-item span {
-    font-size: 13px;
-  }
-  .class-item button {
-    font-size: 13px;
+
+  .class-image {
+    height: 140px;
   }
 }
 
-@media (max-width: 480px) {
-  .suggestion h3 {
-    font-size: 18px;
-  }
-  .class-item h4 {
-    font-size: 15px;
-  }
-  .class-item span {
-    font-size: 12px;
-  }
-  .class-item button {
-    font-size: 12px;
-  }
-}
 /* seggestion section end */
 
 /* 
