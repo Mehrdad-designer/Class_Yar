@@ -13,6 +13,19 @@ margin-bottom: 10px;
 .footer-des{
   margin-top: 50px;
 }
+.near-connection-detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.near-connection-detail li{
+  margin: 5px;
+}
 
 ul.navigation {
   margin-left: 22rem;

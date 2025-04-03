@@ -190,22 +190,37 @@
 
 
 
-    <div class="container-info my-row bg-light">
+    <div class="container-info my-row bg-light ">
 
       <!-- info2-section -->
-      <div class="class-info2 my-col-xs-12 my-col-sm-12 my-col-lg-6">
-        <h4>نام کلاس : ویلن شیدا</h4>
+      <div class="class-info2 my-col-xs-12 my-col-sm-12 my-col-lg-6 ">
+        <div class="col-lg-12">
+          <div class="breadcrumb-content">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="amoozeshgah-detail.html" style="font-size:large;">اموزشگاه شیدا</a></li>
+                <li class="breadcrumb-item active " aria-current="page" style="font-size: large;">ویلن ایرانی</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
 
-        <ul class="info-institute">
-          <li><span class="info-group-span">هنری</span> / <span info-className-span>نام کلاس: ویلن</span></li>
-          <li><span>نام مدرس: محمدی</span></li>
-          <li><span style="font-weight: bolder;">توضیحات</span>:<p>Lorem, ipsum dolor sit amet consectetur adipisicing
+        <ul class="info-institute row">
+          <div class="first-info col-lg-5 py-2 shadow m-1">
+            <span class="info-group-span">هنری</span> / <span info-className-span>نام کلاس: ویلن</span>
+            <br>
+            <span>نام مدرس: محمدی</span>
+          </div>
+
+          <div class="second-info col-lg-6 py-2 shadow m-1">
+            <span style="font-weight: bolder;">توضیحات</span>:
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
               elit. Quisquam, ducimus excepturi. Optio, et, nihil facilis dolore repellendus consectetur minima tempora
               consequatur vitae assumenda esse quasi, ipsa sunt dicta illum sequi.
               <a href="#more-class-info">توضیحات تکمیلی</a>
             </p>
-          </li>
-          <hr>
+          </div>
+
 
           <li class="price-capacity">
             <div class="price">
@@ -219,14 +234,14 @@
 
         <!-- suggestion  -->
         <div class="recommended-classes">
-          <h2 class="section-title">کلاس‌های پیشنهادی برای شما</h2>
+          <h2 class="section-title text-center">کلاس‌های پیشنهادی برای شما</h2>
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <!-- کلاس 1 -->
               <div class="swiper-slide">
                 <div class="class-card">
                   <img src="assets/img/banner/banner_bg.jpg" alt="برنامه‌نویسی پیشرفته">
-                    <!-- class="class-image"> -->
+                  <!-- class="class-image"> -->
                   <div class="class-info">
                     <h3 class="class-title">برنامه‌نویسی پیشرفته پایتون</h3>
                     <p class="class-instructor">استاد: علی محمدی</p>
@@ -243,8 +258,7 @@
               <!-- کلاس 2 -->
               <div class="swiper-slide">
                 <div class="class-card">
-                  <img src="" alt="طراحی رابط کاربری"
-                    class="class-image">
+                  <img src="" alt="طراحی رابط کاربری" class="class-image">
                   <div class="class-info">
                     <h3 class="class-title">طراحی رابط کاربری (UI/UX)</h3>
                     <p class="class-instructor">استاد: زهرا حسینی</p>
@@ -278,8 +292,7 @@
               <!-- کلاس 4 -->
               <div class="swiper-slide">
                 <div class="class-card">
-                  <img src="" alt="دیجیتال مارکتینگ"
-                    class="class-image">
+                  <img src="" alt="دیجیتال مارکتینگ" class="class-image">
                   <div class="class-info">
                     <h3 class="class-title">دیجیتال مارکتینگ پیشرفته</h3>
                     <p class="class-instructor">استاد: سارا قاسمی</p>
@@ -313,8 +326,7 @@
               <!-- کلاس 6 -->
               <div class="swiper-slide">
                 <div class="class-card">
-                  <img src="" alt="زبان انگلیسی"
-                    class="class-image">
+                  <img src="" alt="زبان انگلیسی" class="class-image">
                   <div class="class-info">
                     <h3 class="class-title">مکالمه زبان انگلیسی پیشرفته</h3>
                     <p class="class-instructor">استاد: مریم احمدی</p>
@@ -403,16 +415,13 @@
 
       </div>
 
-
-
     </div>
 
 
     <!-- توضیحات تکمیلی کلاس -->
-    <hr>
-    <div class="more-class-info my-row ">
+    <div class="more-class-info my-row  my-4">
       <!-- بخش اول توضیحات تکمیلی -->
-      <div class="more-info1 more-info my-col-xs-12 my-col-sm-12 my-col-lg-6 bg-light">
+      <div class="more-info1 more-info my-col-xs-12 my-col-sm-12 my-col-lg-6 bg-light" id="more-class-info">
         <div class="list-container">
           <div class="title">اطلاعات تکمیلی</div>
           <div class="list-item">سطح کلاس: مقدماتی</div>

@@ -17,6 +17,10 @@ body {
   gap: 45px;
 }
 
+.class-info {
+  padding: 15px;
+}
+
 /* not active */
 .not-active {
   display: none;
@@ -91,73 +95,7 @@ body {
   margin: 6px;
 }
 
-/* info1 */
-
-/*  */
-
-/* بخش فضای مجازی */
-
-.social-box {
-  background-color: #fff; /* پس‌زمینه سفید */
-  padding: 16px;
-  border-radius: 15px; /* لبه‌های گرد */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
-  text-align: center;
-  width: 90%; /* عرض پیش‌فرض */
-  max-width: 300px; /* حداکثر عرض */
-  margin: 15px;
-  display: flex;
-  align-items: center; /* مرکز چین عمودی */
-  justify-content: center;
-}
-.social-box h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-.social-icons {
-  display: flex;
-  flex-direction: row; /* آیکون‌ها به صورت عمودی */
-  align-items: center; /* مرکز چین عمودی */
-  justify-content: center;
-  gap: 15px; /* فاصله بین آیکون‌ها */
-}
-.social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%; /* دایره‌ای شکل */
-  text-decoration: none;
-  color: #fff; /* رنگ متن سفید */
-  font-size: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ترنزیشن نرم */
-}
-.social-icons a:hover {
-  transform: translateY(-5px); /* حرکت به بالا هنگام hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* سایه بیشتر */
-}
-.social-icons .instagram {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5851db,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #fd1d1d
-  ); /* گرادینت اینستاگرام */
-}
-.social-icons .whatsapp {
-  background: linear-gradient(45deg, #25d366, #128c7e); /* گرادینت واتس‌اپ */
-}
-.social-icons .telegram {
-  background: linear-gradient(45deg, #0088cc, #00aced); /* گرادینت تلگرام */
-}
-
-/*  پایان بخش فضای مجازی */
+/* --------------------info-1 section start------------------ */
 
 .class-info1 ul {
   list-style: none;
@@ -188,7 +126,7 @@ body {
 .swiper-pagination {
   bottom: 0 !important;
 }
-/* اطلاعات جزی کلاس  */
+/*----------------- اطلاعات اصلی کلاس ------------------- */
 .info-institute {
   list-style: none;
   border-radius: 5px;
@@ -197,6 +135,8 @@ body {
   color: rgb(211, 206, 206);
   color: #000;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-institute li {
@@ -289,14 +229,15 @@ input#rate-5:checked ~ label {
   border-radius: 5px !important;
   margin-bottom: 30px;
 }
+/*-----------------   پایان اطلاعات اصلی کلاس ------------------- */
 
-/* seggestion section */
- .recommended-classes {
+/* ---------------suggestion section--------------------- */
+.recommended-classes {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
-.recommended-classes img{
+.recommended-classes img {
   height: 140px;
 }
 
@@ -331,10 +272,6 @@ input#rate-5:checked ~ label {
   width: 100%;
   height: 160px;
   object-fit: cover;
-}
-
-.class-info {
-  padding: 15px;
 }
 
 .class-title {
@@ -385,10 +322,6 @@ input#rate-5:checked ~ label {
   transition: background-color 0.3s;
 }
 
-
-
-
-
 @media (max-width: 768px) {
   .class-card {
     height: 320px;
@@ -399,10 +332,11 @@ input#rate-5:checked ~ label {
   }
 }
 
-/* seggestion section end */
+/*----------------- seggestion section end ---------------------*/
+/* --------------------info-1 section end------------------ */
 
-/* 
-info2 */
+/* -----------------------info-2 sections start---------------------- */
+
 .bolder-span {
   font-weight: bolder;
   margin: 5%;
@@ -463,7 +397,15 @@ info2 */
   margin-right: 20px;
 }
 
-/* <!-- توضیحات تکمیلی کلاس --> */
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ------------------------<!-- توضیحات تکمیلی کلاس --> ---------------------*/
 
 .more-info {
   box-shadow: 0px 0px 2px rgb(95, 94, 94);
@@ -554,7 +496,7 @@ info2 */
   }
 }
 
-/*  باکس مدیا تنظیمات ریسپانسیو */
+/* --------------------- باکس مدیا تنظیمات ریسپانسیو --------------*/
 @media (max-width: 768px) {
   .social-box {
     padding: 20px;
@@ -582,3 +524,5 @@ info2 */
     font-size: 18px;
   }
 }
+
+/* -----------------------info-2 sections end---------------------- */

@@ -5,7 +5,201 @@ body {
   /* متن از راست به چپ */
   color: #333;
 }
+/* -----------------top-info-amizzeshgah start--------------  */
 
+/* .specs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+
+
+.tab-btn {
+  padding: 15px 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  color: #2196f3;
+}
+
+.tab-btn.active:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #2196f3;
+  border-radius: 3px 3px 0 0;
+}
+
+.tab-btn:hover {
+  color: #2196f3;
+  background: rgba(33, 150, 243, 0.05);
+}
+
+        /* Reset و فونت‌ها */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+.specs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  max-height: 420px;
+}
+
+/* تب‌ها */
+.specs-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+  padding: 15px 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  color: #2196f3;
+}
+
+.tab-btn.active:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #2196f3;
+  border-radius: 3px 3px 0 0;
+}
+
+.tab-btn:hover {
+  color: #2196f3;
+  background: rgba(33, 150, 243, 0.05);
+}
+
+/* محتوای تب‌ها */
+.tab-content {
+  display: none;
+  padding: 25px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h3 {
+  margin-bottom: 20px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tab-content h3 i {
+  color: #2196f3;
+}
+
+/* بخش مشخصات فنی */
+.specs-table {
+  margin: 25px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  height: 380px !important;
+}
+
+.spec-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  font-size: 17px;
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+}
+
+.spec-row.highlighted {
+  background: #f9f9f9;
+}
+
+.spec-name {
+  width: 40%;
+  padding: 15px;
+  font-weight: 600;
+  color: #555;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.spec-value {
+  width: 60%;
+  padding: 15px;
+  color: #333;
+}
+
+.color-dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 8px;
+  border: 1px solid #ddd;
+}
+
+/* حالت واکنش‌گرا */
+@media (max-width: 768px) {
+  .specs-tabs {
+    flex-direction: column;
+  }
+
+  .spec-row {
+    flex-direction: column;
+  }
+
+  .spec-name,
+  .spec-value {
+    width: 100%;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* -----------------top-info-amizzeshgah end--------------  */
 .amoozeshgah-info-container {
   max-width: 1800px;
   margin: 50px auto;
