@@ -985,12 +985,12 @@ $(document).ready(function () {
 	var slider = document.getElementById('slider');
 
 	noUiSlider.create(slider, {
-		start: [0, 200000],
+		start: [0, 2359],
 		connect: true,
 		direction: 'rtl',
 		format: wNumb({
 			decimals: 0,
-			thousand: ','
+			thousand: ':'
 		}),
 		range: {
 			'min': [0],
