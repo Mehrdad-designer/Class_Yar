@@ -982,28 +982,24 @@
 
 
 $(document).ready(function () {
-	var slider = document.getElementById('slider');
-
-	noUiSlider.create(slider, {
-		start: [0, 2359],
+	var range = document.getElementById('slider');
+	noUiSlider.create(range, {
+		start: [0, 20000],
 		connect: true,
 		direction: 'rtl',
 		format: wNumb({
 			decimals: 0,
-			thousand: ':'
+			thousand: ','
 		}),
 		range: {
 			'min': [0],
-			'10$': [500, 500],
+			'10%': [500, 500],
 			'50%': [40000, 1000],
 			'max': [100000]
 		}
-
 	});
-
-	var sliderValues = document.getElementById('slider-value');
-
-	slider.noUiSlider.on('update', function (value) {
-		sliderValues.innerHTML = value.join(' - ')
-	})
-})
+	var sliderValue = document.getElementById('slider-value');
+	range.noUiSlider.on('update', function (values) {
+		sliderValue.innerHTML = values.join(' - ');
+	});
+});

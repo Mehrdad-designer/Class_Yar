@@ -384,6 +384,79 @@ body {
   font-size: 25px !important;
 }
 
+.stars {
+  color: #ffc107;
+  margin-left: 5px;
+}
+
+.rating-count {
+  font-size: 12px;
+  color: #666;
+}
+.star-wiget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.star-wiget label {
+  font-size: 32px;
+}
+.star-wiget input:not(:checked) ~ label:hover,
+.star-wiget input:not(:checked) ~ label:hover ~ label {
+  color: #007bff;
+}
+
+input:checked ~ label {
+  color: #0056b3;
+}
+
+input#rate-5:checked ~ label {
+  color: #0056b3;
+  text-shadow: 0px 0px 20px #952;
+}
+
+#rate-1:checked ~ form header :before {
+  content: "i hate it";
+}
+#rate-2:checked ~ form header :before {
+  content: " like it";
+}
+#rate-3:checked ~ form header :before {
+  content: "idont like";
+}
+#rate-4:checked ~ form header :before {
+  content: "its good ";
+}
+#rate-5:checked ~ form header :before {
+  content: "i just love lt";
+}
+.star-wiget input {
+  display: none;
+}
+
+.btN button {
+  margin: 0;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0px 0px 5px black;
+  color: white !important;
+  background-color: #0056b3;
+  outline: none;
+  border-radius: 5px !important;
+  margin-bottom: 30px;
+}
+/* -----------------------------header end----------------------------- */
+
 /* --------------------------filter-start--------------------- */
 .main-content {
   width: 100%;
