@@ -2,18 +2,19 @@
 //swiper index
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
+    slidesPerView: 1.25,
     freeMode: true,
     breakpoints: {
         // when window width is <= 999px
         576: {
-            slidesPerView: 2,
-            spaceBetweenSlides: 30,
+            slidesPerView: 2.25,
+            // spaceBetweenSlides: 30,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 3.25,
         },
         992: {
-            slidesPerView:4,
+            slidesPerView:4.25,
         }
     },
 });

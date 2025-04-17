@@ -17,3 +17,8 @@ margin-bottom: 10px;
 ul.navigation {
   margin-left: 22rem;
 }
+@media screen and (max-width: 767.98px) {
+    .breadcrumb-area.breadcrumb-bg{
+        background-position:-160px;
+    }
+}
