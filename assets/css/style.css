@@ -8342,7 +8342,7 @@ label {
 	background-position: center;
 }
 .footer-top-two {
-	padding: 100px 0 40px;
+	padding: 0px 0 40px;
 }
 .footer-top-two .fw-logo {
 	margin-bottom: 30px;
@@ -8402,7 +8402,6 @@ label {
 }
 .footer-bottom-two {
 	border-top: 1px solid #EAEAEA;
-	padding: 27px 0;
 }
 .copyright-text-two p {
 	margin-bottom: 0;
@@ -11724,4 +11723,86 @@ body{
 
 .logo-side img{
 	width: 200px !important;
+}
+/* e-namad */
+.right-sider{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	
+}
+.e-namad{
+	display: flex;
+	aspect-ratio: 1/1;
+	max-width: 100px;
+	align-items: center;
+}
+
+.copyright-text-two{
+	align-items: center;
+	justify-content: space-around;
+}
+/* footer about */
+.footer-about h4{
+	color: var(--tg-white);
+}
+.footer-area-two.footer-bg-two .footer-about h4{
+	color: #051433;
+}
+
+.footer-about p{
+	color: var(--tg-gray-three);
+}
+.hidden-text {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.visible-text {
+    opacity: 1;
+    max-height: 1000px;
+}
+.faded-text {
+    opacity: 0.5;
+}
+.main-text {
+    opacity: 1;
+    color: #000;
+	position: relative;
+}
+.main-text.not-active::before{
+	background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, #051433);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.main-text.not-active.light-bar::before{
+	background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0%, #fff);
+}
+.showMoreBtn {
+    display: inline-block;
+    background-color: transparent;
+    color: #0066cc;
+    padding: 8px 0px 8px 16px;
+    border: none;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.showMoreBtn:hover {
+    color: #004499;
+}
+
+.showMoreBtn::after {
+    content: " ←";
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.showMoreBtn.expanded::after {
+    transform: rotate(-180deg);
 }

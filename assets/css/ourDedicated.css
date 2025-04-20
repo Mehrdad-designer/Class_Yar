@@ -213,10 +213,10 @@ article > * {
   color: #64748b;
   align-items: center;
 }
-.class-rate-teacher span:last-child {
+.class-rate-teacher span:last-child, .institute-new .send .likes span ,.classes-new .send .likes{
   color: #f59e0b;
 }
-.class-rate-teacher span img {
+.class-rate-teacher span img ,.classes-new .discreption span img {
   border-radius: 50%;
   width: 15%;
 }
