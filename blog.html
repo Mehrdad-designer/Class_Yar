@@ -29,6 +29,10 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/respnsve1.css">
     <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+
 </head>
 
 <body dir="rtl">
@@ -186,18 +190,23 @@
     <main class="fix">
 
         <!-- breadcrumb-area -->
-        <section class="breadcrumb-area breadcrumb-bg" data-background="assets/img/bg/breadcrumb_bg.jpg">
+        <section class="breadcrumb-area breadcrumb-bg" data-background="assets/img/brand/bg-blog.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="breadcrumb-content">
-                            <h2 class="title">آخرین مطالب ما</h2>
+                            <h2 class="title pt-3">بلاگ کلاس یار-مسیر یادگیری شما</h2>
+                            <p class="text-white pt-5">
+                                در این بخش مقالات آموزشی، راهنمایی برای انتخاب کلاس مناسب و نکات مفید برای رشد مهارت‌ها
+                                را خواهید یافت
+                            </p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">خانه</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">وبلاگ</li>
                                 </ol>
                             </nav>
+
                         </div>
                     </div>
                 </div>
@@ -210,7 +219,7 @@
         <!-- breadcrumb-area-end -->
 
         <!-- blog-area -->
-        <section class="blog-area pt-120 pb-120">
+        <section class="blog-area pt-120 ">
             <div class="container">
                 <div class="inner-blog-wrap">
                     <div class="row justify-content-center">
@@ -384,7 +393,7 @@
                                         <button type="submit"><i class="flaticon-search"></i></button>
                                     </form>
                                 </div>
-                                <!-- <div class="blog-widget">
+                                <div class="blog-widget">
                                     <h4 class="bw-title">دسته بندی</h4>
                                     <div class="bs-cat-list">
                                         <ul class="list-wrap">
@@ -396,7 +405,7 @@
                                             <li><a href="#">فروشگاه <span>(12)</span></a></li>
                                         </ul>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="blog-widget">
                                     <h4 class="bw-title">برترین مقالات</h4>
                                     <div class="rc-post-wrap">
@@ -466,6 +475,80 @@
         </section>
         <!-- blog-area-end -->
 
+
+        <!-- suggest start  -->
+        <div class="suggestion  mt-5">
+            <h2 class="section-title container">مقالات پیشنهادی</h2>
+
+            <div class="articles-slider container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/blog/h3_blog_img05.jpg" alt="مقاله 1" class="article-image">
+                        <div class="article-content">
+                            <h3 class="article-title">10 نکته برای یادگیری سریع برنامه نویسی</h3>
+                            <p class="article-excerpt">در این مقاله به بررسی روش‌های موثر برای یادگیری سریع‌تر
+                                برنامه‌نویسی
+                                می‌پردازیم و تکنیک‌هایی را معرفی می‌کنیم که به شما کمک می‌کنند...</p>
+                            <a href="#" class="read-more">مطالعه مقاله</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/blog/h3_blog_img05.jpg" alt="مقاله 2" class="article-image">
+                        <div class="article-content">
+                            <h3 class="article-title">معرفی بهترین فریمورک‌های前端 در سال 2023</h3>
+                            <p class="article-excerpt">در این مقاله به مقایسه و بررسی محبوب‌ترین فریمورک‌های توسعه
+                                front-end
+                                می‌پردازیم و مزایا و معایب هر کدام را بررسی می‌کنیم...</p>
+                            <a href="#" class="read-more">مطالعه مقاله</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/blog/h3_blog_img05.jpg" alt="مقاله 3" class="article-image">
+                        <div class="article-content">
+                            <h3 class="article-title">راهنمای کامل SEO برای توسعه‌دهندگان</h3>
+                            <p class="article-excerpt">هر آنچه که یک توسعه‌دهنده وب باید درباره سئو بداند. از تکنیک‌های
+                                پایه
+                                تا پیشرفته برای بهینه‌سازی سایت‌ها...</p>
+                            <a href="#" class="read-more">مطالعه مقاله</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/blog/h3_blog_img05.jpg" alt="مقاله 4" class="article-image">
+                        <div class="article-content">
+                            <h3 class="article-title">آشنایی با مفاهیم پایه‌ای هوش مصنوعی</h3>
+                            <p class="article-excerpt">هوش مصنوعی چگونه کار می‌کند؟ در این مقاله به بررسی مفاهیم پایه‌ای
+                                و
+                                کاربردهای هوش مصنوعی در زندگی روزمره می‌پردازیم...</p>
+                            <a href="#" class="read-more">مطالعه مقاله</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/blog/h3_blog_img05.jpg" alt="مقاله 5" class="article-image">
+                        <div class="article-content">
+                            <h3 class="article-title">بهینه‌سازی عملکرد وب اپلیکیشن‌ها</h3>
+                            <p class="article-excerpt">تکنیک‌های پیشرفته برای بهبود سرعت و عملکرد وب اپلیکیشن‌ها. از
+                                lazy
+                                loading تا بهینه‌سازی تصاویر و کد...</p>
+                            <a href="#" class="read-more">مطالعه مقاله</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+        <!-- suggest end -->
 
     </main>
     <!-- main-area-end -->
@@ -553,7 +636,8 @@
                     <div class="my-row">
                         <div class="footer-about">
                             <h4>کلاس یار؛ اولین مرجع کلاس ها و آموزشگاه های واقع در نجف آباد</h4>
-                            <p class="main-text not-active">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            <p class="main-text not-active">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با استفاده از طراحان گرافیک
                                 است.
                                 چاپگرها و متون بلکه روزنامه
                                 و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
@@ -595,7 +679,11 @@
                         <div class="my-col-md-6">
                             <div class="right-sider">
                                 <div class="e-namad">
-                                    <a href=""><img src="assets/img/icons/e-namad.jpg" alt="" class="image-fluid"></a>
+                                    <a referrerpolicy='origin' target='_blank'
+                                        href='https://trustseal.enamad.ir/?id=603082&Code=eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD'><img
+                                            referrerpolicy='origin'
+                                            src='https://trustseal.enamad.ir/logo.aspx?id=603082&Code=eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD'
+                                            alt='' style='cursor:pointer' code='eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD'></a>
                                 </div>
                             </div>
                         </div>
@@ -607,7 +695,40 @@
         </div>
     </footer>
     <!-- footer-area-end -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+                }
+            });
+        });
+    </script>
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>

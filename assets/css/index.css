@@ -10,6 +10,10 @@
   color: black;
 }
 
+.footer-top-two{
+  padding-top: 50px;
+}
+
 .banner-img text-center img {
   animation: animate2;
 }
