@@ -1,5 +1,7 @@
 /* section of cart categories */
 
+
+
 .categories-item {
   width: 312px;
   cursor: pointer;
@@ -8,10 +10,6 @@
 .categories-item .services-item-two .services-thumb-two {
   height: 450px;
   color: black;
-}
-
-.footer-top-two{
-  padding-top: 50px;
 }
 
 .banner-img text-center img {
@@ -376,7 +374,8 @@ body {
 }
 
 .institute .send span,
-.institute-new .send span ,.classes .send span,
+.institute-new .send span,
+.classes .send span,
 .classes-new .send span {
   margin: 0px;
   padding: 0px;
@@ -386,8 +385,9 @@ body {
 }
 
 .institute .send .likes,
-.institute-new .send .likes ,.classes .send .likes,
-.classes-new .send .likes  {
+.institute-new .send .likes,
+.classes .send .likes,
+.classes-new .send .likes {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 5px;
@@ -431,7 +431,6 @@ body {
   font-size: small;
 }
 
-
 .likes {
   flex-direction: row !important;
 }
@@ -449,8 +448,6 @@ body {
 .classes-new .discreption {
   margin-top: 20px;
 }
-
-
 
 /* popular institute and newest classes */
 
@@ -515,17 +512,17 @@ body {
   flex-direction: column;
 }
 
-#key-item h4{
+#key-item h4 {
   margin-top: 15px;
   border-bottom: 1px dashed blue;
 }
 
-#key-item .contentt{
+#key-item .contentt {
   display: flex;
   flex-direction: row !important;
 }
 
-#key-item .contentt .key-items{
+#key-item .contentt .key-items {
   display: flex;
   margin-left: 50px;
   align-items: center;
@@ -533,52 +530,63 @@ body {
   margin: 25px;
   padding: 25px;
   border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   border: 1px solid rgb(124, 16, 16) !important;
   flex-direction: column !important;
 }
 
-
-#key-item .key-items img{
+#key-item .key-items img {
   width: 150px;
   height: 150px;
 }
 
-
-#key-item .key-items span{
+#key-item .key-items span {
   margin-top: 5px;
   border-bottom: 1px solid blue;
 }
 
-#key-item .key-items span:hover{
+#key-item .key-items span:hover {
   font-weight: bolder;
   transition: all 0.5ms;
   border-bottom: 1px solid blue;
 }
 /* seo section with word keys end */
-.contentt{
-    justify-content: center;
-    gap: 20px;
+.contentt {
+  justify-content: center;
+  gap: 20px;
 }
-.key-items{
-    text-align: center;
+.key-items {
+  text-align: center;
 }
-.key-items img{
-    max-width: 40%;
+.key-items img {
+  max-width: 40%;
 }
-.amoozeshgah-info-container .swiper-slide{
+.amoozeshgah-info-container .swiper-slide {
   padding: 0;
 }
+
+/* -------------------------footer start------------------------  */
+.footer-top-two {
+  padding-top: 50px;
+}
+
+.footer-mid{
+  width: 80%;
+  padding: 20px;
+  margin-top: 100px !important;
+  margin: 0px auto !important;
+}
+/* -------------------------footer end------------------------  */
 
 @media screen and (max-width: 767.98px) {
   .selector {
     width: 90% !important;
   }
-  .contentt{
+  .contentt {
     flex-direction: column;
     align-items: center;
   }
-  .key-items img{
+  .key-items img {
     max-width: 90%;
   }
 }
@@ -590,7 +598,7 @@ body {
   .fw-logo {
     text-align: center;
   }
-  .key-items img{
+  .key-items img {
     max-width: 70%;
   }
 }
