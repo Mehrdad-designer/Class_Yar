@@ -277,8 +277,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: 13px;
-  padding: 5px;
+  
 }
 
 .swiper-slide img {
@@ -455,10 +454,6 @@ body {
   width: 100%;
 }
 
-.respon-style .swiper-slide {
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
 
 /* selector new section */
 
@@ -576,6 +571,11 @@ body {
   margin-top: 100px !important;
   margin: 0px auto !important;
 }
+
+
+
+
+
 /* -------------------------footer end------------------------  */
 
 @media screen and (max-width: 767.98px) {

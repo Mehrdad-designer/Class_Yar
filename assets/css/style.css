@@ -52,7 +52,7 @@
   background: rgb(4, 0, 255) !important;
 }
 .bg-main {
-  background: rgb(4, 0, 255) !important;
+  background: rgb(61, 58, 211) !important;
 }
 /* --------------------------------defulte classes end------------------------ */
 
@@ -11838,3 +11838,177 @@ body {
 .showMoreBtn.expanded::after {
   transform: rotate(-180deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------namad start---------- */
+.nemads{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nemad-item{
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
+/* ---------namad end---------- */
+
+
+/* ----------------------------------cards start------------------------ */
+.academy-card {
+  margin-top:20px ;
+  width: 380px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.academy-card:hover {
+  transform: translateY(-10px);
+}
+
+.academy-header {
+  position: relative;
+  height: 200px;
+  /* background:#2574fcb2; */
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.academy-name {
+  font-size: 17px;
+  background: white;
+  border-radius: 10px 0px 0px 0px;
+  padding: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  position: absolute;
+  color: rgb(41, 39, 39);
+  bottom: -11px;
+  right: 0px;
+}
+
+.academy-logo {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.academy-content {
+  padding: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  margin-left: 10px;
+  color: #6a11cb;
+  font-size: 20px;
+  min-width: 25px;
+}
+
+.info-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6a11cb;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+.visit-btn {
+  display: block;
+  width: 100%;
+  background: #2575fc;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.visit-btn:hover {
+  opacity: 0.9;
+}
+
+.academy-header {
+  position: relative;
+}
+
+.category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #2575fc;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 0px 0px 0px 10px;
+  z-index: 12;
+}
+
+.footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.footer-card span {
+  color: gold;
+}
+
+.footer-card p {
+  color: #6b11cbb6;
+}
+
+/* ----------------------------------cards end------------------------ */
