@@ -1,13 +1,4 @@
-.title-comment {
-  width: 600px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 255, 0.664);
-  border-radius: 15px;
-}
+
 /* main */
 body {
   background-color: #fefefe;
