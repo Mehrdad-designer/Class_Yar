@@ -4,13 +4,20 @@ const classes = document.querySelector(" .selector button:nth-child(2)");
 
 const instituteSection = document.querySelector(" .institute-container");
 const classesSection = document.querySelector(".class-container");
+//filter selector section
+const filter_institutes=document.querySelector('#filter-box1')
+const filter_classes=document.querySelector('#filter-box2')
 
+
+if (filter_classes != undefined) {
+    filter_classes.style.display = "none";
+}
 if (classesSection != undefined) {
     classesSection.style.display = "none";
 }
 
 institute.className = "acctive";
-
+//selector section
 classes.addEventListener("click", (e) => {
     classes.className = "acctive";
 
@@ -39,65 +46,22 @@ institute.addEventListener("click", (e) => {
     }
 });
 
-
-
-
-// filter section 
-const main_filter=document.querySelector('.contentt');
-
-const contetnBtn = document.querySelector('.filter-list-content');
-const timeBtn = document.querySelector('.filter-list-time');
-const dayBtn = document.querySelector('.filter-list-day');
-
-const containerContent = document.querySelector('.content-filter');
-const timeContent = document.querySelector('.time-filter');
-const dayContent = document.querySelector('.day-filter');
-
-// const closeBtn = document.querySelector('.top-section i');
-// const call_filterBtn = document.querySelector('.call-filter ');
-
-// closeBtn.addEventListener('click',()=>{
-//     main_filter.style.display="none";
-
-//     call_filterBtn.style.display='block'
-// })
-// call_filterBtn.addEventListener('click',()=>{
-//     main_filter.style.display="block";
-
-//     call_filterBtn.style.display='none'
-// })
-
-
-
-
-contetnBtn.addEventListener('click', () => {
-    contetnBtn.classList.add('acctive');
-    timeBtn.classList.remove('acctive');
-    dayBtn.classList.remove('acctive');
-
-    containerContent.style.display = "block"
-    timeContent.style.display = "none"
-    dayContent.style.display = "none"
+//filter events
+classes.addEventListener('click',(e)=>{
+    if (filter_classes != undefined) {
+        filter_classes.style.display = "block";
+    }
+    if (filter_institutes != undefined) {
+        filter_institutes.style.display = "none";
+    }
+})
+institute.addEventListener('click',(e)=>{
+    if (filter_classes != undefined) {
+        filter_classes.style.display = "none";
+    }
+    if (filter_institutes != undefined) {
+        filter_institutes.style.display = "block";
+    }
 })
 
 
-timeBtn.addEventListener('click', () => {
-    contetnBtn.classList.remove('acctive');
-    timeBtn.classList.add('acctive');
-    dayBtn.classList.remove('acctive');
-
-    containerContent.style.display = "none"
-    timeContent.style.display = "block"
-    dayContent.style.display = "none"
-})
-
-
-dayBtn.addEventListener('click', () => {
-    contetnBtn.classList.remove('acctive');
-    timeBtn.classList.remove('acctive');
-    dayBtn.classList.add('acctive');
-
-    containerContent.style.display = "none"
-    timeContent.style.display = "none"
-    dayContent.style.display = "block"
-})

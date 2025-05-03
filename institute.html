@@ -318,11 +318,149 @@
 
             <div class="my-col-xs-12 my-col-lg-3 mx-5 my-4" style="width: 300px;">
 
-                <div class="filter-box">
+                <div class="filter-box" id="filter-box1">
                     <form action="#">
                         <div class="col-12">
                             <div class="section-title">
                                 <h2>فیلتر محصولات</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 mb-3">
+                            <div class="widget-search">
+                                <input type="text" name="5" placeholder="نام کلاس یا اموزشگاه خود را وارد کنید">
+                                <button class="btn-search-widget">
+                                    <img src="assets/img/icons/search.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 filter-product">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+
+                                    <div class="card-header" id="headingOne">
+                                        <h2>
+                                            <button class="btn btn-block text-right collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                دسته بندی
+                                                <i class="fas fa-arrow-down"></i>
+
+                                            </button>
+                                        </h2>
+                                    </div>
+
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label for="customCheck1" class="custom-control-label">همه</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label for="customCheck2" class="custom-control-label">هنری</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label for="customCheck2" class="custom-control-label">ورزشی</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label for="customCheck2" class="custom-control-label">فناوری</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label for="customCheck2" class="custom-control-label">علمی</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+
+                                    <div class="card-header" id="headingTwo">
+                                        <h2>
+                                            <button class="btn btn-block text-right collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                زمان برگزاری
+                                                <i class="fas fa-arrow-down"></i>
+
+                                            </button>
+                                        </h2>
+                                    </div>
+
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label for="customCheck3" class="custom-control-label">همه وقت</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label for="customCheck4" class="custom-control-label">صبح</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label for="customCheck4" class="custom-control-label">ظهر </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label for="customCheck4" class="custom-control-label">بعد از
+                                                    ظهر</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label for="customCheck4" class="custom-control-label">عصر</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label for="customCheck4" class="custom-control-label">شب</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 md-3">
+                            <div class="section-title">
+                                <h2>فیلتر بر اساس زمان</h2>
+                            </div>
+
+                            <div class="my-2">
+                                <div id="slider"></div>
+                            </div>
+
+                            <div class="text-center pt-2 my-2">
+                                <span>قیمت:</span>
+                                <span id="slider-value"></span>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <button class="btn btn-info btn-block" type="submit">فیلتر</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-box" id="filter-box2">
+                    <form action="#">
+                        <div class="col-12">
+                            <div class="section-title">
+                                <h2>2فیلتر محصولات</h2>
                             </div>
                         </div>
 
