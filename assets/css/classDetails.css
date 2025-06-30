@@ -1,0 +1,523 @@
+
+/* main */
+body {
+  background-color: #fefefe;
+}
+.container-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.class-info1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.class-info {
+  padding: 15px;
+}
+
+/* not active */
+.not-active {
+  display: none;
+}
+
+/* active */
+.active {
+  display: block;
+}
+/* slid */
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  background: #fff;
+}
+
+/* institute-title */
+
+.institute-title {
+  margin: 20px;
+  padding: 15px;
+  background: rgba(4, 0, 255, 0.89);
+  border-radius: 10px;
+}
+.institute-title * {
+  color: #ffff;
+}
+
+.institute-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  display: inline;
+}
+
+.institute-title h3 {
+  display: inline;
+}
+
+.institute-title span {
+  margin: 6px;
+}
+
+/* --------------------info-1 section start------------------ */
+
+.class-info1 ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+.class-info1 ul li {
+  display: inline !important;
+  margin: 6px;
+  text-align: center;
+}
+.class-info1 ul li a {
+  color: #000;
+}
+
+.class-info1 ul li i {
+  color: rgb(4, 0, 255);
+}
+
+.slider-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
+/*----------------- اطلاعات اصلی کلاس ------------------- */
+.info-institute {
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(211, 206, 206);
+  color: #000;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-institute li {
+  margin: 5px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+.info-group-span {
+  color: gray;
+}
+
+.info-className-span {
+  color: black;
+}
+
+.price-capacity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.price-capacity .price,
+.price-capacity .capacity {
+  background: rgb(4, 0, 255);
+  margin-right: 9px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.star-wiget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.star-wiget label {
+  font-size: 32px;
+}
+.star-wiget input:not(:checked) ~ label:hover,
+.star-wiget input:not(:checked) ~ label:hover ~ label {
+  color: #007bff;
+}
+
+input:checked ~ label {
+  color: #0056b3;
+}
+
+input#rate-5:checked ~ label {
+  color: #0056b3;
+  text-shadow: 0px 0px 20px #952;
+}
+
+#rate-1:checked ~ form header :before {
+  content: "i hate it";
+}
+#rate-2:checked ~ form header :before {
+  content: " like it";
+}
+#rate-3:checked ~ form header :before {
+  content: "idont like";
+}
+#rate-4:checked ~ form header :before {
+  content: "its good ";
+}
+#rate-5:checked ~ form header :before {
+  content: "i just love lt";
+}
+.star-wiget input {
+  display: none;
+}
+
+.btN button {
+  margin: 0;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0px 0px 5px black;
+  color: white !important;
+  background-color: #0056b3;
+  outline: none;
+  border-radius: 5px !important;
+  margin-bottom: 30px;
+}
+/*-----------------   پایان اطلاعات اصلی کلاس ------------------- */
+
+/* ---------------suggestion section--------------------- */
+.recommended-classes {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.recommended-classes img {
+  height: 140px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.class-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 350px;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+}
+
+.class-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.class-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.class-instructor {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.class-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-/color);
+  margin-bottom: 10px;
+}
+
+.class-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #ffc107;
+  margin-left: 5px;
+}
+
+.rating-count {
+  font-size: 12px;
+  color: #666;
+}
+
+.enroll-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .class-card {
+    height: 320px;
+  }
+
+  .class-image {
+    height: 140px;
+  }
+}
+
+/*----------------- seggestion section end ---------------------*/
+/* --------------------info-1 section end------------------ */
+
+/* -----------------------info-2 sections start---------------------- */
+
+.bolder-span {
+  font-weight: bolder;
+  margin: 5%;
+}
+.class-info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.class-info2 h4,
+.class-info2 b {
+  margin: 5px;
+}
+
+.class-info2 .box ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.box ul {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  box-shadow: 0px 0px 2px rgb(95, 94, 94) !important;
+  background: #fff !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.class-info2 .time-box p {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.623);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.class-info2 .rank i {
+  color: white;
+  margin: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.class-info2 .rank i:hover {
+  color: #000;
+}
+
+.class-info2 ul b,
+.class-info2 ul p {
+  display: inline !important;
+  margin-right: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------<!-- توضیحات تکمیلی کلاس --> ---------------------*/
+
+.more-info {
+  box-shadow: 0px 0px 2px rgb(95, 94, 94);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+
+
+.creator {
+  display: flex;
+  flex-direction: row;
+}
+.creator img {
+  width: 40px;
+}
+
+.list-container {
+  width: 80%; /* عرض پیش‌فرض برای دسکتاپ */
+  margin: 20px auto;
+  border: 1px solid #e0e0e0; /* حاشیه ملایم */
+  border-collapse: collapse; /* یکپارچه کردن border */
+  background-color: #fff; /* پس‌زمینه سفید */
+  border-radius: 10px; /* لبه‌های گرد */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+}
+.list-item {
+  padding: 15px;
+  text-align: right;
+  border-bottom: 1px solid #e0e0e0; /* خط جداکننده ملایم */
+}
+.list-item:nth-child(odd) {
+  background-color: #ffffff; /* سفید */
+}
+.list-item:nth-child(even) {
+  background-color: #f8f9fa; /* خاکستری بسیار روشن */
+}
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 2px solid #007bff; /* خط آبی زیر عنوان */
+  font-family: "Poppins", sans-serif; /* فونت انگلیسی برای عنوان */
+  color: #007bff; /* رنگ آبی */
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .list-container,
+  .comments-section {
+    width: 95%; /* عرض بیشتر برای صفحه‌های کوچک‌تر */
+  }
+  .title {
+    font-size: 16px; /* کاهش اندازه فونت عنوان برای موبایل */
+  }
+  .list-item {
+    font-size: 14px; /* کاهش اندازه فونت آیتم‌ها برای موبایل */
+  }
+}
+
+@media (max-width: 480px) {
+  .list-container,
+  .comments-section {
+    width: 100%; /* عرض کامل برای صفحه‌های خیلی کوچک */
+  }
+  .title {
+    font-size: 14px; /* کاهش بیشتر اندازه فونت عنوان */
+  }
+  .list-item {
+    font-size: 12px; /* کاهش بیشتر اندازه فونت آیتم‌ها */
+    padding: 10px; /* کاهش padding برای صرفه‌جویی در فضا */
+  }
+  .comments-section h2 {
+    font-size: 20px; /* کاهش اندازه عنوان برای موبایل */
+  }
+  .comment-card {
+    padding: 10px;
+  }
+  .comment-header h3 {
+    font-size: 16px;
+  }
+  .comment-body {
+    font-size: 13px;
+  }
+}
+
+/* --------------------- باکس مدیا تنظیمات ریسپانسیو --------------*/
+@media (max-width: 768px) {
+  .social-box {
+    padding: 20px;
+  }
+  .social-box h2 {
+    font-size: 20px;
+  }
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-box {
+    padding: 15px;
+  }
+  .social-box h2 {
+    font-size: 18px;
+  }
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* -----------------------info-2 sections end---------------------- */
