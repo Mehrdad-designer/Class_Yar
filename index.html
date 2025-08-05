@@ -1,829 +1,1541 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="fa">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>کلاس یار</title>
-    <meta name="description" content="Gerow - Business Consulting HTML Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Gerow - Business Consulting HTML Template"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/classYar-logo1.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/classYar-logo1.png"
+    />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/odometer.css">
-    <link rel="stylesheet" href="assets/css/jarallax.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/rtl.css">
-    <link rel="stylesheet" href="assets/css/font/yekan.css">
-    <link rel="stylesheet" href="assets/css/font/aviny.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/respnsve1.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/ourDedicated.css">
-
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <link rel="stylesheet" href="assets/css/jarallax.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css" />
+    <link rel="stylesheet" href="assets/css/font/yekan.css" />
+    <link rel="stylesheet" href="assets/css/font/aviny.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/respnsve1.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/ourDedicated.css" />
 
     <style>
-        .text-container {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 800px;
-            margin: 20px auto;
-            line-height: 1.6;
-            color: #333;
-        }
+      .blue-svg-bg {
+        background-image: url("svg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .school-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
 
-        .short-text {
-            margin-bottom: 10px;
-        }
+        justify-content: center;
+      }
 
-        .full-text {
-            display: none;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            margin-top: 10px;
-            border-right: 4px solid #4CAF50;
-        }
+      .school-box {
+        width: 400px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+      }
 
-        .toggle-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
+      .school-box:hover {
+        transform: translateY(-5px);
+      }
 
-        .toggle-btn:hover {
-            background-color: #45a049;
-        }
+      .school-box img {
+        height: 180px;
+        object-fit: cover;
+      }
 
-        .toggle-btn:focus {
-            outline: none;
-        }
+      .school-box h3 {
+        margin: 15px 0;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .swiper-slide {
+        background: none;
+      }
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide img {
+        display: block;
+        object-fit: cover;
+      }
+
+      .text-container {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px auto;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .short-text {
+        margin-bottom: 10px;
+      }
+
+      .full-text {
+        display: none;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        border-right: 4px solid #4caf50;
+      }
+
+      .toggle-btn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+
+      .toggle-btn:hover {
+        background-color: #45a049;
+      }
+
+      .toggle-btn:focus {
+        outline: none;
+      }
     </style>
-</head>
+  </head>
 
-<body dir="rtl">
-
-
+  <body dir="rtl">
     <!-- preloader -->
     <div id="preloader">
-        <div id="loading-center">
-            <div class="loader">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
-            </div>
+      <div id="loading-center">
+        <div class="loader">
+          <div class="loader-outter"></div>
+          <div class="loader-inner"></div>
         </div>
+      </div>
     </div>
     <!-- preloader-end -->
 
     <!-- Scroll-top -->
     <button class="scroll-top scroll-to-target" data-target="html">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </button>
     <!-- Scroll-top-end-->
 
     <!-- header-area -->
     <header id="sticky-header" class="transparent-header header-style-two">
-        <div class="container custom-container">
-            <div class="heder-top-wrap">
+      <div class="container custom-container">
+        <div class="heder-top-wrap"></div>
+        <div class="menu-area">
+          <div class="row">
+            <div class="col-12">
+              <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+              <div class="menu-wrap">
+                <nav class="menu-nav">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="assets/img/logo/classYar-logo1.png" alt="Logo"
+                    /></a>
+                  </div>
+                  <div class="navbar-wrap main-menu d-none d-lg-flex">
+                    <ul class="navigation">
+                      <li class="active"><a href="#">خانه</a></li>
+                      <li><a href="about.html">درباره ما</a></li>
+                      <li><a href="contact.html"> تماس با ما</a></li>
+                      <li><a href="blog.html">وبلاگ</a></li>
 
-            </div>
-            <div class="menu-area">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
-                        <div class="menu-wrap">
-                            <nav class="menu-nav">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/classYar-logo1.png" alt="Logo"></a>
-                                </div>
-                                <div class="navbar-wrap main-menu d-none d-lg-flex">
-                                    <ul class="navigation">
-                                        <li class="active"><a href="#">خانه</a>
-                                        </li>
-                                        <li><a href="about.html">درباره ما</a></li>
-                                        <li><a href="contact.html"> تماس با ما</a></li>
-                                        <li><a href="blog.html">وبلاگ</a></li>
-
-                                        <li class="menu-item-has-children"><a href="#">آموزشگاه ها</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="institute.html"> هنری</a></li>
-                                                <li><a href="institute.html">ورزشی </a></li>
-                                                <li><a href="institute.html"> فناوری</a></li>
-                                                <li><a href="institute.html"> علمی</a></li>
-                                            </ul>
-
-
-
-                                        </li>
-                                        <li class="menu-item-has-children"><a href="#"> کلاس ها</a>
-                                            <ul class="sub-menu">
-
-                                                <li><a href="institute.html"> هنری</a></li>
-                                                <li><a href="institute.html">ورزشی </a></li>
-                                                <li><a href="institute.html"> فناوری</a></li>
-                                                <li><a href="institute.html"> علمی</a></li>
-                                            </ul>
-
-
-                                        </li>
-                                    </ul>
-
-
-
-
-
-
-                                </div>
-                                <div class="header-action">
-                                    <ul class="list-wrap">
-                                        <li class="header-contact-two">
-                                            <div class="icon">
-                                                <i class="flaticon-phone-call"></i>
-                                            </div>
-                                            <div class="content">
-                                                <span>تماس بگیرید</span>
-                                                <a href="tel:09232894508">۰۹۲۳۲۸۹۴۵۰۸</a>
-                                            </div>
-                                        </li>
-                                        <li class="header-search"><a href="#"><i class="flaticon-search"></i></a></li>
-
-                                    </ul>
-                                </div>
-                            </nav>
+                      <li class="menu-item-has-children">
+                        <a href="#">آموزشگاه ها</a>
+                        <ul class="sub-menu">
+                          <li><a href="institute.html"> هنری</a></li>
+                          <li><a href="institute.html">ورزشی </a></li>
+                          <li><a href="institute.html"> فناوری</a></li>
+                          <li><a href="institute.html"> علمی</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#"> کلاس ها</a>
+                        <ul class="sub-menu">
+                          <li><a href="institute.html"> هنری</a></li>
+                          <li><a href="institute.html">ورزشی </a></li>
+                          <li><a href="institute.html"> فناوری</a></li>
+                          <li><a href="institute.html"> علمی</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-action">
+                    <ul class="list-wrap">
+                      <li class="header-contact-two">
+                        <div class="icon">
+                          <i class="flaticon-phone-call"></i>
                         </div>
-
-                        <!-- Mobile Menu  -->
-                        <div class="mobile-menu">
-                            <nav class="menu-box">
-                                <div class="close-btn"><i class="fas fa-times"></i></div>
-                                <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/logo/classYar-logo1.png" alt="Logo"></a>
-                                </div>
-                                <div class="mobile-search">
-                                    <form action="#">
-                                        <input type="text" placeholder="جستجو کنید ...">
-                                        <button><i class="flaticon-search"></i></button>
-                                    </form>
-                                </div>
-                                <div class="menu-outer">
-                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                                </div>
-                                <div class="social-links">
-                                    <ul class="clearfix list-wrap">
-                                        <li><a href="https://t.me/keaasyarbot"><i class="fab fa-telegram"></i></a></li>
-                                        <li><a href="https://instagram.com/kelassyar"><i
-                                                    class="fab fa-instagram"></i></a></li>
-                                        <li><a href="https://wa.me/09232894508"><i class="fab fa-whatsapp"></i><span
-                                                    class="tooltip">واتساپ</span></a></li>
-                                    </ul>
-                                </div>
-                            </nav>
+                        <div class="content">
+                          <span>تماس بگیرید</span>
+                          <a href="tel:09232894508">۰۹۲۳۲۸۹۴۵۰۸</a>
                         </div>
-                        <div class="menu-backdrop"></div>
-                        <!-- End Mobile Menu -->
+                      </li>
+                      <li class="header-search">
+                        <a href="#"><i class="flaticon-search"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
 
-                    </div>
-                </div>
+              <!-- Mobile Menu  -->
+              <div class="mobile-menu">
+                <nav class="menu-box">
+                  <div class="close-btn"><i class="fas fa-times"></i></div>
+                  <div class="nav-logo">
+                    <a href="index.html"
+                      ><img src="assets/img/logo/classYar-logo1.png" alt="Logo"
+                    /></a>
+                  </div>
+                  <div class="mobile-search">
+                    <form action="#">
+                      <input type="text" placeholder="جستجو کنید ..." />
+                      <button><i class="flaticon-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="menu-outer">
+                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                  </div>
+                  <div class="social-links">
+                    <ul class="clearfix list-wrap">
+                      <li>
+                        <a href="https://t.me/keaasyarbot"
+                          ><i class="fab fa-telegram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://instagram.com/kelassyar"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="https://wa.me/09232894508"
+                          ><i class="fab fa-whatsapp"></i
+                          ><span class="tooltip">واتساپ</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="menu-backdrop"></div>
+              <!-- End Mobile Menu -->
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- header-search -->
-        <div class="search-popup-wrap" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="search-close">
-                <span><i class="fas fa-times"></i></span>
-            </div>
-            <div class="search-wrap text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="title">... جستجوی کلاس و آموزشگاه ...</h2>
-                            <div class="search-form">
-                                <form action="#">
-                                    <input type="text" name="search" placeholder="دنبال چه کلاسی میگردی   ؟">
-                                    <button class="search-btn"><i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- header-search -->
+      <div
+        class="search-popup-wrap"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="search-close">
+          <span><i class="fas fa-times"></i></span>
         </div>
-
+        <div class="search-wrap text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title">... جستجوی کلاس و آموزشگاه ...</h2>
+                <div class="search-form">
+                  <form action="#">
+                    <input
+                      type="text"
+                      name="search"
+                      placeholder="دنبال چه کلاسی میگردی   ؟"
+                    />
+                    <button class="search-btn">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- header-area-end -->
 
-
     <!-- main-area -->
     <main class="fix">
+      <!-- banner-area -->
 
-        <!-- banner-area -->
+      <section
+        class="banner-area-two banner-bg-two"
+        data-background="assets/img/banner/h2_banner_bg.jpg"
+      >
+        <div class="container">
+          <div class="content">
+            <ul class="circle">
+              <li><i class="fas fa-calculator"></i></li>
+              <li><i class="fas fa-book"></i></li>
+              <li><i class="fas fa-search"></i></li>
+              <li><i class="fas fa-pen-alt"></i></li>
+              <li><i class="fas fa-evernote"></i></li>
+              <li><i class="fas fa-pencil-alt"></i></li>
+              <li><i class="fas fa-chalkboard-teacher"></i></li>
+              <li><i class="fas fa-plus"></i></li>
+              <li><i class="fas fa-graduation-cap"></i></li>
 
-
-
-        <section class="banner-area-two banner-bg-two" data-background="assets/img/banner/h2_banner_bg.jpg">
-
-            <div class="container">
-                <div class="content">
-                    <ul class="circle">
-                        <li><i class="fas fa-calculator"></i></li>
-                        <li><i class="fas fa-book"></i></li>
-                        <li><i class="fas fa-search"></i></li>
-                        <li><i class="fas fa-pen-alt"></i></li>
-                        <li><i class="fas fa-evernote"></i></li>
-                        <li><i class="fas fa-pencil-alt"></i></li>
-                        <li><i class="fas fa-chalkboard-teacher"></i></li>
-                        <li><i class="fas fa-plus"></i></li>
-                        <li><i class="fas fa-graduation-cap"></i></li>
-
-                        <li><i class="fas fa-calculator"></i></li>
-                        <li><i class="fas fa-book"></i></li>
-                        <li><i class="fas fa-search"></i></li>
-                        <!-- <li><i class="fas fa-pen-alt"></i></li> -->
-                        <li><i class="fas fa-evernote"></i></li>
-                        <li><i class="fas fa-pencil-alt"></i></li>
-                        <li><i class="fas fa-chalkboard-teacher"></i></li>
-                        <li><i class="fas fa-plus"></i></li>
-                        <li><i class="fas fa-graduation-cap"></i></li>
-
-                    </ul>
-
-
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="banner-content-two">
-                            <span class="sub-title " data-aos="fade-up" data-aos-delay="0">ما در این زمینه متخصص
-                                هستیم</span>
-                            <h2 class="title" data-aos="fade-up" data-aos-delay="300"> یک راه هوشمندانه!برای یافتن کلاس
-                                هایتان </h2>
-                            <p data-aos="fade-up" data-aos-delay="500">یافتن کلاس مناسب شما در چند لحظه! با سایت
-                                کِلاس‌یار، کلاس‌های مورد نظر خود را به آسانی پیدا کنید و بهترین انتخاب را برای پیشرفت
-                                خود داشته باشید.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-
-
-                        <div class="banner-img text-center">
-                            <img src="assets/img/brand/header.png" alt="">
-                        </div>
-
-
-
-                    </div>
-                </div>
+              <li><i class="fas fa-calculator"></i></li>
+              <li><i class="fas fa-book"></i></li>
+              <li><i class="fas fa-search"></i></li>
+              <!-- <li><i class="fas fa-pen-alt"></i></li> -->
+              <li><i class="fas fa-evernote"></i></li>
+              <li><i class="fas fa-pencil-alt"></i></li>
+              <li><i class="fas fa-chalkboard-teacher"></i></li>
+              <li><i class="fas fa-plus"></i></li>
+              <li><i class="fas fa-graduation-cap"></i></li>
+            </ul>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="banner-content-two">
+                <span class="sub-title" data-aos="fade-up" data-aos-delay="0"
+                  >ما در این زمینه متخصص هستیم</span
+                >
+                <h2 class="title" data-aos="fade-up" data-aos-delay="300">
+                  یک راه هوشمندانه!برای یافتن کلاس هایتان
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="500">
+                  یافتن کلاس مناسب شما در چند لحظه! با سایت کِلاس‌یار، کلاس‌های
+                  مورد نظر خود را به آسانی پیدا کنید و بهترین انتخاب را برای
+                  پیشرفت خود داشته باشید.
+                </p>
+              </div>
             </div>
-        </section>
-
-        <!-- about-area -->
-        <section class="about-area-three">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-9">
-                        <div class="about-img-wrap-three">
-                            <img src="assets/img/images/h2_about_img01.jpg" alt="" data-aos="fade-down-right"
-                                data-aos-delay="0">
-                            <img src="assets/img/images/h2_about_img02.jpg" alt="" data-aos="fade-left"
-                                data-aos-delay="400">
-                            <div class="experience-wrap" data-aos="fade-up" data-aos-delay="300">
-                                <p>با کلاس یار همه ی کلاس ها در یک قاب!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content-three">
-
-
-                            <div class="section-title-two mb-20 tg-heading-subheading animation-style3">
-                                <span class="sub-title">چرا باید ما را انتخاب کنید؟</span>
-                                <h2 class="title">با یک سرچ کلاست را پیدا کن</h2>
-                            </div>
-
-
-                            <p class="info-one">ما اطلاعات به‌روز و کامل آموزشگاه‌های نجف‌آباد را در یک پلتفرم ساده
-                                گردآوری کرده‌ایم. با جست‌وجوی پیشرفته و نظرات کاربران، می‌توانید به‌راحتی کلاس‌های
-                                دلخواه خود را پیدا کنید و بهترین تصمیم را بگیرید.</p>
-                            <p>تیم پشیبانی کلاس یار</p>
-                            <div class="about-author-info">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-6">
+              <div class="banner-img text-center">
+                <img src="assets/img/brand/header.png" alt="" />
+              </div>
             </div>
-            <div class="about-shape-wrap-two">
-                <img src="assets/img/images/h2_about_shape01.png" alt="">
-                <img src="assets/img/images/h2_about_shape02.png" alt="">
-                <img src="assets/img/images/h2_about_shape03.png" alt="" data-aos="fade-left" data-aos-delay="500">
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================
+      Testimonials START -->
+      <section
+        class="py-5 text-center"
+        style="background-color: #131462"
+        style="height: 500px"
+      >
+        <h3 class="text-light">اموزشگاه های محبوب</h3>
+
+        <swiper-container
+          class="mySwiper bg-light container rounded-3"
+          pagination="false"
+          pagination-clickable="true"
+          slides-per-view="3"
+          space-between="30"
+          free-mode="true"
+        >
+          <swiper-slide class="bg-light">
+            <div class="school-box-container">
+              <div class="school-box">
+                <img src="assets/img/brand/about_us.jpg" alt="آموزشگاه 1" />
+                <h3>نام آموزشگاه اول</h3>
+              </div>
             </div>
-        </section>
-        <!-- about-area-end -->
+          </swiper-slide>
+          <swiper-slide class="bg-light">
+            <div class="school-box-container">
+              <div class="school-box">
+                <img src="assets/img/brand/about_us.jpg" alt="آموزشگاه 1" />
+                <h3>نام آموزشگاه اول</h3>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="bg-light">
+            <div class="school-box-container">
+              <div class="school-box">
+                <img src="assets/img/brand/about_us.jpg" alt="آموزشگاه 1" />
+                <h3>نام آموزشگاه اول</h3>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="bg-light">
+            <div class="school-box-container">
+              <div class="school-box">
+                <img src="assets/img/brand/about_us.jpg" alt="آموزشگاه 1" />
+                <h3>نام آموزشگاه اول</h3>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="bg-light">
+            <div class="school-box-container">
+              <div class="school-box">
+                <img src="assets/img/brand/about_us.jpg" alt="آموزشگاه 1" />
+                <h3>نام آموزشگاه اول</h3>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="bg-light">
+            <div class="school-box-container">
+              <div class="school-box">
+                <img src="assets/img/brand/about_us.jpg" alt="آموزشگاه 1" />
+                <h3>نام آموزشگاه اول</h3>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+      <!-- =======================
+      Testimonials END -->
 
-        <!-- services-area -->
-        <section class="services-area-two services-bg-two" data-background="assets/img/bg/services_bg02.jpg">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-8">
-
-
-                        <div class="section-title-two mb-60 tg-heading-subheading animation-style3">
-                            <h2 class="title">دسته بندی های کلاس یار:</h2>
-                        </div>
-
-
-                    </div>
+      <!-- svg  -->
+      <div style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C365.40,220.56 229.97,-95.20 715.29,172.22 L543.16,-84.36 L0.00,0.00 Z"
+            style="stroke: none; fill: #131462"
+          ></path>
+        </svg>
+      </div>
+      <!-- about-area -->
+      <section class="about-area-three">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-9">
+              <div class="about-img-wrap-three">
+                <img
+                  src="assets/img/images/h2_about_img01.jpg"
+                  alt=""
+                  data-aos="fade-down-right"
+                  data-aos-delay="0"
+                />
+                <img
+                  src="assets/img/images/h2_about_img02.jpg"
+                  alt=""
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                />
+                <div
+                  class="experience-wrap"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <p>با کلاس یار همه ی کلاس ها در یک قاب!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-content-three">
+                <div
+                  class="section-title-two mb-20 tg-heading-subheading animation-style3"
+                >
+                  <span class="sub-title">چرا باید ما را انتخاب کنید؟</span>
+                  <h2 class="title">با یک سرچ کلاست را پیدا کن</h2>
                 </div>
 
-
-                <div class="row justify-content-center ">
-
-
-                    <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                        <a href="institute.html">
-                            <div class="services-item-two">
-                                <div class="services-thumb-two">
-                                    <img src="assets/img/categories/art.jpg" alt="">
-
-                                </div>
-                                <div class="services-content-two">
-
-                                    <h2 class="title"><a href="institute.html">هنری </a></h2>
-                                    <p> <i class=" fa fa-street-view"> تعداد بازدید : 110</i></p>
-                                    <p> <i class=" fa fa-chalkboard-teacher"> تعداد کلاس ها : 110</i></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-
-                    <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                        <a href="institute.html">
-                            <div class="services-item-two">
-                                <div class="services-thumb-two">
-                                    <img src="assets/img/categories/exersize.jpg" alt="">
-
-                                </div>
-                                <div class="services-content-two">
-                                    <h2 class="title"><a href="institute.html">ورزشی </a></h2>
-                                    <p> <i class=" fa fa-street-view"> تعداد بازدید : 110</i></p>
-                                    <p> <i class=" fa fa-chalkboard-teacher"> تعداد کلاس ها : 110</i></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-
-                    <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                        <a href="institute.html">
-                            <div class="services-item-two">
-                                <div class="services-thumb-two">
-                                    <img src="assets/img/categories/sience.jpg" alt="">
-
-                                </div>
-                                <div class="services-content-two">
-
-                                    <h2 class="title"><a href="institute.html">فناوری </a></h2>
-                                    <p> <i class=" fa fa-street-view"> تعداد بازدید : 110</i></p>
-                                    <p> <i class=" fa fa-chalkboard-teacher"> تعداد کلاس ها : 110</i></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-
-                    <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                        <a href="institute.html">
-                            <div class="services-item-two">
-                                <div class="services-thumb-two">
-                                    <img src="assets/img/categories/study.jpg" alt="">
-
-                                </div>
-                                <div class="services-content-two">
-
-                                    <h2 class="title"><a href="institute.html">علمی </a></h2>
-                                    <p> <i class=" fa fa-street-view"> تعداد بازدید : 110</i></p>
-                                    <p> <i class=" fa fa-chalkboard-teacher"> تعداد کلاس ها : 110</i></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <p class="info-one">
+                  ما اطلاعات به‌روز و کامل آموزشگاه‌های نجف‌آباد را در یک پلتفرم
+                  ساده گردآوری کرده‌ایم. با جست‌وجوی پیشرفته و نظرات کاربران،
+                  می‌توانید به‌راحتی کلاس‌های دلخواه خود را پیدا کنید و بهترین
+                  تصمیم را بگیرید.
+                </p>
+                <p>تیم پشیبانی کلاس یار</p>
+                <div class="about-author-info"></div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="about-shape-wrap-two">
+          <img src="assets/img/images/h2_about_shape01.png" alt="" />
+          <img src="assets/img/images/h2_about_shape02.png" alt="" />
+          <img
+            src="assets/img/images/h2_about_shape03.png"
+            alt=""
+            data-aos="fade-left"
+            data-aos-delay="500"
+          />
+        </div>
+      </section>
+      <!-- about-area-end -->
 
-        <!-- project-area -->
-        <section class=" project-area-two project-bg-two row align-items-center justify-content-center"
-            data-background="assets/img/bg/project_bg02.jpg">
+      <!-- جدیدترین کلاس ها -->
+      <div class="classes-new bg-white pt-5">
+        <h3 class="bg-main p-3 rounded container mt-5 text-white">
+          جدید ترین کلاس های کلاس یار
+        </h3>
+        <div class="swiper mySwiper respon-style blue-svg-bg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="institute.html">
+                <div class="academy-card">
+                  <div class="academy-header">
+                    <div class="category">دسته بندی : هنری</div>
+                    <img
+                      src="assets/img/brand/aboutus.jpg"
+                      alt="تصویر شاخص آموزشگاه"
+                      class="academy-logo"
+                    />
+                    <h1 class="academy-name">آموزشگاه شیدا</h1>
+                  </div>
 
+                  <div class="academy-content">
+                    <div class="info-item">
+                      <i class="fas fa-map-marker-alt info-icon"></i>
+                      <p class="info-text">نام کلاس : ویلن شیدا</p>
+                    </div>
 
+                    <div class="info-item">
+                      <i class="fas fa-info-circle info-icon"></i>
+                      <p class="info-text">ساعت برگزاری : 13 الی 22</p>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa fa-chalkboard-teacher info-icon"></i>
+                      <p class="info-text">مدرس : حبیبی</p>
+                    </div>
 
-            <div class="col-lg-12 ane-new group-container">
+                    <div class="footer-card">
+                      <p>
+                        <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                      </p>
 
-                <div class="selector selector-2">
+                      <span><i class="fas fa-star">5.0</i></span>
+                    </div>
+                    <button class="visit-btn">
+                      <i class="fas fa-eye" style="margin-left: 8px"></i>
+                      مشاهده آموزشگاه
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="institute.html">
+                <div class="academy-card">
+                  <div class="academy-header">
+                    <div class="category">دسته بندی : هنری</div>
+                    <img
+                      src="assets/img/brand/aboutus.jpg"
+                      alt="تصویر شاخص آموزشگاه"
+                      class="academy-logo"
+                    />
+                    <h1 class="academy-name">آموزشگاه شیدا</h1>
+                  </div>
+
+                  <div class="academy-content">
+                    <div class="info-item">
+                      <i class="fas fa-map-marker-alt info-icon"></i>
+                      <p class="info-text">نام کلاس : ویلن شیدا</p>
+                    </div>
+
+                    <div class="info-item">
+                      <i class="fas fa-info-circle info-icon"></i>
+                      <p class="info-text">ساعت برگزاری : 13 الی 22</p>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa fa-chalkboard-teacher info-icon"></i>
+                      <p class="info-text">مدرس : حبیبی</p>
+                    </div>
+
+                    <div class="footer-card">
+                      <p>
+                        <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                      </p>
+
+                      <span><i class="fas fa-star">5.0</i></span>
+                    </div>
+                    <button class="visit-btn">
+                      <i class="fas fa-eye" style="margin-left: 8px"></i>
+                      مشاهده آموزشگاه
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="institute.html">
+                <div class="academy-card">
+                  <div class="academy-header">
+                    <div class="category">دسته بندی : هنری</div>
+                    <img
+                      src="assets/img/brand/aboutus.jpg"
+                      alt="تصویر شاخص آموزشگاه"
+                      class="academy-logo"
+                    />
+                    <h1 class="academy-name">آموزشگاه شیدا</h1>
+                  </div>
+
+                  <div class="academy-content">
+                    <div class="info-item">
+                      <i class="fas fa-map-marker-alt info-icon"></i>
+                      <p class="info-text">نام کلاس : ویلن شیدا</p>
+                    </div>
+
+                    <div class="info-item">
+                      <i class="fas fa-info-circle info-icon"></i>
+                      <p class="info-text">ساعت برگزاری : 13 الی 22</p>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa fa-chalkboard-teacher info-icon"></i>
+                      <p class="info-text">مدرس : حبیبی</p>
+                    </div>
+
+                    <div class="footer-card">
+                      <p>
+                        <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                      </p>
+
+                      <span><i class="fas fa-star">5.0</i></span>
+                    </div>
+                    <button class="visit-btn">
+                      <i class="fas fa-eye" style="margin-left: 8px"></i>
+                      مشاهده آموزشگاه
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="institute.html">
+                <div class="academy-card">
+                  <div class="academy-header">
+                    <div class="category">دسته بندی : هنری</div>
+                    <img
+                      src="assets/img/brand/aboutus.jpg"
+                      alt="تصویر شاخص آموزشگاه"
+                      class="academy-logo"
+                    />
+                    <h1 class="academy-name">آموزشگاه شیدا</h1>
+                  </div>
+
+                  <div class="academy-content">
+                    <div class="info-item">
+                      <i class="fas fa-map-marker-alt info-icon"></i>
+                      <p class="info-text">نام کلاس : ویلن شیدا</p>
+                    </div>
+
+                    <div class="info-item">
+                      <i class="fas fa-info-circle info-icon"></i>
+                      <p class="info-text">ساعت برگزاری : 13 الی 22</p>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa fa-chalkboard-teacher info-icon"></i>
+                      <p class="info-text">مدرس : حبیبی</p>
+                    </div>
+
+                    <div class="footer-card">
+                      <p>
+                        <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                      </p>
+
+                      <span><i class="fas fa-star">5.0</i></span>
+                    </div>
+                    <button class="visit-btn">
+                      <i class="fas fa-eye" style="margin-left: 8px"></i>
+                      مشاهده آموزشگاه
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="institute.html">
+                <div class="academy-card">
+                  <div class="academy-header">
+                    <div class="category">دسته بندی : هنری</div>
+                    <img
+                      src="assets/img/brand/aboutus.jpg"
+                      alt="تصویر شاخص آموزشگاه"
+                      class="academy-logo"
+                    />
+                    <h1 class="academy-name">آموزشگاه شیدا</h1>
+                  </div>
+
+                  <div class="academy-content">
+                    <div class="info-item">
+                      <i class="fas fa-map-marker-alt info-icon"></i>
+                      <p class="info-text">نام کلاس : ویلن شیدا</p>
+                    </div>
+
+                    <div class="info-item">
+                      <i class="fas fa-info-circle info-icon"></i>
+                      <p class="info-text">ساعت برگزاری : 13 الی 22</p>
+                    </div>
+                    <div class="info-item">
+                      <i class="fa fa-chalkboard-teacher info-icon"></i>
+                      <p class="info-text">مدرس : حبیبی</p>
+                    </div>
+
+                    <div class="footer-card">
+                      <p>
+                        <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                      </p>
+
+                      <span><i class="fas fa-star">5.0</i></span>
+                    </div>
+                    <button class="visit-btn">
+                      <i class="fas fa-eye" style="margin-left: 8px"></i>
+                      مشاهده آموزشگاه
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- services-area -->
+      <section
+        class="services-area-two services-bg-two"
+        data-background="assets/img/bg/services_bg02.jpg"
+        style="background: rgb(7, 28, 68)"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-8">
+              <div
+                class="section-title-two mb-60 tg-heading-subheading animation-style3"
+              >
+                <h2 class="title">دسته بندی های کلاس یار:</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <a href="institute.html">
+                <div class="services-item-two">
+                  <div class="services-thumb-two">
+                    <img src="assets/img/categories/art.jpg" alt="" />
+                  </div>
+                  <div class="services-content-two">
+                    <h2 class="title"><a href="institute.html">هنری </a></h2>
+                    <p><i class="fa fa-street-view"> تعداد بازدید : 110</i></p>
+                    <p>
+                      <i class="fa fa-chalkboard-teacher">
+                        تعداد کلاس ها : 110</i
+                      >
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <a href="institute.html">
+                <div class="services-item-two">
+                  <div class="services-thumb-two">
+                    <img src="assets/img/categories/exersize.jpg" alt="" />
+                  </div>
+                  <div class="services-content-two">
+                    <h2 class="title"><a href="institute.html">ورزشی </a></h2>
+                    <p><i class="fa fa-street-view"> تعداد بازدید : 110</i></p>
+                    <p>
+                      <i class="fa fa-chalkboard-teacher">
+                        تعداد کلاس ها : 110</i
+                      >
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <a href="institute.html">
+                <div class="services-item-two">
+                  <div class="services-thumb-two">
+                    <img src="assets/img/categories/sience.jpg" alt="" />
+                  </div>
+                  <div class="services-content-two">
+                    <h2 class="title"><a href="institute.html">فناوری </a></h2>
+                    <p><i class="fa fa-street-view"> تعداد بازدید : 110</i></p>
+                    <p>
+                      <i class="fa fa-chalkboard-teacher">
+                        تعداد کلاس ها : 110</i
+                      >
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="categories-item col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <a href="institute.html">
+                <div class="services-item-two">
+                  <div class="services-thumb-two">
+                    <img src="assets/img/categories/study.jpg" alt="" />
+                  </div>
+                  <div class="services-content-two">
+                    <h2 class="title"><a href="institute.html">علمی </a></h2>
+                    <p><i class="fa fa-street-view"> تعداد بازدید : 110</i></p>
+                    <p>
+                      <i class="fa fa-chalkboard-teacher">
+                        تعداد کلاس ها : 110</i
+                      >
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project-area -->
+      <section
+        class="project-area-two project-bg-two row align-items-center justify-content-center"
+        data-background="assets/img/bg/project_bg02.jpg"
+      >
+        <div class="col-lg-12 ane-new group-container">
+          <!-- <div class="selector selector-2">
                     <button type="button" class="acctive my-col-lg-6">جدید ترین اموزشگاه ها </button>
                     <button type="button" class="my-col-lg-6"> جدید ترین کلاس ها </button>
-                </div>
+                </div> -->
+        </div>
 
-                <!-- جدید ترین اموزشگاه ها -->
-                <div class="institute-new">
-
-
-                    <h3 class="bg-main p-3 rounded container mt-5 text-light">جدید ترین اموزشگاه های کلاس یار</h3>
-                    <!-- Swiper -->
-                    <div class="swiper mySwiper respon-style">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="institute.html">
-                                    <div class="academy-card">
-                                        <div class="academy-header">
-                                            <div class="category">دسته بندی : هنری</div>
-                                            <img src="assets/img/brand/aboutus.jpg" alt="تصویر شاخص آموزشگاه"
-                                                class="academy-logo">
-                                            <div>
-                                                <h1 class="academy-name">آموزشگاه شیدا</h1>
-                                                <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
-                                            </div>
-                                        </div>
-
-                                        <div class="academy-content">
-                                            <div class="info-item">
-                                                <i class="fas fa-map-marker-alt info-icon"></i>
-                                                <p class="info-text">آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳</p>
-                                            </div>
-
-
-
-                                            <div class="info-item">
-                                                <i class="fas fa-info-circle info-icon"></i>
-                                                <p class="info-text">ساعت کاری : 13 الی 22</p>
-                                            </div>
-
-
-
-                                            <div class="footer-card">
-                                                <p> <i class=" fa fa-street-view"> تعداد بازدید : 110</i></p>
-
-                                                <span><i class="fas fa-star">5.0</i></span>
-
-                                            </div>
-                                            <button class="visit-btn">
-                                                <i class="fas fa-eye" style="margin-left: 8px;"></i>
-                                                مشاهده آموزشگاه
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
-                        </div>
+        <!-- جدید ترین اموزشگاه ها -->
+        <div class="institute-new">
+          <h3 class="bg-main p-3 rounded container mt-5 text-light">
+            جدید ترین اموزشگاه های کلاس یار
+          </h3>
+          <!-- Swiper -->
+          <div class="swiper mySwiper respon-style">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
                     </div>
-                </div>
 
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
 
-                <!-- جدیدترین کلاس ها -->
-                <div class="classes-new ">
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
 
-                    <h3 class="bg-main p-3 rounded container mt-5 text-light">جدید ترین کلاس های کلاس یار</h3>
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
 
-
-                    <div class="swiper mySwiper respon-style">
-                        <div class="swiper-wrapper">
-
-
-                            <div class="swiper-slide">
-                                <a href="institute.html">
-                                    <div class="academy-card">
-                                        <div class="academy-header">
-                                            <div class="category">دسته بندی : هنری</div>
-                                            <img src="assets/img/brand/aboutus.jpg" alt="تصویر شاخص آموزشگاه"
-                                                class="academy-logo">
-                                            <h1 class="academy-name">آموزشگاه شیدا</h1>
-
-
-                                        </div>
-
-                                        <div class="academy-content">
-                                            <div class="info-item">
-                                                <i class="fas fa-map-marker-alt info-icon"></i>
-                                                <p class="info-text">نام کلاس : ویلن شیدا</p>
-                                            </div>
-
-
-
-                                            <div class="info-item">
-                                                <i class="fas fa-info-circle info-icon"></i>
-                                                <p class="info-text">ساعت برگزاری : 13 الی 22</p>
-                                            </div>
-                                            <div class="info-item">
-                                                <i class="fa fa-chalkboard-teacher info-icon"></i>
-                                                <p class="info-text">مدرس : حبیبی</p>
-                                            </div>
-
-
-
-                                            <div class="footer-card">
-                                                <p> <i class=" fa fa-street-view"> تعداد بازدید : 110</i></p>
-
-                                                <span><i class="fas fa-star">5.0</i></span>
-
-                                            </div>
-                                            <button class="visit-btn">
-                                                <i class="fas fa-eye" style="margin-left: 8px;"></i>
-                                                مشاهده آموزشگاه
-                                            </button>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-
-                        </div>
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
                     </div>
-                </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
 
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
 
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
 
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
 
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
 
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
+
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
+
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
+
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
+
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
+
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="institute.html">
+                  <div class="academy-card">
+                    <div class="academy-header">
+                      <div class="category">دسته بندی : هنری</div>
+                      <img
+                        src="assets/img/brand/aboutus.jpg"
+                        alt="تصویر شاخص آموزشگاه"
+                        class="academy-logo"
+                      />
+                      <div>
+                        <h1 class="academy-name">آموزشگاه شیدا</h1>
+                        <!-- <p>مرکز تخصصی آموزش‌های هنری</p> -->
+                      </div>
+                    </div>
+
+                    <div class="academy-content">
+                      <div class="info-item">
+                        <i class="fas fa-map-marker-alt info-icon"></i>
+                        <p class="info-text">
+                          آدرس: خیابان امام، بین فلان و بهمان، پلاک ۱۲۳
+                        </p>
+                      </div>
+
+                      <div class="info-item">
+                        <i class="fas fa-info-circle info-icon"></i>
+                        <p class="info-text">ساعت کاری : 13 الی 22</p>
+                      </div>
+
+                      <div class="footer-card">
+                        <p>
+                          <i class="fa fa-street-view"> تعداد بازدید : 110</i>
+                        </p>
+
+                        <span><i class="fas fa-star">5.0</i></span>
+                      </div>
+                      <button class="visit-btn">
+                        <i class="fas fa-eye" style="margin-left: 8px"></i>
+                        مشاهده آموزشگاه
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-
-
-        </section>
-
-
+          </div>
+        </div>
+      </section>
     </main>
     <!-- main-area-end -->
 
     <!-- seo section with word keys -->
 
     <section id="key-item ">
-        <h4 class="bg-main p-3 rounded container mt-5 text-light">ما در این حوضه ها متخصص هستیم</h4>
-        <div class="contentt my-row">
-            <div class="key-items my-col-xs-5 my-col-sm-5 my-col-md-3">
-                <img src="assets/img/brand/seoitem1.png" alt="">
-                <p>اطلاعات اموزشگاه ها و کلاس ها</p>
-            </div>
-            <div class="key-items my-col-xs-5 my-col-sm-5 my-col-md-3">
-                <img src="assets/img/brand/seoitem2.png" alt="">
-                <p>فیلتر پیش رفته برای جستجو</p>
-            </div>
-            <div class="key-items my-col-xs-5 my-col-sm-5 my-col-md-3">
-                <img src="assets/img/brand/seoitem3.png" alt="">
-                <p>نظرات و امتیاز دهی برای کاربران</p>
-            </div>
+      <h4 class="bg-main p-3 rounded container mt-5 text-light">
+        ما در این حوضه ها متخصص هستیم
+      </h4>
+      <div class="contentt my-row">
+        <div class="key-items my-col-xs-5 my-col-sm-5 my-col-md-3">
+          <img src="assets/img/brand/seoitem1.png" alt="" />
+          <p>اطلاعات اموزشگاه ها و کلاس ها</p>
         </div>
+        <div class="key-items my-col-xs-5 my-col-sm-5 my-col-md-3">
+          <img src="assets/img/brand/seoitem2.png" alt="" />
+          <p>فیلتر پیش رفته برای جستجو</p>
+        </div>
+        <div class="key-items my-col-xs-5 my-col-sm-5 my-col-md-3">
+          <img src="assets/img/brand/seoitem3.png" alt="" />
+          <p>نظرات و امتیاز دهی برای کاربران</p>
+        </div>
+      </div>
     </section>
 
-
-
-
-
     <div class="container">
-        <h4 class="text-light bg-main rounded p-3 mt-5 ">کلاس‌یار؛ مرجع جامع جست‌وجو و معرفی آموزشگاه‌ها و کلاس‌های
-            آموزشی در نجف‌آباد</h4>
+      <h4 class="text-light bg-main rounded p-3 mt-5">
+        کلاس‌یار؛ مرجع جامع جست‌وجو و معرفی آموزشگاه‌ها و کلاس‌های آموزشی در
+        نجف‌آباد
+      </h4>
 
-        <div class="short-text">
-            <p>
-                <strong>کلاس‌یار</strong> یک سامانه پیشرفته و هوشمند برای معرفی، مقایسه و جست‌وجوی
-                <strong>کلاس‌های آموزشی در نجف‌آباد</strong> است. اگر به دنبال پیدا کردن سریع و آسان
-                <strong>آموزشگاه‌های معتبر نجف‌آباد</strong> هستید یا قصد دارید کلاس موردنظر خود را از بین صدها دوره و
-                آموزشگاه با شرایط مناسب انتخاب کنید،
-                کلاس‌یار دقیقاً برای شما طراحی شده است.
-            </p>
-            <p>
-                ما در کلاس‌یار تلاش کرده‌ایم با جمع‌آوری اطلاعات جامع و دقیق از آموزشگاه‌های سطح شهر نجف‌آباد، نیاز
-                همه‌ی گروه‌های سنی و علاقه‌مندان به یادگیری را پوشش دهیم.
-                فرقی نمی‌کند که به دنبال آموزش ورزشی باشید یا کلاس زبان انگلیسی، ما مسیر یادگیری را برایتان ساده و
-                حرفه‌ای کرده‌ایم.
-            </p>
+      <div class="short-text">
+        <p>
+          <strong>کلاس‌یار</strong> یک سامانه پیشرفته و هوشمند برای معرفی،
+          مقایسه و جست‌وجوی <strong>کلاس‌های آموزشی در نجف‌آباد</strong> است.
+          اگر به دنبال پیدا کردن سریع و آسان
+          <strong>آموزشگاه‌های معتبر نجف‌آباد</strong> هستید یا قصد دارید کلاس
+          موردنظر خود را از بین صدها دوره و آموزشگاه با شرایط مناسب انتخاب کنید،
+          کلاس‌یار دقیقاً برای شما طراحی شده است.
+        </p>
+        <p>
+          ما در کلاس‌یار تلاش کرده‌ایم با جمع‌آوری اطلاعات جامع و دقیق از
+          آموزشگاه‌های سطح شهر نجف‌آباد، نیاز همه‌ی گروه‌های سنی و علاقه‌مندان
+          به یادگیری را پوشش دهیم. فرقی نمی‌کند که به دنبال آموزش ورزشی باشید یا
+          کلاس زبان انگلیسی، ما مسیر یادگیری را برایتان ساده و حرفه‌ای کرده‌ایم.
+        </p>
+      </div>
 
-        </div>
+      <div class="full-text border-end border-primary border-4">
+        <h2>دسته‌بندی‌های اصلی کلاس‌ها در کلاس‌یار</h2>
 
-        <div class="full-text border-end border-primary border-4">
-            <h2>دسته‌بندی‌های اصلی کلاس‌ها در کلاس‌یار</h2>
+        <h3>1. کلاس‌های ورزشی در نجف‌آباد</h3>
+        <ul>
+          <li>کلاس‌های بدن‌سازی و فیتنس</li>
+          <li>آموزش شنا، ژیمناستیک و ایروبیک</li>
+          <li>ورزش‌های رزمی مانند کاراته، تکواندو، جودو</li>
+          <li>فوتبال، والیبال، بسکتبال، اسکیت و دیگر رشته‌ها</li>
+        </ul>
 
-            <h3>1. کلاس‌های ورزشی در نجف‌آباد</h3>
-            <ul>
-                <li>کلاس‌های بدن‌سازی و فیتنس</li>
-                <li>آموزش شنا، ژیمناستیک و ایروبیک</li>
-                <li>ورزش‌های رزمی مانند کاراته، تکواندو، جودو</li>
-                <li>فوتبال، والیبال، بسکتبال، اسکیت و دیگر رشته‌ها</li>
-            </ul>
+        <h3>2. کلاس‌های هنری در نجف‌آباد</h3>
+        <ul>
+          <li>
+            کلاس موسیقی (آموزش سازهای مختلف مثل گیتار، پیانو، سنتور و ...)
+          </li>
+          <li>نقاشی، طراحی، خوشنویسی و هنرهای تجسمی</li>
+          <li>بازیگری، تئاتر، مجسمه‌سازی، عکاسی و گرافیک</li>
+        </ul>
 
-            <h3>2. کلاس‌های هنری در نجف‌آباد</h3>
-            <ul>
-                <li>کلاس موسیقی (آموزش سازهای مختلف مثل گیتار، پیانو، سنتور و ...)</li>
-                <li>نقاشی، طراحی، خوشنویسی و هنرهای تجسمی</li>
-                <li>بازیگری، تئاتر، مجسمه‌سازی، عکاسی و گرافیک</li>
-            </ul>
+        <h3>3. کلاس‌های علمی و آموزشی در نجف‌آباد</h3>
+        <ul>
+          <li>آموزش زبان‌های خارجی (انگلیسی، فرانسه، آلمانی، ترکی و ...)</li>
+          <li>کلاس‌های درسی برای مقاطع ابتدایی تا دبیرستان</li>
+          <li>فن بیان، تندخوانی، مهارت‌های تحصیلی و مشاوره درسی</li>
+          <li>آموزش مهارت‌های عمومی و رشد فردی</li>
+        </ul>
 
-            <h3>3. کلاس‌های علمی و آموزشی در نجف‌آباد</h3>
-            <ul>
-                <li>آموزش زبان‌های خارجی (انگلیسی، فرانسه، آلمانی، ترکی و ...)</li>
-                <li>کلاس‌های درسی برای مقاطع ابتدایی تا دبیرستان</li>
-                <li>فن بیان، تندخوانی، مهارت‌های تحصیلی و مشاوره درسی</li>
-                <li>آموزش مهارت‌های عمومی و رشد فردی</li>
-            </ul>
+        <h3>4. کلاس‌های فناوری و کامپیوتر در نجف‌آباد</h3>
+        <ul>
+          <li>آموزش برنامه‌نویسی (پایتون، جاوا، سی‌شارپ، اندروید و ...)</li>
+          <li>طراحی سایت، رباتیک، الکترونیک و هوش مصنوعی</li>
+          <li>آموزش نرم‌افزارهای کاربردی مثل فتوشاپ، کورل، آفیس، اتوکد</li>
+          <li>آموزش ICDL و مهارت‌های پایه کار با رایانه</li>
+        </ul>
 
-            <h3>4. کلاس‌های فناوری و کامپیوتر در نجف‌آباد</h3>
-            <ul>
-                <li>آموزش برنامه‌نویسی (پایتون، جاوا، سی‌شارپ، اندروید و ...)</li>
-                <li>طراحی سایت، رباتیک، الکترونیک و هوش مصنوعی</li>
-                <li>آموزش نرم‌افزارهای کاربردی مثل فتوشاپ، کورل، آفیس، اتوکد</li>
-                <li>آموزش ICDL و مهارت‌های پایه کار با رایانه</li>
-            </ul>
+        <h2>جست‌وجوی دقیق و فیلترهای هوشمند در کلاس‌یار</h2>
+        <p>
+          یکی از مهم‌ترین ویژگی‌های کلاس‌یار، امکان
+          <strong>فیلتر پیشرفته کلاس‌ها</strong> بر اساس فاکتورهای مختلف است.
+          این قابلیت به شما کمک می‌کند کلاس موردنظرتان را سریع‌تر و دقیق‌تر پیدا
+          کنید.
+        </p>
+        <ul>
+          <li>
+            <strong>قیمت کلاس:</strong> انتخاب کلاس‌های رایگان یا با هزینه مناسب
+          </li>
+          <li>
+            <strong>زمان برگزاری:</strong> کلاس‌های صبح، عصر، روزهای تعطیل یا
+            پایان هفته
+          </li>
+          <li>
+            <strong>نوع دوره و زیرمجموعه‌ها:</strong> انتخاب دقیق کلاس در شاخه
+            موردنظر
+          </li>
+        </ul>
 
-            <h2>جست‌وجوی دقیق و فیلترهای هوشمند در کلاس‌یار</h2>
-            <p>
-                یکی از مهم‌ترین ویژگی‌های کلاس‌یار، امکان <strong>فیلتر پیشرفته کلاس‌ها</strong> بر اساس فاکتورهای مختلف
-                است. این قابلیت به شما کمک می‌کند کلاس موردنظرتان را سریع‌تر و دقیق‌تر پیدا کنید.
-            </p>
-            <ul>
-                <li><strong>قیمت کلاس:</strong> انتخاب کلاس‌های رایگان یا با هزینه مناسب</li>
-                <li><strong>زمان برگزاری:</strong> کلاس‌های صبح، عصر، روزهای تعطیل یا پایان هفته</li>
-                <li><strong>نوع دوره و زیرمجموعه‌ها:</strong> انتخاب دقیق کلاس در شاخه موردنظر</li>
-            </ul>
+        <h2>چرا کلاس‌یار را انتخاب کنیم؟</h2>
+        <ul>
+          <li><strong>جامع‌ترین مرجع آموزشگاه‌های نجف‌آباد</strong></li>
+          <li>
+            معرفی کامل هر آموزشگاه همراه با عکس، مشخصات، ساعات کاری و آدرس دقیق
+          </li>
+          <li>امکان جست‌وجو بر اساس دسته‌بندی، قیمت، زمان و نوع کلاس</li>
+          <li>مشاهده نظرات کاربران و رتبه‌بندی آموزشگاه‌ها</li>
+          <li>دسترسی آسان به شماره تماس و ثبت‌نام سریع کلاس‌ها</li>
+        </ul>
 
-            <h2>چرا کلاس‌یار را انتخاب کنیم؟</h2>
-            <ul>
-                <li><strong>جامع‌ترین مرجع آموزشگاه‌های نجف‌آباد</strong></li>
-                <li>معرفی کامل هر آموزشگاه همراه با عکس، مشخصات، ساعات کاری و آدرس دقیق</li>
-                <li>امکان جست‌وجو بر اساس دسته‌بندی، قیمت، زمان و نوع کلاس</li>
-                <li>مشاهده نظرات کاربران و رتبه‌بندی آموزشگاه‌ها</li>
-                <li>دسترسی آسان به شماره تماس و ثبت‌نام سریع کلاس‌ها</li>
-            </ul>
+        <h2>کلاس‌یار؛ مسیر هوشمندانه برای یادگیری و پیشرفت</h2>
+        <p>
+          با کلاس‌یار، دیگر نیازی نیست ساعت‌ها به دنبال شماره آموزشگاه‌ها بگردید
+          یا از آشنایان سوال بپرسید. تنها با چند کلیک، به لیستی از بهترین
+          <strong>کلاس‌های آموزشی در نجف‌آباد</strong> دسترسی دارید، آن‌ها را
+          مقایسه می‌کنید و با اطمینان انتخاب می‌کنید.
+        </p>
+        <p>
+          <strong
+            >همین حالا جست‌وجوی کلاس آموزشی در نجف‌آباد را با کلاس‌یار شروع کنید
+            و یک قدم به یادگیری دلخواهتان نزدیک‌تر شوید!</strong
+          >
+        </p>
+      </div>
 
-            <h2>کلاس‌یار؛ مسیر هوشمندانه برای یادگیری و پیشرفت</h2>
-            <p>
-                با کلاس‌یار، دیگر نیازی نیست ساعت‌ها به دنبال شماره آموزشگاه‌ها بگردید یا از آشنایان سوال بپرسید.
-                تنها با چند کلیک، به لیستی از بهترین <strong>کلاس‌های آموزشی در نجف‌آباد</strong> دسترسی دارید، آن‌ها را
-                مقایسه می‌کنید و با اطمینان انتخاب می‌کنید.
-            </p>
-            <p>
-                <strong>همین حالا جست‌وجوی کلاس آموزشی در نجف‌آباد را با کلاس‌یار شروع کنید و یک قدم به یادگیری
-                    دلخواهتان نزدیک‌تر شوید!</strong>
-            </p>
-        </div>
-
-        <button class="toggle-btn mb-5 bg-main" onclick="toggleText()">توضیحات بیشتر</button>
+      <button class="toggle-btn mb-5 bg-main" onclick="toggleText()">
+        توضیحات بیشتر
+      </button>
     </div>
     <!-- seo section with word keys END-->
 
-
     <!-- footer-area -->
     <footer>
-        <div class="footer-area-two footer-bg-two" data-background="assets/img/bg/h2_footer_bg.jpg">
-            <div class="footer-top-two">
-                <div class="container">
-                    <div class="my-row">
-                        <div class="my-col-lg-4 my-col-md-12">
-                            <div class="footer-widget">
-                                <div class="fw-logo">
-                                    <a href="index.html"><img src="assets/img/logo/classYar-logo1.png"
-                                            alt="کلاس یار"></a>
-                                </div>
-                                <div class="footer-content">
-                                    <p> یافتن کلاس مناسب شما در چند لحظه! با سایت کِلاس‌یار، کلاس‌های مورد نظر خود را به
-                                        آسانی پیدا کنید و بهترین انتخاب را برای پیشرفت خود داشته باشید.</p>
-                                    <div class="footer-info">
-                                        <ul class="list-wrap">
-                                            <li>
-                                                <div class="icon">
-                                                    <i class="flaticon-phone-call"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <a href="tel:09232894508">۰۹۲۳۲۸۹۴۵۰۸</a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <i class="flaticon-clock"></i>
-                                                </div>
-                                                <div class="content">
-                                                    <p>
-                                                        زمان پشتیبانی : از ساعت 4تا 9 شب
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-col-lg-2 my-col-md-4 my-col-sm-6 my-col-xs-6">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">منو</h4>
-                                <div class="footer-link">
-                                    <ul class="list-wrap">
-                                        <li><a href="about.html"> درباره ما </a></li>
-                                        <li><a href="contact.html"> تماس با ما </a></li>
-                                        <li><a href="blog.html">وبلاگ</a></li>
-                                        <li><a href="institute.html">اموزشگاه ها </a></li>
-                                        <li><a href="institute.html">کلاس ها </a></li>
-                                        <li><a href="../privacy.html">حریم خصوصی</a></li>
-                                        <li><a href="../rules.html">قوانین</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-col-lg-2 my-col-md-4 my-col-sm-6 my-col-xs-6">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">دسترسی سریع</h4>
-                                <div class="footer-link">
-                                    <ul class="list-wrap">
-                                        <li><a href="institute.html"> هنری </a></li>
-                                        <li><a href="institute.html">ورزشی</a></li>
-                                        <li><a href="institute.html">فناوری </a></li>
-                                        <li><a href="institute.html"> علمی</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="my-col-lg-4 my-col-md-4 my-col-sm-8 my-col-xs-8">
-                            <div class="footer-widget">
-                                <div class="footer-social footer-social-two">
-
-                                    <div class="icons">
-                                        <h4 class="fw-title">راه های ارتباطی با ما </h4>
-                                        <ul class="list-wrap">
-                                            <li><a href="https://instagram.com/kelassyar"><i
-                                                        class="fab fa-instagram"></i><span
-                                                        class="tooltip">اینستا</span></a></li>
-                                            <li><a href="https://t.me/keaasyarbot"><i class="fab fa-telegram"></i><span
-                                                        class="tooltip">تلگرم</span></a></li>
-                                            <li><a href="https://wa.me/09232894508"><i class="fab fa-whatsapp"></i><span
-                                                        class="tooltip">واتساپ</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <div
+        class="footer-area-two footer-bg-two"
+        data-background="assets/img/bg/h2_footer_bg.jpg"
+      >
+        <div class="footer-top-two">
+          <div class="container">
+            <div class="my-row">
+              <div class="my-col-lg-4 my-col-md-12">
+                <div class="footer-widget">
+                  <div class="fw-logo">
+                    <a href="index.html"
+                      ><img
+                        src="assets/img/logo/classYar-logo1.png"
+                        alt="کلاس یار"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      یافتن کلاس مناسب شما در چند لحظه! با سایت کِلاس‌یار،
+                      کلاس‌های مورد نظر خود را به آسانی پیدا کنید و بهترین
+                      انتخاب را برای پیشرفت خود داشته باشید.
+                    </p>
+                    <div class="footer-info">
+                      <ul class="list-wrap">
+                        <li>
+                          <div class="icon">
+                            <i class="flaticon-phone-call"></i>
+                          </div>
+                          <div class="content">
+                            <a href="tel:09232894508">۰۹۲۳۲۸۹۴۵۰۸</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="icon">
+                            <i class="flaticon-clock"></i>
+                          </div>
+                          <div class="content">
+                            <p>زمان پشتیبانی : از ساعت 4تا 9 شب</p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-
+                  </div>
                 </div>
-            </div>
+              </div>
+              <div class="my-col-lg-2 my-col-md-4 my-col-sm-6 my-col-xs-6">
+                <div class="footer-widget">
+                  <h4 class="fw-title">منو</h4>
+                  <div class="footer-link">
+                    <ul class="list-wrap">
+                      <li><a href="about.html"> درباره ما </a></li>
+                      <li><a href="contact.html"> تماس با ما </a></li>
+                      <li><a href="blog.html">وبلاگ</a></li>
+                      <li><a href="institute.html">اموزشگاه ها </a></li>
+                      <li><a href="institute.html">کلاس ها </a></li>
+                      <li><a href="../privacy.html">حریم خصوصی</a></li>
+                      <li><a href="../rules.html">قوانین</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="my-col-lg-2 my-col-md-4 my-col-sm-6 my-col-xs-6">
+                <div class="footer-widget">
+                  <h4 class="fw-title">دسترسی سریع</h4>
+                  <div class="footer-link">
+                    <ul class="list-wrap">
+                      <li><a href="institute.html"> هنری </a></li>
+                      <li><a href="institute.html">ورزشی</a></li>
+                      <li><a href="institute.html">فناوری </a></li>
+                      <li><a href="institute.html"> علمی</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-        </div>
-
-        <div class="footer-bottom-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <!-- ساماندهای مشکل داره  -->
-
-                        <div class="copyright-text-two text-center my-row">
-                            <p>تمامی حقوق محفوظ است | کلاس یار</p>
-                            <div class="nemads">
-                                <div class="nemad-item">
-                                    <a referrerpolicy='origin' target='_blank'
-                                        href='https://trustseal.enamad.ir/?id=603082&Code=eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD'><img
-                                            referrerpolicy='origin'
-                                            src='https://trustseal.enamad.ir/logo.aspx?id=603082&Code=eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD'
-                                            alt='' style='cursor:pointer' code='eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD'></a>
-                                </div>
-
-                                <div class="nemad-item">
-
-                                    <img referrerpolicy='origin' id='rgvjjzpesizpesgtesgtjzpe' style='cursor:pointer'
-                                        onclick="window.open('https:/logo.samandehi.ir/Verify.aspx?id=379007&p=xlaojyoepfvlobpdobpdjyoe', Popup,toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30)"
-                                        alt='logo-samandehi'
-                                        src='https://logo.samandehi.ir/logo.aspx?id=379007&p=qftiyndtbsiylymalymayndt' />
-                                </div>
-                            </div>
-                        </div>
+              <div class="my-col-lg-4 my-col-md-4 my-col-sm-8 my-col-xs-8">
+                <div class="footer-widget">
+                  <div class="footer-social footer-social-two">
+                    <div class="icons">
+                      <h4 class="fw-title">راه های ارتباطی با ما</h4>
+                      <ul class="list-wrap">
+                        <li>
+                          <a href="https://instagram.com/kelassyar"
+                            ><i class="fab fa-instagram"></i
+                            ><span class="tooltip">اینستا</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://t.me/keaasyarbot"
+                            ><i class="fab fa-telegram"></i
+                            ><span class="tooltip">تلگرم</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://wa.me/09232894508"
+                            ><i class="fab fa-whatsapp"></i
+                            ><span class="tooltip">واتساپ</span></a
+                          >
+                        </li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
+      <div class="footer-bottom-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- ساماندهای مشکل داره  -->
 
+              <div class="copyright-text-two text-center my-row">
+                <p>تمامی حقوق محفوظ است | کلاس یار</p>
+                <div class="nemads">
+                  <div class="nemad-item">
+                    <a
+                      referrerpolicy="origin"
+                      target="_blank"
+                      href="https://trustseal.enamad.ir/?id=603082&Code=eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD"
+                      ><img
+                        referrerpolicy="origin"
+                        src="https://trustseal.enamad.ir/logo.aspx?id=603082&Code=eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD"
+                        alt=""
+                        style="cursor: pointer"
+                        code="eRO9hOUkcoAv9hc8Bz6q7ep4NqrNtRgD"
+                    /></a>
+                  </div>
+
+                  <div class="nemad-item">
+                    <img
+                      referrerpolicy="origin"
+                      id="rgvjjzpesizpesgtesgtjzpe"
+                      style="cursor: pointer"
+                      onclick="window.open('https:/logo.samandehi.ir/Verify.aspx?id=379007&p=xlaojyoepfvlobpdobpdjyoe', Popup,toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30)"
+                      alt="logo-samandehi"
+                      src="https://logo.samandehi.ir/logo.aspx?id=379007&p=qftiyndtbsiylymalymayndt"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- <script src="assets/js/index.js"></script> -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -844,12 +1556,6 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/dedicate javascript.js"></script>
-
-
-
-</body>
-
-
-
+    <script src="assets/js/dedicatejavascript.js"></script>
+  </body>
 </html>

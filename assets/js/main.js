@@ -10,26 +10,26 @@
         console.log(moreText);
         let isExpanded = false;
 
-        showMoreBtn.addEventListener("click", function () {
-            if (isExpanded) {
-                // Collapse - fade main text back in, hide additional text
-                mainText.classList.add("not-active");
-                mainText.classList.remove("faded-text");
-                moreText.classList.remove("visible-text");
-                moreText.classList.add("hidden-text");
-                showMoreBtn.textContent = "مشاهده بیشتر";
-                showMoreBtn.classList.remove("expanded");
-            } else {
-                // Expand - fade main text out, show additional text
-                mainText.classList.add("faded-text");
-                moreText.classList.remove("hidden-text");
-                mainText.classList.remove("not-active");
-                moreText.classList.add("visible-text");
-                showMoreBtn.textContent = "مشاهده کمتر";
-                showMoreBtn.classList.add("expanded");
-            }
-            isExpanded = !isExpanded;
-        });
+        // showMoreBtn.addEventListener("click", function () {
+        //     if (isExpanded) {
+        //         // Collapse - fade main text back in, hide additional text
+        //         mainText.classList.add("not-active");
+        //         mainText.classList.remove("faded-text");
+        //         moreText.classList.remove("visible-text");
+        //         moreText.classList.add("hidden-text");
+        //         showMoreBtn.textContent = "مشاهده بیشتر";
+        //         showMoreBtn.classList.remove("expanded");
+        //     } else {
+        //         // Expand - fade main text out, show additional text
+        //         mainText.classList.add("faded-text");
+        //         moreText.classList.remove("hidden-text");
+        //         mainText.classList.remove("not-active");
+        //         moreText.classList.add("visible-text");
+        //         showMoreBtn.textContent = "مشاهده کمتر";
+        //         showMoreBtn.classList.add("expanded");
+        //     }
+        //     isExpanded = !isExpanded;
+        // });
     });
     /*=============================================
 	=    		 Preloader			      =

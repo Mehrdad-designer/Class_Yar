@@ -62,6 +62,4 @@ institute.addEventListener('click',(e)=>{
     if (filter_institutes != undefined) {
         filter_institutes.style.display = "block";
     }
-})
-
-
+});
